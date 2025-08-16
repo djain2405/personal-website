@@ -1,0 +1,366 @@
+'use client'
+
+import { motion } from 'framer-motion'
+import { useState, useEffect } from 'react'
+import { Sparkles, MapPin, Code, Mic, BookOpen, Mail, Github, Linkedin, Twitter, ExternalLink } from 'lucide-react'
+import AnimatedCounter from './components/AnimatedCounter'
+import SkillCloud from './components/SkillCloud'
+import Timeline from './components/Timeline'
+import ContactForm from './components/ContactForm'
+
+export default function Home() {
+  const [isVisible, setIsVisible] = useState(false)
+
+  useEffect(() => {
+    setIsVisible(true)
+  }, [])
+
+  const fadeInUp = {
+    initial: { opacity: 0, y: 60 },
+    animate: { opacity: 1, y: 0 },
+    transition: { duration: 0.6 }
+  }
+
+  const staggerContainer = {
+    animate: {
+      transition: {
+        staggerChildren: 0.2
+      }
+    }
+  }
+
+  return (
+    <div className="bg-gray-50 min-h-screen text-gray-900">
+      {/* Hero Section */}
+      <section className="flex flex-col items-center justify-center text-center section-padding gradient-bg min-h-screen">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8 }}
+          className="space-y-6"
+        >
+          <motion.div
+            animate={{ rotate: 360 }}
+            transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+            className="w-20 h-20 mx-auto mb-8"
+          >
+            <Sparkles className="w-full h-full text-purple-600" />
+          </motion.div>
+          
+          <h1 className="text-6xl md:text-7xl font-extrabold mb-4 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+            Building Apps, <br />Connecting People ✨
+          </h1>
+          
+          <p className="text-xl md:text-2xl max-w-3xl mb-8 text-gray-700">
+            I'm <span className="font-bold text-purple-600">Deevaa</span> – Engineering Leader, App Builder, Speaker, Explorer, Manifestor.
+          </p>
+          
+          <div className="flex flex-wrap justify-center gap-4">
+            <motion.button 
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="btn-primary"
+            >
+              Work With Me
+            </motion.button>
+            <motion.button 
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="btn-secondary"
+            >
+              Download Resume
+            </motion.button>
+          </div>
+        </motion.div>
+      </section>
+
+      {/* About Section */}
+      <section className="section-padding max-w-6xl mx-auto">
+        <motion.div
+          variants={staggerContainer}
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true }}
+        >
+          <motion.h2 variants={fadeInUp} className="text-4xl font-bold mb-8 text-center">
+            About Me
+          </motion.h2>
+          
+          <motion.div variants={fadeInUp} className="grid md:grid-cols-2 gap-12 items-center mb-16">
+            <div className="space-y-6">
+              <div className="flex items-center gap-2 text-lg">
+                <MapPin className="text-purple-600" />
+                <span>From India → US → building apps → speaking at conferences → manifesting future dreams ✨</span>
+              </div>
+              
+              <div className="space-y-4">
+                <div className="flex items-start gap-3">
+                  <Code className="text-purple-600 mt-1 flex-shrink-0" />
+                  <div>
+                    <h3 className="font-semibold">10+ years in mobile engineering</h3>
+                    <p className="text-gray-600">Leading teams and building scalable applications</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start gap-3">
+                  <Mic className="text-pink-600 mt-1 flex-shrink-0" />
+                  <div>
+                    <h3 className="font-semibold">Global tech conference speaker</h3>
+                    <p className="text-gray-600">Sharing knowledge at Android Makers, Droidcon, DroidKaigi</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start gap-3">
+                  <Sparkles className="text-blue-600 mt-1 flex-shrink-0" />
+                  <div>
+                    <h3 className="font-semibold">Passionate about growth & manifestation</h3>
+                    <p className="text-gray-600">Travel enthusiast, personal development advocate</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <motion.div 
+              className="relative"
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.3 }}
+            >
+              <div className="w-80 h-80 mx-auto rounded-full bg-gradient-to-br from-purple-200 to-pink-200 flex items-center justify-center">
+                <div className="text-6xl">👩‍💻</div>
+              </div>
+            </motion.div>
+          </motion.div>
+
+          {/* Stats Section */}
+          <motion.div variants={fadeInUp} className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
+            <div className="text-center">
+              <div className="text-3xl font-bold text-purple-600 mb-2">
+                <AnimatedCounter end={10} suffix="+" />
+              </div>
+              <p className="text-gray-600">Years Experience</p>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl font-bold text-pink-600 mb-2">
+                <AnimatedCounter end={50} suffix="+" />
+              </div>
+              <p className="text-gray-600">Apps Built</p>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl font-bold text-blue-600 mb-2">
+                <AnimatedCounter end={15} suffix="+" />
+              </div>
+              <p className="text-gray-600">Conferences</p>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl font-bold text-green-600 mb-2">
+                <AnimatedCounter end={25} suffix="+" />
+              </div>
+              <p className="text-gray-600">Countries Visited</p>
+            </div>
+          </motion.div>
+
+          {/* Skills Section */}
+          <motion.div variants={fadeInUp}>
+            <h3 className="text-2xl font-bold mb-8 text-center">Technical Skills & Expertise</h3>
+            <SkillCloud />
+          </motion.div>
+        </motion.div>
+      </section>
+
+      {/* Journey Timeline */}
+      <section className="bg-gray-100 section-padding">
+        <div className="max-w-4xl mx-auto">
+          <motion.h2 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            className="text-4xl font-bold mb-12 text-center"
+          >
+            My Journey
+          </motion.h2>
+          <Timeline />
+        </div>
+      </section>
+
+      {/* Projects Section */}
+      <section className="bg-white section-padding shadow-inner">
+        <motion.div
+          variants={staggerContainer}
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true }}
+          className="max-w-6xl mx-auto"
+        >
+          <motion.h2 variants={fadeInUp} className="text-4xl font-bold mb-12 text-center">
+            Featured Projects
+          </motion.h2>
+          
+          <div className="grid md:grid-cols-2 gap-8">
+            <motion.div 
+              variants={fadeInUp}
+              className="group p-8 bg-gray-50 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+            >
+              <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center mb-6">
+                <BookOpen className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-2xl font-semibold mb-4">Sticky Notes App</h3>
+              <p className="text-gray-700 mb-6">A playful yet powerful app with event tracking, to-dos & affirmations. Built with modern mobile technologies.</p>
+              <div className="flex flex-wrap gap-2 mb-6">
+                <span className="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">React Native</span>
+                <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">TypeScript</span>
+                <span className="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Firebase</span>
+              </div>
+              <button className="flex items-center gap-2 text-purple-600 font-semibold hover:text-purple-700 transition-colors">
+                View Case Study <ExternalLink className="w-4 h-4" />
+              </button>
+            </motion.div>
+            
+            <motion.div 
+              variants={fadeInUp}
+              className="group p-8 bg-gray-50 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+            >
+              <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-green-500 rounded-2xl flex items-center justify-center mb-6">
+                <MapPin className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-2xl font-semibold mb-4">Travel Journal</h3>
+              <p className="text-gray-700 mb-6">Interactive map + stories from my road trips & camping adventures. Real-time location tracking and photo journals.</p>
+              <div className="flex flex-wrap gap-2 mb-6">
+                <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Next.js</span>
+                <span className="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Mapbox</span>
+                <span className="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm">Supabase</span>
+              </div>
+              <button className="flex items-center gap-2 text-purple-600 font-semibold hover:text-purple-700 transition-colors">
+                Explore <ExternalLink className="w-4 h-4" />
+              </button>
+            </motion.div>
+          </div>
+        </motion.div>
+      </section>
+
+      {/* Speaking Section */}
+      <section className="section-padding max-w-6xl mx-auto">
+        <motion.div
+          variants={staggerContainer}
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true }}
+        >
+          <motion.h2 variants={fadeInUp} className="text-4xl font-bold mb-8 text-center">
+            Speaking
+          </motion.h2>
+          
+          <motion.div variants={fadeInUp} className="text-center space-y-8">
+            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+              Clips from my talks at <span className="font-semibold">Android Makers</span>, <span className="font-semibold">Droidcon</span>, <span className="font-semibold">DroidKaigi</span> & more.
+            </p>
+            
+            <div className="grid md:grid-cols-3 gap-6">
+              {['Android Makers 2024', 'Droidcon Berlin', 'DroidKaigi Tokyo'].map((event, index) => (
+                <motion.div
+                  key={event}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ delay: index * 0.2 }}
+                  className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow"
+                >
+                  <div className="w-full h-40 bg-gradient-to-br from-purple-200 to-pink-200 rounded-xl mb-4 flex items-center justify-center">
+                    <Mic className="w-12 h-12 text-purple-600" />
+                  </div>
+                  <h3 className="font-semibold text-lg">{event}</h3>
+                  <p className="text-gray-600 text-sm">Building Better Mobile Apps</p>
+                </motion.div>
+              ))}
+            </div>
+            
+            <motion.button 
+              whileHover={{ scale: 1.05 }}
+              className="btn-secondary"
+            >
+              Book Me To Speak
+            </motion.button>
+          </motion.div>
+        </motion.div>
+      </section>
+
+      {/* Blog Section */}
+      <section className="bg-gray-100 section-padding">
+        <motion.div
+          variants={staggerContainer}
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true }}
+          className="max-w-6xl mx-auto"
+        >
+          <motion.h2 variants={fadeInUp} className="text-4xl font-bold mb-12 text-center">
+            Latest from the Blog
+          </motion.h2>
+          
+          <div className="grid md:grid-cols-2 gap-8">
+            <motion.div variants={fadeInUp} className="bg-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition-shadow">
+              <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
+                <Code className="w-6 h-6 text-blue-600" />
+              </div>
+              <h3 className="text-xl font-semibold mb-4">Tech Wisdom</h3>
+              <p className="text-gray-600 mb-6">Thoughts on mobile development, AI integration, and building better user experiences.</p>
+              <button className="text-blue-600 font-semibold hover:text-blue-700">Read More →</button>
+            </motion.div>
+            
+            <motion.div variants={fadeInUp} className="bg-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition-shadow">
+              <div className="w-12 h-12 bg-pink-100 rounded-xl flex items-center justify-center mb-6">
+                <Sparkles className="w-6 h-6 text-pink-600" />
+              </div>
+              <h3 className="text-xl font-semibold mb-4">Life Notes</h3>
+              <p className="text-gray-600 mb-6">Manifestation techniques, travel experiences, and personal growth insights.</p>
+              <button className="text-pink-600 font-semibold hover:text-pink-700">Read More →</button>
+            </motion.div>
+          </div>
+        </motion.div>
+      </section>
+
+      {/* Contact Section */}
+      <section className="section-padding text-center max-w-4xl mx-auto">
+        <motion.div
+          variants={staggerContainer}
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true }}
+        >
+          <motion.h2 variants={fadeInUp} className="text-4xl font-bold mb-8">
+            Let's Collab 🌟
+          </motion.h2>
+          
+          <motion.p variants={fadeInUp} className="text-xl text-gray-700 mb-12">
+            Have an idea, project, or just want to say hi? I'd love to hear from you!
+          </motion.p>
+          
+          <motion.div variants={fadeInUp} className="flex justify-center gap-6 mb-12">
+            <a href="#" className="p-4 bg-white rounded-full shadow-lg hover:shadow-xl transition-shadow hover:scale-110 transform duration-300">
+              <Github className="w-6 h-6 text-gray-700" />
+            </a>
+            <a href="#" className="p-4 bg-white rounded-full shadow-lg hover:shadow-xl transition-shadow hover:scale-110 transform duration-300">
+              <Linkedin className="w-6 h-6 text-blue-600" />
+            </a>
+            <a href="#" className="p-4 bg-white rounded-full shadow-lg hover:shadow-xl transition-shadow hover:scale-110 transform duration-300">
+              <Twitter className="w-6 h-6 text-blue-400" />
+            </a>
+            <a href="#" className="p-4 bg-white rounded-full shadow-lg hover:shadow-xl transition-shadow hover:scale-110 transform duration-300">
+              <Mail className="w-6 h-6 text-red-500" />
+            </a>
+          </motion.div>
+          
+          <ContactForm />
+        </motion.div>
+      </section>
+
+      {/* Footer */}
+      <footer className="py-12 text-center text-gray-500 border-t border-gray-200">
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.6 }}
+        >
+          © 2025 Deevaa. Made with ✨ and lots of coffee. All Rights Reserved.
+        </motion.p>
+      </footer>
+    </div>
+  )
+}
