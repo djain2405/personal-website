@@ -1,4 +1,4 @@
-# Deevaa's Portfolio Website ✨
+# Divya's Portfolio Website ✨
 
 A modern, interactive personal brand website built with Next.js 14, TypeScript, and Framer Motion.
 

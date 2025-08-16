@@ -174,30 +174,36 @@ export default function Home() {
           </motion.div>
 
           {/* Stats Section */}
-          <motion.div variants={fadeInUp} className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
+          <motion.div variants={fadeInUp} className="grid grid-cols-1 md:grid-cols-5 gap-6 mb-16">
             <div className="text-center">
               <div className="text-3xl font-bold text-purple-600 mb-2">
-                <AnimatedCounter end={10} suffix="+" />
+                <AnimatedCounter end={12} suffix="+" />
               </div>
-              <p className="text-gray-600">Years Experience</p>
+              <p className="text-gray-600 text-sm leading-tight">Years in Mobile Engineering & Leadership</p>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-pink-600 mb-2">
-                <AnimatedCounter end={50} suffix="+" />
+                <AnimatedCounter end={20} suffix="+" />
               </div>
-              <p className="text-gray-600">Apps Built</p>
+              <p className="text-gray-600 text-sm leading-tight">Apps & Features Launched (directly impacting large users)</p>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-blue-600 mb-2">
-                <AnimatedCounter end={15} suffix="+" />
+                <AnimatedCounter end={10} suffix="+" />
               </div>
-              <p className="text-gray-600">Conferences</p>
+              <p className="text-gray-600 text-sm leading-tight">Global Tech Conferences Spoken At</p>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-green-600 mb-2">
-                <AnimatedCounter end={25} suffix="+" />
+                <AnimatedCounter end={10} suffix="+" />
               </div>
-              <p className="text-gray-600">Countries Visited</p>
+              <p className="text-gray-600 text-sm leading-tight">Engineers Mentored</p>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl font-bold text-orange-600 mb-2">
+                <AnimatedCounter end={10} suffix="+" />
+              </div>
+              <p className="text-gray-600 text-sm leading-tight">National Parks Explored 🌍 (and counting!)</p>
             </div>
           </motion.div>
 
