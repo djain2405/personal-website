@@ -78,7 +78,7 @@ export default function Home() {
           </h1>
 
           <p className="text-xl md:text-2xl max-w-3xl mb-8 text-gray-700">
-            I'm <span className="font-bold text-purple-600">Divya</span> – Engineering Leader, App Builder, Speaker, Explorer, Manifestor.
+            I&apos;m <span className="font-bold text-purple-600">Divya</span> – Engineering Leader, App Builder, Speaker, Explorer, Manifestor.
           </p>
 
           <div className="flex flex-wrap justify-center gap-4">
@@ -384,7 +384,7 @@ export default function Home() {
         </motion.div>
       </section>
 
-      {/* Blog Section - Temporarily Hidden
+{/* Blog Section - Temporarily Hidden
       <section className="bg-gray-100 section-padding">
         <motion.div
           variants={staggerContainer}
@@ -429,11 +429,11 @@ export default function Home() {
           viewport={{ once: true }}
         >
           <motion.h2 variants={fadeInUp} className="text-4xl font-bold mb-8">
-            Let's Collab 🌟
+            Let&apos;s Collab 🌟
           </motion.h2>
 
           <motion.p variants={fadeInUp} className="text-xl text-gray-700 mb-12">
-            Have an idea, project, or just want to say hi? I'd love to hear from you!
+            Have an idea, project, or just want to say hi? I&apos;d love to hear from you!
           </motion.p>
 
           <motion.div variants={fadeInUp} className="flex justify-center gap-6 mb-12">
