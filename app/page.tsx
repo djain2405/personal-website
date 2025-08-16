@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { useState, useEffect } from 'react'
+import Image from 'next/image'
 import { Sparkles, MapPin, Code, Mic, BookOpen, Mail, Github, Linkedin, Twitter, ExternalLink } from 'lucide-react'
 import AnimatedCounter from './components/AnimatedCounter'
 import SkillCloud from './components/SkillCloud'
@@ -46,24 +47,24 @@ export default function Home() {
           >
             <Sparkles className="w-full h-full text-purple-600" />
           </motion.div>
-          
+
           <h1 className="text-6xl md:text-7xl font-extrabold mb-4 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
             Building Apps, <br />Connecting People ✨
           </h1>
-          
+
           <p className="text-xl md:text-2xl max-w-3xl mb-8 text-gray-700">
-            I'm <span className="font-bold text-purple-600">Deevaa</span> – Engineering Leader, App Builder, Speaker, Explorer, Manifestor.
+            I'm <span className="font-bold text-purple-600">Divya</span> – Engineering Leader, App Builder, Speaker, Explorer, Manifestor.
           </p>
-          
+
           <div className="flex flex-wrap justify-center gap-4">
-            <motion.button 
+            <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="btn-primary"
             >
               Work With Me
             </motion.button>
-            <motion.button 
+            <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="btn-secondary"
@@ -85,14 +86,14 @@ export default function Home() {
           <motion.h2 variants={fadeInUp} className="text-4xl font-bold mb-8 text-center">
             About Me
           </motion.h2>
-          
+
           <motion.div variants={fadeInUp} className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div className="space-y-6">
               <div className="flex items-center gap-2 text-lg">
                 <MapPin className="text-purple-600" />
                 <span>From India → US → building apps → speaking at conferences → manifesting future dreams ✨</span>
               </div>
-              
+
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
                   <Code className="text-purple-600 mt-1 flex-shrink-0" />
@@ -101,7 +102,7 @@ export default function Home() {
                     <p className="text-gray-600">Leading teams and building scalable applications</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start gap-3">
                   <Mic className="text-pink-600 mt-1 flex-shrink-0" />
                   <div>
@@ -109,7 +110,7 @@ export default function Home() {
                     <p className="text-gray-600">Sharing knowledge at Android Makers, Droidcon, DroidKaigi</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start gap-3">
                   <Sparkles className="text-blue-600 mt-1 flex-shrink-0" />
                   <div>
@@ -119,14 +120,25 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            
-            <motion.div 
+
+            <motion.div
               className="relative"
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
             >
-              <div className="w-80 h-80 mx-auto rounded-full bg-gradient-to-br from-purple-200 to-pink-200 flex items-center justify-center">
-                <div className="text-6xl">👩‍💻</div>
+              <div className="w-80 h-80 mx-auto rounded-full bg-gradient-to-br from-purple-200 to-pink-200 p-2">
+                <div className="w-full h-full rounded-full overflow-hidden bg-white shadow-lg">
+                  {/* Using regular img tag for better compatibility */}
+                  <img
+                    src="/images/profile.png?v=2"
+                    alt="Divya - Engineering Leader and Speaker"
+                    className="w-full h-full object-cover rounded-full"
+                    onError={(e) => {
+                      console.error('Image failed to load:', e);
+                      e.currentTarget.src = '/images/placeholder.svg';
+                    }}
+                  />
+                </div>
               </div>
             </motion.div>
           </motion.div>
@@ -170,7 +182,7 @@ export default function Home() {
       {/* Journey Timeline */}
       <section className="bg-gray-100 section-padding">
         <div className="max-w-4xl mx-auto">
-          <motion.h2 
+          <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             className="text-4xl font-bold mb-12 text-center"
@@ -193,9 +205,9 @@ export default function Home() {
           <motion.h2 variants={fadeInUp} className="text-4xl font-bold mb-12 text-center">
             Featured Projects
           </motion.h2>
-          
+
           <div className="grid md:grid-cols-2 gap-8">
-            <motion.div 
+            <motion.div
               variants={fadeInUp}
               className="group p-8 bg-gray-50 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
             >
@@ -213,8 +225,8 @@ export default function Home() {
                 View Case Study <ExternalLink className="w-4 h-4" />
               </button>
             </motion.div>
-            
-            <motion.div 
+
+            <motion.div
               variants={fadeInUp}
               className="group p-8 bg-gray-50 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
             >
@@ -247,12 +259,12 @@ export default function Home() {
           <motion.h2 variants={fadeInUp} className="text-4xl font-bold mb-8 text-center">
             Speaking
           </motion.h2>
-          
+
           <motion.div variants={fadeInUp} className="text-center space-y-8">
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
               Clips from my talks at <span className="font-semibold">Android Makers</span>, <span className="font-semibold">Droidcon</span>, <span className="font-semibold">DroidKaigi</span> & more.
             </p>
-            
+
             <div className="grid md:grid-cols-3 gap-6">
               {['Android Makers 2024', 'Droidcon Berlin', 'DroidKaigi Tokyo'].map((event, index) => (
                 <motion.div
@@ -270,8 +282,8 @@ export default function Home() {
                 </motion.div>
               ))}
             </div>
-            
-            <motion.button 
+
+            <motion.button
               whileHover={{ scale: 1.05 }}
               className="btn-secondary"
             >
@@ -293,7 +305,7 @@ export default function Home() {
           <motion.h2 variants={fadeInUp} className="text-4xl font-bold mb-12 text-center">
             Latest from the Blog
           </motion.h2>
-          
+
           <div className="grid md:grid-cols-2 gap-8">
             <motion.div variants={fadeInUp} className="bg-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition-shadow">
               <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
@@ -303,7 +315,7 @@ export default function Home() {
               <p className="text-gray-600 mb-6">Thoughts on mobile development, AI integration, and building better user experiences.</p>
               <button className="text-blue-600 font-semibold hover:text-blue-700">Read More →</button>
             </motion.div>
-            
+
             <motion.div variants={fadeInUp} className="bg-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition-shadow">
               <div className="w-12 h-12 bg-pink-100 rounded-xl flex items-center justify-center mb-6">
                 <Sparkles className="w-6 h-6 text-pink-600" />
@@ -327,11 +339,11 @@ export default function Home() {
           <motion.h2 variants={fadeInUp} className="text-4xl font-bold mb-8">
             Let's Collab 🌟
           </motion.h2>
-          
+
           <motion.p variants={fadeInUp} className="text-xl text-gray-700 mb-12">
             Have an idea, project, or just want to say hi? I'd love to hear from you!
           </motion.p>
-          
+
           <motion.div variants={fadeInUp} className="flex justify-center gap-6 mb-12">
             <a href="#" className="p-4 bg-white rounded-full shadow-lg hover:shadow-xl transition-shadow hover:scale-110 transform duration-300">
               <Github className="w-6 h-6 text-gray-700" />
@@ -346,7 +358,7 @@ export default function Home() {
               <Mail className="w-6 h-6 text-red-500" />
             </a>
           </motion.div>
-          
+
           <ContactForm />
         </motion.div>
       </section>
