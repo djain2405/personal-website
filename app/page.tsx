@@ -88,34 +88,64 @@ export default function Home() {
           </motion.h2>
 
           <motion.div variants={fadeInUp} className="grid md:grid-cols-2 gap-12 items-center mb-16">
-            <div className="space-y-6">
-              <div className="flex items-center gap-2 text-lg">
-                <MapPin className="text-purple-600" />
-                <span>From India → US → building apps → speaking at conferences → manifesting future dreams ✨</span>
+            <div className="space-y-8">
+              {/* Journey Introduction */}
+              <div className="bg-gradient-to-r from-purple-50 to-pink-50 p-6 rounded-2xl border-l-4 border-purple-400">
+                <div className="flex items-center gap-3 text-lg">
+                  <MapPin className="text-purple-600 flex-shrink-0" />
+                  <span className="font-medium text-gray-800">
+                    India → US → building apps → speaking on global stages → manifesting big dreams ✨
+                  </span>
+                </div>
               </div>
 
-              <div className="space-y-4">
-                <div className="flex items-start gap-3">
-                  <Code className="text-purple-600 mt-1 flex-shrink-0" />
-                  <div>
-                    <h3 className="font-semibold">10+ years in mobile engineering</h3>
-                    <p className="text-gray-600">Leading teams and building scalable applications</p>
+              {/* Professional Experience */}
+              <div className="space-y-6">
+                <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                  <div className="flex items-start gap-4">
+                    <div className="p-2 bg-purple-100 rounded-lg">
+                      <Code className="text-purple-600 w-6 h-6" />
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="font-bold text-lg text-gray-900 mb-2">
+                        Engineering Leadership & Mobile Innovation
+                      </h3>
+                      <div className="space-y-1">
+                        <p className="text-gray-700">🌟 10+ years crafting mobile experiences & scaling engineering teams</p>
+                        <p className="text-gray-600">💡 Leading humans + building apps that make life easier & more fun</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-3">
-                  <Mic className="text-pink-600 mt-1 flex-shrink-0" />
-                  <div>
-                    <h3 className="font-semibold">Global tech conference speaker</h3>
-                    <p className="text-gray-600">Sharing knowledge at Android Makers, Droidcon, DroidKaigi</p>
+                <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                  <div className="flex items-start gap-4">
+                    <div className="p-2 bg-pink-100 rounded-lg">
+                      <Mic className="text-pink-600 w-6 h-6" />
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="font-bold text-lg text-gray-900 mb-2">
+                        Global Tech Conference Speaker
+                      </h3>
+                      <p className="text-gray-700">🎤 Shared insights at Android Makers, Droidcon, DroidKaigi & beyond</p>
+                    </div>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-3">
-                  <Sparkles className="text-blue-600 mt-1 flex-shrink-0" />
-                  <div>
-                    <h3 className="font-semibold">Passionate about growth & manifestation</h3>
-                    <p className="text-gray-600">Travel enthusiast, personal development advocate</p>
+                <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                  <div className="flex items-start gap-4">
+                    <div className="p-2 bg-blue-100 rounded-lg">
+                      <Sparkles className="text-blue-600 w-6 h-6" />
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="font-bold text-lg text-gray-900 mb-2">
+                        Passionate Explorer & Dreamer
+                      </h3>
+                      <div className="space-y-1">
+                        <p className="text-gray-700">💫 Growth mindset & manifestation enthusiast</p>
+                        <p className="text-gray-600">✈️ Road tripper, camper, and forever curious about the world</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
