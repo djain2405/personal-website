@@ -3,11 +3,36 @@
 import { motion } from 'framer-motion'
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
-import { Sparkles, MapPin, Code, Mic, BookOpen, Mail, Github, Linkedin, Twitter, ExternalLink } from 'lucide-react'
+import { Sparkles, MapPin, Code, Mic, BookOpen, Mail, Github, Linkedin, Twitter, ExternalLink, Play } from 'lucide-react'
 import AnimatedCounter from './components/AnimatedCounter'
 import SkillCloud from './components/SkillCloud'
 import Timeline from './components/Timeline'
 import ContactForm from './components/ContactForm'
+
+// Speaking events data
+const speakingEvents = [
+  {
+    title: 'Android Makers',
+    description: 'Jetpack DataStore',
+    videoUrl: 'https://youtu.be/rKGZTvL9vdg?si=adVeAWvHNNaoNoR7', // Replace with your actual video URL
+    thumbnail: 'https://img.youtube.com/vi/rKGZTvL9vdg/maxresdefault.jpg',
+    year: '2022'
+  },
+  {
+    title: 'Droidcon Italy',
+    description: 'Clean Architecture with Jetpack Compose',
+    videoUrl: 'https://youtu.be/25VjadHR0zs?si=Y6SKujqZWVIbRYnq',
+    thumbnail: '/images/speaking/droidcon_italy.png',
+    year: '2021'
+  },
+  {
+    title: 'DroidKaigi',
+    description: 'Kotlin Multiplatform',
+    videoUrl: 'https://youtu.be/pKMXXiV_aGc?si=iTCmnED3ae0_YnYP',
+    thumbnail: 'https://img.youtube.com/vi/pKMXXiV_aGc/maxresdefault.jpg',
+    year: '2021'
+  }
+]
 
 export default function Home() {
   const [isVisible, setIsVisible] = useState(false)
@@ -229,7 +254,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Projects Section */}
+      {/* Projects Section - Temporarily Hidden */}
+      {/* 
       <section className="bg-white section-padding shadow-inner">
         <motion.div
           variants={staggerContainer}
@@ -283,6 +309,7 @@ export default function Home() {
           </div>
         </motion.div>
       </section>
+      */}
 
       {/* Speaking Section */}
       <section className="section-padding max-w-6xl mx-auto">
@@ -302,19 +329,47 @@ export default function Home() {
             </p>
 
             <div className="grid md:grid-cols-3 gap-6">
-              {['Android Makers 2024', 'Droidcon Berlin', 'DroidKaigi Tokyo'].map((event, index) => (
+              {speakingEvents.map((event, index) => (
                 <motion.div
-                  key={event}
+                  key={event.title}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ delay: index * 0.2 }}
-                  className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow"
+                  className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 group cursor-pointer"
+                  onClick={() => window.open(event.videoUrl, '_blank')}
                 >
-                  <div className="w-full h-40 bg-gradient-to-br from-purple-200 to-pink-200 rounded-xl mb-4 flex items-center justify-center">
-                    <Mic className="w-12 h-12 text-purple-600" />
+                  <div className="relative w-full h-40 bg-gradient-to-br from-purple-200 to-pink-200 rounded-xl mb-4 flex items-center justify-center overflow-hidden group-hover:scale-105 transition-transform duration-300">
+                    {event.thumbnail ? (
+                      <img
+                        src={event.thumbnail}
+                        alt={`${event.title} thumbnail`}
+                        className="w-full h-full object-cover"
+                      />
+                    ) : (
+                      <Mic className="w-12 h-12 text-purple-600" />
+                    )}
+
+                    {/* Play button overlay */}
+                    <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <div className="bg-white rounded-full p-3 shadow-lg">
+                        <Play className="w-8 h-8 text-purple-600 fill-current" />
+                      </div>
+                    </div>
                   </div>
-                  <h3 className="font-semibold text-lg">{event}</h3>
-                  <p className="text-gray-600 text-sm">Building Better Mobile Apps</p>
+
+                  <div className="space-y-2">
+                    <div className="flex items-center justify-between">
+                      <h3 className="font-semibold text-lg group-hover:text-purple-600 transition-colors">{event.title}</h3>
+                      <span className="text-xs text-gray-500 bg-gray-100 px-2 py-1 rounded-full">{event.year}</span>
+                    </div>
+                    <p className="text-gray-600 text-sm">{event.description}</p>
+
+                    {/* Watch video link */}
+                    <div className="flex items-center gap-2 text-purple-600 font-medium text-sm pt-2 group-hover:text-purple-700 transition-colors">
+                      <Play className="w-4 h-4" />
+                      Watch Talk
+                    </div>
+                  </div>
                 </motion.div>
               ))}
             </div>
