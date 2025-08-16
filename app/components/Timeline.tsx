@@ -5,40 +5,40 @@ import { MapPin, Briefcase, Award, Plane } from 'lucide-react'
 
 const timelineData = [
   {
-    year: '2024',
-    title: 'Senior Engineering Leader',
-    description: 'Leading mobile engineering teams, speaking at global conferences',
+    year: '2023',
+    title: 'Engineering Manager',
+    description: 'From builder to leader—growing teams, scaling systems, and shipping outcomes.',
     icon: Briefcase,
-    color: 'bg-purple-500'
+    color: 'bg-purple-600',
   },
   {
-    year: '2022',
-    title: 'Conference Speaker',
-    description: 'Started speaking at Android Makers, Droidcon, DroidKaigi',
+    year: '2020–Present',
+    title: 'Global Conference Speaker',
+    description: 'Sharing on Android, architecture, and delightful UX at Droidcon, DroidKaigi, Android Makers & more.',
     icon: Award,
-    color: 'bg-pink-500'
-  },
-  {
-    year: '2020',
-    title: 'US Journey Begins',
-    description: 'Moved to the US, new adventures and opportunities',
-    icon: Plane,
-    color: 'bg-blue-500'
-  },
-  {
-    year: '2018',
-    title: 'Mobile Engineering Focus',
-    description: 'Specialized in React Native and cross-platform development',
-    icon: Briefcase,
-    color: 'bg-green-500'
+    color: 'bg-pink-500',
   },
   {
     year: '2014',
-    title: 'Engineering Career Start',
-    description: 'Started mobile development journey in India',
-    icon: MapPin,
-    color: 'bg-orange-500'
-  }
+    title: 'US Chapter Begins',
+    description: 'Moved to the USA—bigger canvas, bigger challenges, bigger growth.',
+    icon: Plane,
+    color: 'bg-blue-500',
+  },
+  {
+    year: '2012',
+    title: 'First App Published',
+    description: 'Released my debut app—first users, first reviews, first “we’re so back” moment.',
+    icon: Award,
+    color: 'bg-green-500',
+  },
+  {
+    year: '2011',
+    title: 'Career Kickoff (India)',
+    description: 'Jumped into mobile dev—learning fast, shipping faster, building the foundation.',
+    icon: Briefcase,
+    color: 'bg-orange-500',
+  },
 ]
 
 export default function Timeline() {
@@ -46,7 +46,7 @@ export default function Timeline() {
     <div className="relative">
       {/* Timeline line */}
       <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-gradient-to-b from-purple-400 to-pink-400"></div>
-      
+
       <div className="space-y-8">
         {timelineData.map((item, index) => (
           <motion.div
@@ -60,7 +60,7 @@ export default function Timeline() {
             <div className={`relative z-10 w-12 h-12 ${item.color} rounded-full flex items-center justify-center shadow-lg`}>
               <item.icon className="w-6 h-6 text-white" />
             </div>
-            
+
             {/* Content */}
             <div className="ml-8 bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow flex-1">
               <div className="flex items-center justify-between mb-2">
