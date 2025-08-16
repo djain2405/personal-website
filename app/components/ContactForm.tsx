@@ -6,6 +6,7 @@ import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'
 import { Send, CheckCircle } from 'lucide-react'
+import emailjs from '@emailjs/browser'
 
 const contactSchema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters'),
@@ -32,16 +33,34 @@ export default function ContactForm() {
   const onSubmit = async (data: ContactFormData) => {
     setIsSubmitting(true)
     
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 1000))
-    
-    console.log('Form submitted:', data)
-    setIsSubmitted(true)
-    setIsSubmitting(false)
-    reset()
-    
-    // Reset success message after 3 seconds
-    setTimeout(() => setIsSubmitted(false), 3000)
+    try {
+      // Send email using EmailJS
+      await emailjs.send(
+        'service_2uugvou', // Service ID
+        'template_jzijang', // Template ID
+        {
+          from_name: data.name,
+          from_email: data.email,
+          subject: data.subject,
+          message: data.message,
+          reply_to: data.email,
+        },
+        'F4I6oQ1uaJuNTC6nJ' // Public Key
+      )
+      
+      console.log('Email sent successfully!')
+      setIsSubmitted(true)
+      reset()
+      
+      // Reset success message after 5 seconds
+      setTimeout(() => setIsSubmitted(false), 5000)
+    } catch (error) {
+      console.error('Failed to send email:', error)
+      // You could add error state handling here
+      alert('Failed to send message. Please try again or contact me directly.')
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   if (isSubmitted) {
