@@ -384,7 +384,7 @@ export default function Home() {
         </motion.div>
       </section>
 
-      {/* Blog Section */}
+      {/* Blog Section - Temporarily Hidden
       <section className="bg-gray-100 section-padding">
         <motion.div
           variants={staggerContainer}
@@ -418,6 +418,7 @@ export default function Home() {
           </div>
         </motion.div>
       </section>
+      */}
 
       {/* Contact Section */}
       <section className="section-padding text-center max-w-4xl mx-auto">
@@ -436,16 +437,13 @@ export default function Home() {
           </motion.p>
 
           <motion.div variants={fadeInUp} className="flex justify-center gap-6 mb-12">
-            <a href="#" className="p-4 bg-white rounded-full shadow-lg hover:shadow-xl transition-shadow hover:scale-110 transform duration-300">
+            <a href="https://github.com/djain2405" target="_blank" rel="noopener noreferrer" className="p-4 bg-white rounded-full shadow-lg hover:shadow-xl transition-shadow hover:scale-110 transform duration-300">
               <Github className="w-6 h-6 text-gray-700" />
             </a>
-            <a href="#" className="p-4 bg-white rounded-full shadow-lg hover:shadow-xl transition-shadow hover:scale-110 transform duration-300">
+            <a href="https://www.linkedin.com/in/divyajain2405/" target="_blank" rel="noopener noreferrer" className="p-4 bg-white rounded-full shadow-lg hover:shadow-xl transition-shadow hover:scale-110 transform duration-300">
               <Linkedin className="w-6 h-6 text-blue-600" />
             </a>
-            <a href="#" className="p-4 bg-white rounded-full shadow-lg hover:shadow-xl transition-shadow hover:scale-110 transform duration-300">
-              <Twitter className="w-6 h-6 text-blue-400" />
-            </a>
-            <a href="#" className="p-4 bg-white rounded-full shadow-lg hover:shadow-xl transition-shadow hover:scale-110 transform duration-300">
+            <a href="mailto:divyajain2405@gmail.com" className="p-4 bg-white rounded-full shadow-lg hover:shadow-xl transition-shadow hover:scale-110 transform duration-300">
               <Mail className="w-6 h-6 text-red-500" />
             </a>
           </motion.div>
