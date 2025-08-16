@@ -86,6 +86,11 @@ export default function Home() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="btn-primary"
+              onClick={() => {
+                document.getElementById('contact')?.scrollIntoView({ 
+                  behavior: 'smooth' 
+                })
+              }}
             >
               Work With Me
             </motion.button>
@@ -377,6 +382,11 @@ export default function Home() {
             <motion.button
               whileHover={{ scale: 1.05 }}
               className="btn-secondary"
+              onClick={() => {
+                document.getElementById('contact')?.scrollIntoView({ 
+                  behavior: 'smooth' 
+                })
+              }}
             >
               Book Me To Speak
             </motion.button>
@@ -421,7 +431,7 @@ export default function Home() {
       */}
 
       {/* Contact Section */}
-      <section className="section-padding text-center max-w-4xl mx-auto">
+      <section id="contact" className="section-padding text-center max-w-4xl mx-auto">
         <motion.div
           variants={staggerContainer}
           initial="initial"
