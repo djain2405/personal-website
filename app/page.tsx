@@ -394,7 +394,7 @@ export default function Home() {
         </motion.div>
       </section>
 
-{/* Blog Section - Temporarily Hidden
+      {/* Blog Section */}
       <section className="bg-gray-100 section-padding">
         <motion.div
           variants={staggerContainer}
@@ -408,13 +408,20 @@ export default function Home() {
           </motion.h2>
 
           <div className="grid md:grid-cols-2 gap-8">
-            <motion.div variants={fadeInUp} className="bg-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition-shadow">
-              <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
+            <motion.div 
+              variants={fadeInUp} 
+              className="bg-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 group cursor-pointer"
+              onClick={() => window.open('https://mobile-with-me-blog.vercel.app/', '_blank')}
+            >
+              <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 <Code className="w-6 h-6 text-blue-600" />
               </div>
-              <h3 className="text-xl font-semibold mb-4">Tech Wisdom</h3>
-              <p className="text-gray-600 mb-6">Thoughts on mobile development, AI integration, and building better user experiences.</p>
-              <button className="text-blue-600 font-semibold hover:text-blue-700">Read More →</button>
+              <h3 className="text-xl font-semibold mb-4 group-hover:text-blue-600 transition-colors">Mobile With Me</h3>
+              <p className="text-gray-600 mb-6">Bite-sized mobile development tips & tricks. Quick, practical insights to level up your iOS & Android skills.</p>
+              <div className="flex items-center gap-2 text-blue-600 font-semibold hover:text-blue-700 transition-colors">
+                <span>Visit Blog</span>
+                <ExternalLink className="w-4 h-4" />
+              </div>
             </motion.div>
 
             <motion.div variants={fadeInUp} className="bg-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition-shadow">
@@ -423,12 +430,11 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-semibold mb-4">Life Notes</h3>
               <p className="text-gray-600 mb-6">Manifestation techniques, travel experiences, and personal growth insights.</p>
-              <button className="text-pink-600 font-semibold hover:text-pink-700">Read More →</button>
+              <button className="text-pink-600 font-semibold hover:text-pink-700">Coming Soon →</button>
             </motion.div>
           </div>
         </motion.div>
       </section>
-      */}
 
       {/* Contact Section */}
       <section id="contact" className="section-padding text-center max-w-4xl mx-auto">
