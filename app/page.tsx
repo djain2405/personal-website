@@ -87,8 +87,8 @@ export default function Home() {
               whileTap={{ scale: 0.95 }}
               className="btn-primary"
               onClick={() => {
-                document.getElementById('contact')?.scrollIntoView({ 
-                  behavior: 'smooth' 
+                document.getElementById('contact')?.scrollIntoView({
+                  behavior: 'smooth'
                 })
               }}
             >
@@ -259,8 +259,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Projects Section - Temporarily Hidden */}
-      {/* 
+      {/* Featured Projects Section */}
       <section className="bg-white section-padding shadow-inner">
         <motion.div
           variants={staggerContainer}
@@ -273,48 +272,102 @@ export default function Home() {
             Featured Projects
           </motion.h2>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <motion.div
               variants={fadeInUp}
               className="group p-8 bg-gray-50 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
             >
-              <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center mb-6">
-                <BookOpen className="w-8 h-8 text-white" />
+              <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-blue-500 rounded-2xl flex items-center justify-center mb-6">
+                <Play className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-2xl font-semibold mb-4">Sticky Notes App</h3>
-              <p className="text-gray-700 mb-6">A playful yet powerful app with event tracking, to-dos & affirmations. Built with modern mobile technologies.</p>
+              <h3 className="text-2xl font-semibold mb-4">GameTime App</h3>
+              <p className="text-gray-700 mb-6">Gametime is the app that helps *you* score deals to all your favorite events! Now featuring Gametime Ticket Coverage, the most comprehensive service and protection policy in ticketing - included free with all purchases. Gametime is the top app for deals on last minute tickets to sports, concerts, and theater.</p>
               <div className="flex flex-wrap gap-2 mb-6">
-                <span className="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">React Native</span>
+                <span className="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">React Native</span>
                 <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">TypeScript</span>
-                <span className="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Firebase</span>
+                <span className="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">Firebase</span>
+                <span className="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-sm">Cross-Platform</span>
               </div>
-              <button className="flex items-center gap-2 text-purple-600 font-semibold hover:text-purple-700 transition-colors">
-                View Case Study <ExternalLink className="w-4 h-4" />
-              </button>
+              <div className="flex gap-3">
+                <button
+                  className="flex items-center gap-2 text-purple-600 font-semibold hover:text-purple-700 transition-colors cursor-pointer"
+                  onClick={() => window.open('https://apps.apple.com/us/app/gametime-last-minute-tickets/id630687854', '_blank')}
+                >
+                  App Store <ExternalLink className="w-4 h-4" />
+                </button>
+                <button
+                  className="flex items-center gap-2 text-purple-600 font-semibold hover:text-purple-700 transition-colors cursor-pointer"
+                  onClick={() => window.open('https://play.google.com/store/apps/details?id=com.gametime.gametime&hl=en_US', '_blank')}
+                >
+                  Play Store <ExternalLink className="w-4 h-4" />
+                </button>
+              </div>
             </motion.div>
 
             <motion.div
               variants={fadeInUp}
               className="group p-8 bg-gray-50 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
             >
-              <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-green-500 rounded-2xl flex items-center justify-center mb-6">
+              <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-500 rounded-2xl flex items-center justify-center mb-6">
                 <MapPin className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-2xl font-semibold mb-4">Travel Journal</h3>
-              <p className="text-gray-700 mb-6">Interactive map + stories from my road trips & camping adventures. Real-time location tracking and photo journals.</p>
+              <h3 className="text-2xl font-semibold mb-4">HiRoad App</h3>
+              <p className="text-gray-700 mb-6">Insurance app that rewards safe driving with personalized rates and real-time feedback. Helping drivers save money while staying safe on the road.</p>
               <div className="flex flex-wrap gap-2 mb-6">
-                <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Next.js</span>
-                <span className="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Mapbox</span>
-                <span className="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm">Supabase</span>
+                <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Swift</span>
+                <span className="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">Kotlin</span>
+                <span className="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Native APIs</span>
+                <span className="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-sm">Insurance Tech</span>
               </div>
-              <button className="flex items-center gap-2 text-purple-600 font-semibold hover:text-purple-700 transition-colors">
-                Explore <ExternalLink className="w-4 h-4" />
+              <div className="flex gap-3">
+                <button
+                  className="flex items-center gap-2 text-purple-600 font-semibold hover:text-purple-700 transition-colors cursor-pointer"
+                  onClick={() => window.open('https://apps.apple.com/us/app/hiroad-car-insurance/id1269731942', '_blank')}
+                >
+                  App Store <ExternalLink className="w-4 h-4" />
+                </button>
+                <button
+                  className="flex items-center gap-2 text-purple-600 font-semibold hover:text-purple-700 transition-colors cursor-pointer"
+                  onClick={() => window.open('https://play.google.com/store/apps/details?id=xyz.blueowl.mobile.hiroad&hl=en_US', '_blank')}
+                >
+                  Play Store <ExternalLink className="w-4 h-4" />
+                </button>
+              </div>
+            </motion.div>
+
+            <motion.div
+              variants={fadeInUp}
+              className="group p-8 bg-gray-50 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+              onClick={() => window.open('https://github.com/djain2405/trivia-game', '_blank')}
+            >
+              <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-500 rounded-2xl flex items-center justify-center mb-6">
+                <Code className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-2xl font-semibold mb-4">Trivia Game</h3>
+              <p className="text-gray-700 mb-6">Interactive multiplayer trivia game with real-time scoring, multiple game modes, and engaging UI. Perfect for team building!</p>
+              <div className="flex flex-wrap gap-2 mb-6">
+                <span className="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-sm">JavaScript</span>
+                <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">HTML5</span>
+                <span className="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">CSS3</span>
+                <span className="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">Node.js</span>
+              </div>
+              <button className="flex items-center gap-2 text-purple-600 font-semibold hover:text-purple-700 transition-colors cursor-pointer">
+                View on GitHub <ExternalLink className="w-4 h-4" />
               </button>
             </motion.div>
           </div>
+
+          <motion.div variants={fadeInUp} className="text-center mt-12">
+            <p className="text-gray-600 mb-6">Want to see more of my work?</p>
+            <button
+              className="btn-secondary"
+              onClick={() => window.open('https://github.com/djain2405', '_blank')}
+            >
+              View All Projects on GitHub
+            </button>
+          </motion.div>
         </motion.div>
       </section>
-      */}
 
       {/* Speaking Section */}
       <section className="section-padding max-w-6xl mx-auto">
@@ -383,8 +436,8 @@ export default function Home() {
               whileHover={{ scale: 1.05 }}
               className="btn-secondary"
               onClick={() => {
-                document.getElementById('contact')?.scrollIntoView({ 
-                  behavior: 'smooth' 
+                document.getElementById('contact')?.scrollIntoView({
+                  behavior: 'smooth'
                 })
               }}
             >
@@ -408,8 +461,8 @@ export default function Home() {
           </motion.h2>
 
           <div className="grid md:grid-cols-2 gap-8">
-            <motion.div 
-              variants={fadeInUp} 
+            <motion.div
+              variants={fadeInUp}
               className="bg-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 group cursor-pointer"
               onClick={() => window.open('https://mobile-with-me-blog.vercel.app/', '_blank')}
             >
