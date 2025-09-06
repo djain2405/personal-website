@@ -485,8 +485,8 @@ export default function Home() {
               <div className="w-12 h-12 bg-pink-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 <BookOpen className="w-6 h-6 text-pink-600" />
               </div>
-              <h3 className="text-xl font-semibold mb-4 group-hover:text-pink-600 transition-colors">Life Notes Newsletter</h3>
-              <p className="text-gray-600 mb-6">Weekly insights on manifestation, personal growth, travel adventures, and life lessons. Join the community!</p>
+              <h3 className="text-xl font-semibold mb-4 group-hover:text-pink-600 transition-colors">Lead Build Manifest Newsletter</h3>
+              <p className="text-gray-600 mb-6">Weekly insights at the intersection of tech leadership, mobile app development, and manifestation mindset.. Join the community!</p>
               <div className="flex items-center gap-2 text-pink-600 font-semibold hover:text-pink-700 transition-colors">
                 <span>Subscribe on Substack</span>
                 <ExternalLink className="w-4 h-4" />
