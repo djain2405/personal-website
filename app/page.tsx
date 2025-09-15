@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import { Sparkles, MapPin, Code, Mic, BookOpen, Mail, Github, Linkedin, Twitter, ExternalLink, Play } from 'lucide-react'
+import Link from 'next/link'
 import AnimatedCounter from './components/AnimatedCounter'
 import SkillCloud from './components/SkillCloud'
 import Timeline from './components/Timeline'
@@ -461,21 +462,22 @@ export default function Home() {
           </motion.h2>
 
           <div className="grid md:grid-cols-2 gap-8">
-            <motion.div
-              variants={fadeInUp}
-              className="bg-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 group cursor-pointer"
-              onClick={() => window.open('https://mobile-with-me-blog.vercel.app/', '_blank')}
-            >
+            <Link href="/blog">
+              <motion.div
+                variants={fadeInUp}
+                className="bg-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 group cursor-pointer"
+              >
               <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 <Code className="w-6 h-6 text-blue-600" />
               </div>
               <h3 className="text-xl font-semibold mb-4 group-hover:text-blue-600 transition-colors">Mobile With Me</h3>
               <p className="text-gray-600 mb-6">Bite-sized mobile development tips & tricks. Quick, practical insights to level up your iOS & Android skills.</p>
               <div className="flex items-center gap-2 text-blue-600 font-semibold hover:text-blue-700 transition-colors">
-                <span>Visit Blog</span>
-                <ExternalLink className="w-4 h-4" />
+                <span>Read Blog</span>
+                <BookOpen className="w-4 h-4" />
               </div>
-            </motion.div>
+              </motion.div>
+            </Link>
 
             <motion.div
               variants={fadeInUp}
