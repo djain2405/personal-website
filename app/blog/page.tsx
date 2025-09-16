@@ -6,6 +6,15 @@ import SubscriptionModal from './components/SubscriptionModal'
 
 const blogPosts = [
   {
+    id: 5,
+    title: "remember vs rememberSaveable in Jetpack Compose 🤔",
+    excerpt: "If you've ever built a screen in Jetpack Compose and wondered why your state resets on rotation or process death, you've probably hit the remember vs rememberSaveable confusion. Let's break it down.",
+    category: "Jetpack Compose",
+    readTime: "4 min read",
+    date: "2025-09-15",
+    slug: "remember-vs-remembersaveable"
+  },
+  {
     id: 4,
     title: "App Startup API: Speed Up Your Launch in 5 Minutes",
     excerpt: "Speed matters on Android. The Jetpack App Startup API helps you clean up messy initialization code,...",
