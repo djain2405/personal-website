@@ -50,7 +50,7 @@ export default function ComposeMultiplatformNavigationPost() {
           </div>
 
           <p className="text-lg text-gray-700 leading-relaxed">
-            So far we've built shared UI and run it on Desktop + Android. Now let's take the same code to iOS.
+            So far we&apos;ve built shared UI and run it on Desktop + Android. Now let&apos;s take the same code to iOS.
             Learn how to bridge your Kotlin UI to iOS using SwiftUI and UIViewController.
           </p>
         </div>
@@ -70,7 +70,7 @@ export default function ComposeMultiplatformNavigationPost() {
             {/* Introduction */}
             <h2 className="text-2xl font-bold text-gray-900 mb-4">Introduction</h2>
             <p className="text-gray-700 mb-8">
-              So far we've built shared UI and run it on Desktop + Android. Now let's take the same code to iOS.
+              So far we&apos;ve built shared UI and run it on Desktop + Android. Now let&apos;s take the same code to iOS.
             </p>
 
             {/* Step 1 */}
