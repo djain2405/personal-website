@@ -70,11 +70,11 @@ export default function ComposeMultiplatformStateManagementPost() {
             {/* Introduction */}
             <h2 className="text-2xl font-bold text-gray-900 mb-4">Introduction</h2>
             <p className="text-gray-700 mb-8">
-              We've got our Quotes app running across Android, iOS, and Desktop with shared UI. In this final part, let's refine the favorite/unfavorite feature and introduce proper state management.
+              We&apos;ve got our Quotes app running across Android, iOS, and Desktop with shared UI. In this final part, let&apos;s refine the favorite/unfavorite feature and introduce proper state management.
             </p>
 
             <p className="text-gray-700 mb-8">
-              Instead of holding mutable lists directly in the composable, we'll manage state using a ViewModel-style approach in shared code.
+              Instead of holding mutable lists directly in the composable, we&apos;ll manage state using a ViewModel-style approach in shared code.
             </p>
 
             {/* Step 1 */}
@@ -182,7 +182,7 @@ fun QuotesScreen(viewModel: QuotesViewModel = QuotesViewModel()) {
             {/* Outro */}
             <h2 className="text-2xl font-bold text-gray-900 mb-4">Outro</h2>
             <p className="text-gray-700 mb-4">
-              And that's a wrap 🎉 You've built a cross-platform Quotes App with real state management:
+              And that&apos;s a wrap 🎉 You&apos;ve built a cross-platform Quotes App with real state management:
             </p>
 
             <ul className="list-disc list-inside space-y-2 text-gray-700 mb-6">
@@ -199,7 +199,7 @@ fun QuotesScreen(viewModel: QuotesViewModel = QuotesViewModel()) {
               <div className="flex">
                 <div className="ml-3">
                   <p className="text-sm text-green-700">
-                    <strong>🎉 Series Complete!</strong> You've successfully built a complete Compose Multiplatform app
+                    <strong>🎉 Series Complete!</strong> You&apos;ve successfully built a complete Compose Multiplatform app
                     with shared UI and state management across Android, iOS, and Desktop.
                   </p>
                 </div>

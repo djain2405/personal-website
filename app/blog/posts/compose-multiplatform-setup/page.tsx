@@ -54,7 +54,7 @@ export default function ComposeMultiplatformSetupPost() {
 
           <p className="text-lg text-gray-700 leading-relaxed">
             Everything you need to know to start building cross-platform apps with Compose Multiplatform.
-            We'll cover project setup, dependencies, and build your first shared UI that runs on both iOS and Android.
+            We&apos;ll cover project setup, dependencies, and build your first shared UI that runs on both iOS and Android.
           </p>
         </div>
 
@@ -73,7 +73,7 @@ export default function ComposeMultiplatformSetupPost() {
             {/* Introduction Section */}
             <h2 className="text-2xl font-bold text-gray-900 mb-4">Introduction</h2>
             <p className="text-gray-700 mb-8">
-              Jetpack Compose isn't just for Android anymore. With Compose Multiplatform (CMP), you can write one UI codebase in Kotlin and run it across Android, iOS, and Desktop. In this first part of the series, we'll set up a CMP project using JetBrains' Kotlin Multiplatform Wizard and get it running on Desktop.
+              Jetpack Compose isn&apos;t just for Android anymore. With Compose Multiplatform (CMP), you can write one UI codebase in Kotlin and run it across Android, iOS, and Desktop. In this first part of the series, we&apos;ll set up a CMP project using JetBrains&apos; Kotlin Multiplatform Wizard and get it running on Desktop.
             </p>
 
             {/* Step 1 */}
@@ -92,7 +92,7 @@ export default function ComposeMultiplatformSetupPost() {
             </ul>
 
             <p className="text-gray-700 mb-6">
-              Click "New Project", download, and open it in IntelliJ IDEA.
+              Click &quot;New Project&quot;, download, and open it in IntelliJ IDEA.
             </p>
 
             <p className="text-gray-700 mb-4">Your project will look like this:</p>
@@ -112,7 +112,7 @@ export default function ComposeMultiplatformSetupPost() {
             {/* Step 2 */}
             <h2 className="text-2xl font-bold text-gray-900 mb-4">Step 2: Run on Desktop</h2>
             <p className="text-gray-700 mb-4">
-              In <code className="bg-gray-100 px-2 py-1 rounded text-sm">desktopMain/kotlin/Main.kt</code> you'll find:
+              In <code className="bg-gray-100 px-2 py-1 rounded text-sm">desktopMain/kotlin/Main.kt</code> you&apos;ll find:
             </p>
 
             <CodeSnippet
@@ -143,7 +143,7 @@ export default function ComposeMultiplatformSetupPost() {
               <div className="flex">
                 <div className="ml-3">
                   <p className="text-sm text-green-700">
-                    <strong>Ready for More?</strong> In Part 2, we'll start building a real app UI and share it across platforms.
+                    <strong>Ready for More?</strong> In Part 2, we&apos;ll start building a real app UI and share it across platforms.
                   </p>
                 </div>
               </div>

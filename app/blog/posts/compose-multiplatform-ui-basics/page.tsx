@@ -70,7 +70,7 @@ export default function ComposeMultiplatformUIBasicsPost() {
             {/* Introduction */}
             <h2 className="text-2xl font-bold text-gray-900 mb-4">Introduction</h2>
             <p className="text-gray-700 mb-8">
-              Now that our CMP project is set up, let's build something useful. In this part, we'll create a small app: Quotes of the Day. We'll show a list of quotes, with the ability to favorite/unfavorite them — all written in shared UI code.
+              Now that our CMP project is set up, let&apos;s build something useful. In this part, we&apos;ll create a small app: Quotes of the Day. We&apos;ll show a list of quotes, with the ability to favorite/unfavorite them — all written in shared UI code.
             </p>
 
             {/* Step 1 */}
@@ -171,7 +171,7 @@ fun QuotesScreen() {
               <div className="flex">
                 <div className="ml-3">
                   <p className="text-sm text-green-700">
-                    <strong>Continue the Journey:</strong> You now have a shared UI running on Desktop and Android. In Part 3, we'll bring iOS into the mix.
+                    <strong>Continue the Journey:</strong> You now have a shared UI running on Desktop and Android. In Part 3, we&apos;ll bring iOS into the mix.
                   </p>
                 </div>
               </div>
