@@ -4,7 +4,101 @@ import Link from 'next/link'
 import { useState } from 'react'
 import SubscriptionModal from './components/SubscriptionModal'
 
+// Series definition
+const composeMultiplatformSeries = {
+  title: "Complete Compose Multiplatform Guide",
+  description: "Build cross-platform apps from setup to deployment",
+  stages: [
+    {
+      title: "Setting Up Compose Multiplatform: From Zero to Hello World",
+      slug: "compose-multiplatform-setup",
+      stage: 1
+    },
+    {
+      title: "Building Your First Shared UI Components",
+      slug: "compose-multiplatform-ui-basics",
+      stage: 2
+    },
+    {
+      title: "Taking It to iOS",
+      slug: "compose-multiplatform-ios",
+      stage: 3
+    },
+    {
+      title: "Adding Real State Management (Favorites Feature)",
+      slug: "compose-multiplatform-state-management",
+      stage: 4
+    },
+    {
+      title: "Deploying Your Compose Multiplatform App",
+      slug: "compose-multiplatform-deployment",
+      stage: 5
+    }
+  ]
+}
+
 const blogPosts = [
+  // Compose Multiplatform Series
+  {
+    id: 10,
+    title: "Build & Run a Compose Multiplatform App",
+    excerpt: "Everything you need to know to start building cross-platform apps with Compose Multiplatform. Project setup, dependencies, and your first shared UI. Continue through all 5 parts to build a complete app.",
+    category: "Compose Multiplatform",
+    readTime: "15 min read",
+    date: "2025-09-21",
+    slug: "compose-multiplatform-setup",
+    type: "deep-dive",
+    series: "compose-multiplatform",
+    seriesStage: 1
+  },
+  {
+    id: 11,
+    title: "Building Your First Shared UI Components",
+    excerpt: "Learn to create reusable UI components that work seamlessly across iOS and Android platforms.",
+    category: "Compose Multiplatform",
+    readTime: "20 min read",
+    date: "2025-09-22",
+    slug: "compose-multiplatform-ui-basics",
+    type: "deep-dive",
+    series: "compose-multiplatform",
+    seriesStage: 2
+  },
+  {
+    id: 12,
+    title: "Taking It to iOS",
+    excerpt: "Bring your shared UI to iOS using SwiftUI and UIViewController integration.",
+    category: "Compose Multiplatform",
+    readTime: "25 min read",
+    date: "2025-09-23",
+    slug: "compose-multiplatform-ios",
+    type: "deep-dive",
+    series: "compose-multiplatform",
+    seriesStage: 3
+  },
+  {
+    id: 13,
+    title: "Adding Real State Management (Favorites Feature)",
+    excerpt: "Refine your Quotes app with proper state management using ViewModel-style approach in shared code.",
+    category: "Compose Multiplatform",
+    readTime: "30 min read",
+    date: "2025-09-24",
+    slug: "compose-multiplatform-state-management",
+    type: "deep-dive",
+    series: "compose-multiplatform",
+    seriesStage: 4
+  },
+  {
+    id: 14,
+    title: "Deploying Your Compose Multiplatform App",
+    excerpt: "From testing to app store deployment - everything you need to ship your multiplatform app to production.",
+    category: "Compose Multiplatform",
+    readTime: "35 min read",
+    date: "2025-09-25",
+    slug: "compose-multiplatform-deployment",
+    type: "deep-dive",
+    series: "compose-multiplatform",
+    seriesStage: 5
+  },
   {
     id: 5,
     title: "remember vs rememberSaveable in Jetpack Compose 🤔",
@@ -12,7 +106,8 @@ const blogPosts = [
     category: "Jetpack Compose",
     readTime: "4 min read",
     date: "2025-09-15",
-    slug: "remember-vs-remembersaveable"
+    slug: "remember-vs-remembersaveable",
+    type: "quick"
   },
   {
     id: 4,
@@ -21,7 +116,8 @@ const blogPosts = [
     category: "Android Development",
     readTime: "2 min read",
     date: "2025-09-10",
-    slug: "app-startup-api"
+    slug: "app-startup-api",
+    type: "quick"
   },
   {
     id: 3,
@@ -30,7 +126,8 @@ const blogPosts = [
     category: "Android Development",
     readTime: "4 min read",
     date: "2025-09-06",
-    slug: "shared-preferences-datastore"
+    slug: "shared-preferences-datastore",
+    type: "quick"
   },
   {
     id: 1,
@@ -39,7 +136,8 @@ const blogPosts = [
     category: "Architecture Decision",
     readTime: "8 min read",
     date: "2025-08-30",
-    slug: "react-native-vs-native-guide"
+    slug: "react-native-vs-native-guide",
+    type: "guide"
   },
   {
     id: 2,
@@ -48,12 +146,18 @@ const blogPosts = [
     category: "React Native",
     readTime: "3 min read",
     date: "2025-08-17",
-    slug: "react-native-performance"
+    slug: "react-native-performance",
+    type: "quick"
   }
 ]
 
 export default function BlogPage() {
   const [isSubscriptionModalOpen, setIsSubscriptionModalOpen] = useState(false)
+
+  // Filter posts to show only part 1 of series (or posts without series)
+  const displayPosts = blogPosts.filter(post =>
+    !post.series || post.seriesStage === 1
+  )
 
   return (
     <div className="min-h-screen bg-white">
@@ -87,8 +191,8 @@ export default function BlogPage() {
             Learn one concept at a time, build better apps.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link 
-              href="/blog" 
+            <Link
+              href="/blog"
               className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
             >
               Start Reading
@@ -111,7 +215,7 @@ export default function BlogPage() {
         </div>
 
         <div className="grid gap-8 md:grid-cols-2">
-          {blogPosts.map((post) => (
+          {displayPosts.map((post) => (
             <Link
               key={post.id}
               href={`/blog/posts/${post.slug}`}
@@ -119,10 +223,25 @@ export default function BlogPage() {
             >
               <article className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-shadow">
                 <div className="p-6">
-                  <div className="flex items-center gap-2 mb-3">
-                    <span className="px-3 py-1 bg-blue-100 text-blue-800 text-sm font-medium rounded-full">
+                  <div className="flex items-center gap-2 mb-3 flex-wrap">
+                    <span className="px-3 py-1 bg-blue-50 text-blue-700 text-sm font-medium rounded-md border border-blue-200">
                       {post.category}
                     </span>
+                    {post.type === 'guide' && (
+                      <span className="px-2 py-1 bg-emerald-50 text-emerald-700 text-xs font-medium rounded-md border border-emerald-200">
+                        Guide
+                      </span>
+                    )}
+                    {post.type === 'quick' && (
+                      <span className="px-2 py-1 bg-amber-50 text-amber-700 text-xs font-medium rounded-md border border-amber-200">
+                        Quick Tip
+                      </span>
+                    )}
+                    {post.series && (
+                      <span className="px-2 py-1 bg-gradient-to-r from-violet-50 to-purple-50 text-violet-700 text-xs font-medium rounded-md border border-violet-200">
+                        Series • {post.seriesStage}/5
+                      </span>
+                    )}
                     <span className="text-sm text-gray-500">{post.readTime}</span>
                   </div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-3 line-clamp-2">
