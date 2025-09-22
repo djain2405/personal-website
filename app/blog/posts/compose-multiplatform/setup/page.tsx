@@ -37,7 +37,7 @@ export default function ComposeMultiplatformSetupPost() {
               🎯 Deep Dive
             </span>
             <span className="px-2 py-1 bg-indigo-100 text-indigo-800 text-xs font-medium rounded-full">
-              📚 Part 1/5
+              📚 Part 1/4
             </span>
           </div>
 
