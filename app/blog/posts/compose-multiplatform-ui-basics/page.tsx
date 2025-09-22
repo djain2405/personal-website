@@ -42,12 +42,6 @@ export default function ComposeMultiplatformUIBasicsPost() {
             Building Your First Shared UI Components
           </h1>
 
-          <div className="flex items-center gap-4 text-sm text-gray-600 mb-6">
-            <span>September 22, 2025</span>
-            <span>•</span>
-            <span>20 min read</span>
-          </div>
-
           <p className="text-lg text-gray-700 leading-relaxed">
             Learn to create reusable UI components that work seamlessly across iOS and Android platforms.
             We&apos;ll build interactive components with state management and explore how to handle platform differences.
@@ -113,13 +107,11 @@ fun QuoteCard(
 @Composable
 fun QuotesScreen() {
     var quotes by remember {
-        mutableStateOf(
-            listOf(
+      mutableStateListOf(
                 Quote("Compose once, run anywhere.", "JetBrains"),
                 Quote("Simplicity is the soul of efficiency.", "Austin Freeman"),
                 Quote("Stay hungry, stay foolish.", "Steve Jobs")
             )
-        )
     }
 
     LazyColumn {

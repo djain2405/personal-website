@@ -42,12 +42,6 @@ export default function ComposeMultiplatformStateManagementPost() {
             Adding Real State Management (Favorites Feature)
           </h1>
 
-          <div className="flex items-center gap-4 text-sm text-gray-600 mb-6">
-            <span>September 24, 2025</span>
-            <span>•</span>
-            <span>30 min read</span>
-          </div>
-
           <p className="text-lg text-gray-700 leading-relaxed">
             Refine your Quotes app with proper state management using ViewModel-style approach in shared code.
             Learn how to centralize state and manage favorites consistently across all platforms.
@@ -107,20 +101,20 @@ export default function ComposeMultiplatformStateManagementPost() {
               language="kotlin"
               title="QuotesViewModel.kt"
               code={`class QuotesViewModel {
-    private val _quotes = mutableStateOf(
-        listOf(
-            Quote(1, "Compose once, run anywhere.", "JetBrains"),
-            Quote(2, "Simplicity is the soul of efficiency.", "Austin Freeman"),
-            Quote(3, "Stay hungry, stay foolish.", "Steve Jobs")
-        )
-    )
-    val quotes: State<List<Quote>> = _quotes
+                private val _quotes = mutableStateListOf(
+                  Quote(1, "Compose once, run anywhere.", "JetBrains"),
+                  Quote(2, "Simplicity is the soul of efficiency.", "Austin Freeman"),
+                  Quote(3, "Stay hungry, stay foolish.", "Steve Jobs")
+              )
+              val quotes: SnapshotStateList<Quote> = _quotes
 
-    fun toggleFavorite(id: Int) {
-        _quotes.value = _quotes.value.map {
-            if (it.id == id) it.copy(isFavorite = !it.isFavorite) else it
-        }
-    }
+
+              fun toggleFavorite(id: Int) {
+                val index = _quotes.indexOfFirst { it.id == id }
+                if (index != -1) {
+                    _quotes[index] = _quotes[index].copy(isFavorite = !_quotes[index].isFavorite)
+                }
+            }
 }`}
             />
 
@@ -145,7 +139,7 @@ export default function ComposeMultiplatformStateManagementPost() {
               title="QuotesScreen.kt"
               code={`@Composable
 fun QuotesScreen(viewModel: QuotesViewModel = QuotesViewModel()) {
-    val quotes = viewModel.quotes.value
+  val quotes = viewModel.quotes
 
     LazyColumn {
         items(quotes.size) { index ->

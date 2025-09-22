@@ -42,12 +42,6 @@ export default function ComposeMultiplatformNavigationPost() {
             Taking It to iOS
           </h1>
 
-          <div className="flex items-center gap-4 text-sm text-gray-600 mb-6">
-            <span>September 23, 2025</span>
-            <span>•</span>
-            <span>25 min read</span>
-          </div>
-
           <p className="text-lg text-gray-700 leading-relaxed">
             So far we&apos;ve built shared UI and run it on Desktop + Android. Now let&apos;s take the same code to iOS.
             Learn how to bridge your Kotlin UI to iOS using SwiftUI and UIViewController.
