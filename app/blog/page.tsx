@@ -11,22 +11,22 @@ const composeMultiplatformSeries = {
   stages: [
     {
       title: "Setting Up Compose Multiplatform: From Zero to Hello World",
-      slug: "compose-multiplatform-setup",
+      slug: "compose-multiplatform/setup",
       stage: 1
     },
     {
       title: "Building Your First Shared UI Components",
-      slug: "compose-multiplatform-ui-basics",
+      slug: "compose-multiplatform/ui-basics",
       stage: 2
     },
     {
       title: "Taking It to iOS",
-      slug: "compose-multiplatform-ios",
+      slug: "compose-multiplatform/ios",
       stage: 3
     },
     {
       title: "Adding Real State Management (Favorites Feature)",
-      slug: "compose-multiplatform-state-management",
+      slug: "compose-multiplatform/state-management",
       stage: 4
     },
   ]
@@ -41,7 +41,7 @@ const blogPosts = [
     category: "Compose Multiplatform",
     readTime: "15 min read",
     date: "2025-09-21",
-    slug: "compose-multiplatform-setup",
+    slug: "compose-multiplatform/setup",
     type: "deep-dive",
     series: "compose-multiplatform",
     seriesStage: 1
@@ -53,7 +53,7 @@ const blogPosts = [
     category: "Compose Multiplatform",
     readTime: "20 min read",
     date: "2025-09-22",
-    slug: "compose-multiplatform-ui-basics",
+    slug: "compose-multiplatform/ui-basics",
     type: "deep-dive",
     series: "compose-multiplatform",
     seriesStage: 2
@@ -65,7 +65,7 @@ const blogPosts = [
     category: "Compose Multiplatform",
     readTime: "25 min read",
     date: "2025-09-23",
-    slug: "compose-multiplatform-ios",
+    slug: "compose-multiplatform/ios",
     type: "deep-dive",
     series: "compose-multiplatform",
     seriesStage: 3
@@ -77,7 +77,7 @@ const blogPosts = [
     category: "Compose Multiplatform",
     readTime: "30 min read",
     date: "2025-09-24",
-    slug: "compose-multiplatform-state-management",
+    slug: "compose-multiplatform/state-management",
     type: "deep-dive",
     series: "compose-multiplatform",
     seriesStage: 4

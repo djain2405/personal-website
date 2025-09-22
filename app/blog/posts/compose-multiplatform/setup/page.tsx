@@ -1,14 +1,14 @@
 import Link from 'next/link'
-import CodeSnippet from '../../components/CodeSnippet'
-import SeriesNavigation from '../../components/SeriesNavigation'
+import CodeSnippet from '../../../components/CodeSnippet'
+import SeriesNavigation from '../../../components/SeriesNavigation'
 
 const composeMultiplatformSeries = {
   title: "Complete Compose Multiplatform Guide",
   stages: [
-    { title: "Setting Up Compose Multiplatform: From Zero to Hello World", slug: "compose-multiplatform-setup" },
-    { title: "Building Your First Shared UI Components", slug: "compose-multiplatform-ui-basics" },
-    { title: "Taking It to iOS", slug: "compose-multiplatform-ios" },
-    { title: "Adding Real State Management (Favorites Feature)", slug: "compose-multiplatform-state-management" }
+    { title: "Setting Up Compose Multiplatform: From Zero to Hello World", slug: "compose-multiplatform/setup" },
+    { title: "Building Your First Shared UI Components", slug: "compose-multiplatform/ui-basics" },
+    { title: "Taking It to iOS", slug: "compose-multiplatform/ios" },
+    { title: "Adding Real State Management (Favorites Feature)", slug: "compose-multiplatform/state-management" }
   ]
 }
 
