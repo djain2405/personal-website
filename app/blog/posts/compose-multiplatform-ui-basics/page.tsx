@@ -8,8 +8,7 @@ const composeMultiplatformSeries = {
     { title: "Setting Up Compose Multiplatform: From Zero to Hello World", slug: "compose-multiplatform-setup", completed: true },
     { title: "Building Your First Shared UI Components", slug: "compose-multiplatform-ui-basics" },
     { title: "Taking It to iOS", slug: "compose-multiplatform-ios" },
-    { title: "Adding Real State Management (Favorites Feature)", slug: "compose-multiplatform-state-management" },
-    { title: "Deploying Your Compose Multiplatform App", slug: "compose-multiplatform-deployment" }
+    { title: "Adding Real State Management (Favorites Feature)", slug: "compose-multiplatform-state-management" }
   ]
 }
 
@@ -35,7 +34,7 @@ export default function ComposeMultiplatformUIBasicsPost() {
               Compose Multiplatform
             </span>
             <span className="px-2 py-1 bg-gradient-to-r from-violet-50 to-purple-50 text-violet-700 text-xs font-medium rounded-md border border-violet-200">
-              Series • 2/5
+              Series • 2/4
             </span>
           </div>
 
@@ -51,7 +50,7 @@ export default function ComposeMultiplatformUIBasicsPost() {
 
           <p className="text-lg text-gray-700 leading-relaxed">
             Learn to create reusable UI components that work seamlessly across iOS and Android platforms.
-            We'll build interactive components with state management and explore how to handle platform differences.
+            We&apos;ll build interactive components with state management and explore how to handle platform differences.
           </p>
         </div>
 
@@ -59,7 +58,7 @@ export default function ComposeMultiplatformUIBasicsPost() {
         <SeriesNavigation
           seriesTitle={composeMultiplatformSeries.title}
           currentStage={2}
-          totalStages={5}
+          totalStages={4}
           stages={composeMultiplatformSeries.stages}
         />
 

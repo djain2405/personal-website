@@ -8,8 +8,7 @@ const composeMultiplatformSeries = {
     { title: "Setting Up Compose Multiplatform: From Zero to Hello World", slug: "compose-multiplatform-setup", completed: true },
     { title: "Building Your First Shared UI Components", slug: "compose-multiplatform-ui-basics", completed: true },
     { title: "Taking It to iOS", slug: "compose-multiplatform-ios" },
-    { title: "Adding Real State Management (Favorites Feature)", slug: "compose-multiplatform-state-management" },
-    { title: "Deploying Your Compose Multiplatform App", slug: "compose-multiplatform-deployment" }
+    { title: "Adding Real State Management (Favorites Feature)", slug: "compose-multiplatform-state-management" }
   ]
 }
 
@@ -35,7 +34,7 @@ export default function ComposeMultiplatformNavigationPost() {
               Compose Multiplatform
             </span>
             <span className="px-2 py-1 bg-gradient-to-r from-violet-50 to-purple-50 text-violet-700 text-xs font-medium rounded-md border border-violet-200">
-              Series • 3/5
+              Series • 3/4
             </span>
           </div>
 
@@ -59,7 +58,7 @@ export default function ComposeMultiplatformNavigationPost() {
         <SeriesNavigation
           seriesTitle={composeMultiplatformSeries.title}
           currentStage={3}
-          totalStages={5}
+          totalStages={4}
           stages={composeMultiplatformSeries.stages}
         />
 

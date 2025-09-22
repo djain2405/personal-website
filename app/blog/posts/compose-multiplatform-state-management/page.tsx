@@ -8,8 +8,7 @@ const composeMultiplatformSeries = {
     { title: "Setting Up Compose Multiplatform: From Zero to Hello World", slug: "compose-multiplatform-setup", completed: true },
     { title: "Building Your First Shared UI Components", slug: "compose-multiplatform-ui-basics", completed: true },
     { title: "Taking It to iOS", slug: "compose-multiplatform-ios", completed: true },
-    { title: "Adding Real State Management (Favorites Feature)", slug: "compose-multiplatform-state-management" },
-    { title: "Deploying Your Compose Multiplatform App", slug: "compose-multiplatform-deployment" }
+    { title: "Adding Real State Management (Favorites Feature)", slug: "compose-multiplatform-state-management" }
   ]
 }
 
@@ -35,7 +34,7 @@ export default function ComposeMultiplatformStateManagementPost() {
               Compose Multiplatform
             </span>
             <span className="px-2 py-1 bg-gradient-to-r from-violet-50 to-purple-50 text-violet-700 text-xs font-medium rounded-md border border-violet-200">
-              Series • 4/5
+              Series • 4/4
             </span>
           </div>
 
@@ -59,7 +58,7 @@ export default function ComposeMultiplatformStateManagementPost() {
         <SeriesNavigation
           seriesTitle={composeMultiplatformSeries.title}
           currentStage={4}
-          totalStages={5}
+          totalStages={4}
           stages={composeMultiplatformSeries.stages}
         />
 
@@ -129,7 +128,7 @@ export default function ComposeMultiplatformStateManagementPost() {
               <div className="flex">
                 <div className="ml-3">
                   <p className="text-sm text-blue-700">
-                    <strong>👉 This centralizes the app's state in one place.</strong>
+                    <strong>👉 This centralizes the app&apos;s state in one place.</strong>
                   </p>
                 </div>
               </div>
@@ -138,7 +137,7 @@ export default function ComposeMultiplatformStateManagementPost() {
             {/* Step 3 */}
             <h2 className="text-2xl font-bold text-gray-900 mb-4">Step 3: Update the Screen</h2>
             <p className="text-gray-700 mb-4">
-              Now our UI observes the ViewModel's state instead of owning it directly.
+              Now our UI observes the ViewModel&apos;s state instead of owning it directly.
             </p>
 
             <CodeSnippet

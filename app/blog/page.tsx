@@ -29,11 +29,6 @@ const composeMultiplatformSeries = {
       slug: "compose-multiplatform-state-management",
       stage: 4
     },
-    {
-      title: "Deploying Your Compose Multiplatform App",
-      slug: "compose-multiplatform-deployment",
-      stage: 5
-    }
   ]
 }
 
@@ -42,7 +37,7 @@ const blogPosts = [
   {
     id: 10,
     title: "Build & Run a Compose Multiplatform App",
-    excerpt: "Everything you need to know to start building cross-platform apps with Compose Multiplatform. Project setup, dependencies, and your first shared UI. Continue through all 5 parts to build a complete app.",
+    excerpt: "Everything you need to know to start building cross-platform apps with Compose Multiplatform. Project setup, dependencies, and your first shared UI. Continue through all 4 parts to build a complete app.",
     category: "Compose Multiplatform",
     readTime: "15 min read",
     date: "2025-09-21",
@@ -86,18 +81,6 @@ const blogPosts = [
     type: "deep-dive",
     series: "compose-multiplatform",
     seriesStage: 4
-  },
-  {
-    id: 14,
-    title: "Deploying Your Compose Multiplatform App",
-    excerpt: "From testing to app store deployment - everything you need to ship your multiplatform app to production.",
-    category: "Compose Multiplatform",
-    readTime: "35 min read",
-    date: "2025-09-25",
-    slug: "compose-multiplatform-deployment",
-    type: "deep-dive",
-    series: "compose-multiplatform",
-    seriesStage: 5
   },
   {
     id: 5,
@@ -239,7 +222,7 @@ export default function BlogPage() {
                     )}
                     {post.series && (
                       <span className="px-2 py-1 bg-gradient-to-r from-violet-50 to-purple-50 text-violet-700 text-xs font-medium rounded-md border border-violet-200">
-                        Series • {post.seriesStage}/5
+                        Series • {post.seriesStage}/4
                       </span>
                     )}
                     <span className="text-sm text-gray-500">{post.readTime}</span>
