@@ -188,6 +188,22 @@ fun QuotesScreen(viewModel: QuotesViewModel = QuotesViewModel()) {
               From here, you could extend this with persistence (SQLDelight), or live data sources (Ktor), but the foundation is already solid.
             </p>
 
+            {/* Final Result Screenshot */}
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">Final Result</h2>
+            <p className="text-gray-700 mb-4">
+              Here&apos;s what our completed Quotes app looks like on Android:
+            </p>
+
+            <div className="mb-8 flex justify-center">
+              <div className="max-w-xs rounded-2xl overflow-hidden shadow-xl border-2 border-gray-200 bg-gradient-to-b from-gray-50 to-gray-100 p-2">
+                <img
+                  src="/images/quotes_of_the_day_screenshot.png"
+                  alt="Quotes of the Day app showing three quotes with favorite/unfavorite buttons"
+                  className="w-full rounded-xl shadow-lg"
+                />
+              </div>
+            </div>
+
             <div className="bg-green-50 border-l-4 border-green-400 p-4 mb-8">
               <div className="flex">
                 <div className="ml-3">
