@@ -44,7 +44,7 @@ export default function StateFlowVsSharedFlowPost() {
               StateFlow vs SharedFlow: When to Use Which ⚡
             </h1>
             <p className="text-gray-600 text-lg">
-              Kotlin's Flow APIs are powerful, but many devs trip up on StateFlow vs SharedFlow. Both are hot flows, but they shine in different situations.
+              Kotlin&apos;s Flow APIs are powerful, but many devs trip up on StateFlow vs SharedFlow. Both are hot flows, but they shine in different situations.
             </p>
             <div className="flex items-center mt-6 text-sm text-gray-500">
               <span>September 23, 2025</span>
@@ -113,10 +113,10 @@ export default function StateFlowVsSharedFlowPost() {
             <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">Think of it this way:</h2>
             <div className="bg-gray-50 border border-gray-200 rounded-lg p-6 mb-6">
               <p className="text-gray-700 mb-3">
-                <strong>StateFlow:</strong> "What's the app's current mood?"
+                <strong>StateFlow:</strong> &quot;What&apos;s the app&apos;s current mood?&quot;
               </p>
               <p className="text-gray-700">
-                <strong>SharedFlow:</strong> "What just happened that the UI should react to?"
+                <strong>SharedFlow:</strong> &quot;What just happened that the UI should react to?&quot;
               </p>
             </div>
 
