@@ -44,7 +44,7 @@ export default function SharedPreferencesDataStorePost() {
               SharedPreferences vs DataStore: Which Should You Use?
             </h1>
             <div className="flex items-center mt-6 text-sm text-gray-500">
-              <span>Sept 6, 2024</span>
+              <span>Sept 6, 2025</span>
               <span className="mx-2">•</span>
               <span>By Divya</span>
             </div>

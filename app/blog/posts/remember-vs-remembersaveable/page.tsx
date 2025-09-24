@@ -47,7 +47,7 @@ export default function RememberVsRememberSaveablePost() {
               If you&apos;ve ever built a screen in Jetpack Compose and wondered why your state resets on rotation or process death, you&apos;ve probably hit the remember vs rememberSaveable confusion. Let&apos;s break it down.
             </p>
             <div className="flex items-center mt-6 text-sm text-gray-500">
-              <span>September 15, 2024</span>
+              <span>September 15, 2025</span>
               <span className="mx-2">•</span>
               <span>By Divya</span>
             </div>
@@ -68,7 +68,7 @@ export default function RememberVsRememberSaveablePost() {
 
             <div className="bg-gray-100 rounded-lg p-4 mb-6">
               <pre className="text-sm text-gray-800 overflow-x-auto">
-{`var text by remember { mutableStateOf("") }`}
+                {`var text by remember { mutableStateOf("") }`}
               </pre>
             </div>
 
@@ -89,7 +89,7 @@ export default function RememberVsRememberSaveablePost() {
 
             <div className="bg-gray-100 rounded-lg p-4 mb-6">
               <pre className="text-sm text-gray-800 overflow-x-auto">
-{`var text by rememberSaveable { mutableStateOf("") }`}
+                {`var text by rememberSaveable { mutableStateOf("") }`}
               </pre>
             </div>
 
@@ -104,7 +104,7 @@ export default function RememberVsRememberSaveablePost() {
 
             <div className="bg-gray-100 rounded-lg p-4 mb-6">
               <pre className="text-sm text-gray-800 overflow-x-auto">
-{`// ❌ This won't work - custom objects need custom savers
+                {`// ❌ This won't work - custom objects need custom savers
 data class User(val name: String, val age: Int)
 var user by rememberSaveable { mutableStateOf(User("", 0)) } // Crashes!
 
@@ -135,7 +135,7 @@ var user by rememberSaveable(
             <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">Form Input (Use rememberSaveable)</h3>
             <div className="bg-gray-100 rounded-lg p-4 mb-6">
               <pre className="text-sm text-gray-800 overflow-x-auto">
-{`@Composable
+                {`@Composable
 fun LoginForm() {
     var email by rememberSaveable { mutableStateOf("") }
     var password by rememberSaveable { mutableStateOf("") }
@@ -159,7 +159,7 @@ fun LoginForm() {
             <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">Animation State (Use remember)</h3>
             <div className="bg-gray-100 rounded-lg p-4 mb-6">
               <pre className="text-sm text-gray-800 overflow-x-auto">
-{`@Composable
+                {`@Composable
 fun AnimatedButton() {
     var isPressed by remember { mutableStateOf(false) }
     val scale by animateFloatAsState(

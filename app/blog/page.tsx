@@ -33,6 +33,16 @@ const composeMultiplatformSeries = {
 }
 
 const blogPosts = [
+  {
+    id: 14,
+    title: "StateFlow vs SharedFlow: When to Use Which ⚡",
+    excerpt: "Kotlin's Flow APIs are powerful, but many devs trip up on StateFlow vs SharedFlow. Both are hot flows, but they shine in different situations.",
+    category: "Kotlin Flow",
+    readTime: "3 min read",
+    date: "2025-09-23",
+    slug: "stateflow-vs-sharedflow",
+    type: "quick"
+  },
   // Compose Multiplatform Series
   {
     id: 10,

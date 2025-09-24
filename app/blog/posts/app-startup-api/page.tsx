@@ -44,7 +44,7 @@ export default function AppStartupApiPost() {
               App Startup API: Speed Up Your Launch in 5 Minutes 🚀
             </h1>
             <div className="flex items-center mt-6 text-sm text-gray-500">
-              <span>Sept 10, 2024</span>
+              <span>Sept 10, 2025</span>
               <span className="mx-2">•</span>
               <span>By Divya</span>
             </div>
