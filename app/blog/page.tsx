@@ -34,6 +34,16 @@ const composeMultiplatformSeries = {
 
 const blogPosts = [
   {
+    id: 15,
+    title: "Modifier Order in Jetpack Compose: Why It Breaks Your UI 🎨",
+    excerpt: "In Jetpack Compose, modifier order matters more than most devs realize. Swapping two modifiers can completely change how your UI looks.",
+    category: "Jetpack Compose",
+    readTime: "3 min read",
+    date: "2025-10-02",
+    slug: "modifier-order-compose",
+    type: "quick"
+  },
+  {
     id: 14,
     title: "StateFlow vs SharedFlow: When to Use Which ⚡",
     excerpt: "Kotlin's Flow APIs are powerful, but many devs trip up on StateFlow vs SharedFlow. Both are hot flows, but they shine in different situations.",
