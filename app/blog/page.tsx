@@ -34,6 +34,16 @@ const composeMultiplatformSeries = {
 
 const blogPosts = [
   {
+    id: 16,
+    title: "What's New in Jetpack Compose 1.9: Smoother, Faster, and More Expressive 🎨",
+    excerpt: "Jetpack Compose 1.9 just dropped — and it's all about performance, polish, and flexibility. If you've been shipping Compose UIs, this update is worth a quick look.",
+    category: "Jetpack Compose",
+    readTime: "4 min read",
+    date: "2025-10-11",
+    slug: "jetpack-compose-1-9",
+    type: "quick"
+  },
+  {
     id: 15,
     title: "Modifier Order in Jetpack Compose: Why It Breaks Your UI 🎨",
     excerpt: "In Jetpack Compose, modifier order matters more than most devs realize. Swapping two modifiers can completely change how your UI looks.",
