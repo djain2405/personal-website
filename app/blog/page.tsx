@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { useState } from 'react'
 import SubscriptionModal from './components/SubscriptionModal'
 
-// Series definition
+// Series definitions
 const composeMultiplatformSeries = {
   title: "Complete Compose Multiplatform Guide",
   description: "Build cross-platform apps from setup to deployment",
@@ -33,6 +33,16 @@ const composeMultiplatformSeries = {
 }
 
 const blogPosts = [
+  {
+    id: 17,
+    title: "Running AI Locally on iPhone — No Cloud Needed",
+    excerpt: "Build an on-device image classifier with Core ML + SwiftUI. Instant predictions, complete privacy, zero latency. AI is now happening right in our pockets.",
+    category: "On-Device AI",
+    readTime: "6 min read",
+    date: "2025-10-12",
+    slug: "on-device-ai/ios-coreml",
+    type: "deep-dive"
+  },
   {
     id: 16,
     title: "What's New in Jetpack Compose 1.9: Smoother, Faster, and More Expressive 🎨",
