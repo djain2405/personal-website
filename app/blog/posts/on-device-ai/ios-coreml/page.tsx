@@ -1,5 +1,6 @@
 'use client'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function OnDeviceAIiOSPost() {
   const handleLinkedInShare = () => {
@@ -213,14 +214,17 @@ if let prediction = try? model.prediction(image: pixelBuffer) {
 
             <div className="bg-gradient-to-br from-purple-50 to-blue-50 border border-purple-200 rounded-lg p-6 mb-6">
               <div className="bg-white rounded-lg p-4 shadow-lg">
-                <img
+                <Image
                   src="/blog/assets/on_device_ai_ios_demo.gif"
                   alt="iPhone app classifying images with Core ML - showing instant predictions with confidence scores"
+                  width={400}
+                  height={800}
                   className="rounded-lg w-full max-w-md mx-auto"
+                  unoptimized
                 />
               </div>
               <p className="text-sm text-gray-600 text-center mt-4 italic">
-                Tap "Choose Photo" → select any image → instant label appears with confidence score
+                Tap &ldquo;Choose Photo&rdquo; → select any image → instant label appears with confidence score
               </p>
             </div>
 

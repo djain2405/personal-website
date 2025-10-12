@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import CodeSnippet from '../../../components/CodeSnippet'
 import SeriesNavigation from '../../../components/SeriesNavigation'
 
@@ -196,9 +197,11 @@ fun QuotesScreen(viewModel: QuotesViewModel = QuotesViewModel()) {
 
             <div className="mb-8 flex justify-center">
               <div className="max-w-xs rounded-2xl overflow-hidden shadow-xl border-2 border-gray-200 bg-gradient-to-b from-gray-50 to-gray-100 p-2">
-                <img
+                <Image
                   src="/images/quotes_of_the_day_screenshot.png"
                   alt="Quotes of the Day app showing three quotes with favorite/unfavorite buttons"
+                  width={300}
+                  height={600}
                   className="w-full rounded-xl shadow-lg"
                 />
               </div>
