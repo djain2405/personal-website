@@ -1,6 +1,15 @@
 'use client'
 import Link from 'next/link'
 import Image from 'next/image'
+import SeriesNavigation from '../../../components/SeriesNavigation'
+
+const onDeviceAISeries = {
+  title: "On-Device AI Series",
+  stages: [
+    { title: "Running AI Locally on iPhone — No Cloud Needed", slug: "on-device-ai/ios-coreml" },
+    { title: "On-Device AI, Part 2 — Running Image Classification on Android with TensorFlow Lite", slug: "on-device-ai/android-tflite" }
+  ]
+}
 
 export default function OnDeviceAIiOSPost() {
   const handleLinkedInShare = () => {
@@ -42,6 +51,9 @@ export default function OnDeviceAIiOSPost() {
               <span className="px-3 py-1 bg-blue-100 text-blue-800 text-sm font-medium rounded-full">
                 iOS
               </span>
+              <span className="px-3 py-1 bg-indigo-100 text-indigo-800 text-sm font-medium rounded-full">
+                📚 Part 1/2
+              </span>
               <span className="text-sm text-gray-500">6 min read</span>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -53,6 +65,14 @@ export default function OnDeviceAIiOSPost() {
               <span>By Divya</span>
             </div>
           </header>
+
+          {/* Series Navigation */}
+          <SeriesNavigation
+            seriesTitle={onDeviceAISeries.title}
+            currentStage={1}
+            totalStages={2}
+            stages={onDeviceAISeries.stages}
+          />
 
           {/* Post Content */}
           <div className="prose prose-lg max-w-none">

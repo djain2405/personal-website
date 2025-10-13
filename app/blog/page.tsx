@@ -32,16 +32,47 @@ const composeMultiplatformSeries = {
   ]
 }
 
+const onDeviceAISeries = {
+  title: "On-Device AI Series",
+  description: "Building AI-powered mobile apps without cloud dependency",
+  stages: [
+    {
+      title: "Running AI Locally on iPhone — No Cloud Needed",
+      slug: "on-device-ai/ios-coreml",
+      stage: 1
+    },
+    {
+      title: "On-Device AI, Part 2 — Running Image Classification on Android with TensorFlow Lite",
+      slug: "on-device-ai/android-tflite",
+      stage: 2
+    },
+  ]
+}
+
 const blogPosts = [
+  {
+    id: 18,
+    title: "On-Device AI, Part 2 — Running Image Classification on Android with TensorFlow Lite",
+    excerpt: "Following up on the iOS demo, I brought the same on-device AI experience to Android using TensorFlow Lite + Jetpack Compose. Same concept: instant predictions, complete privacy, zero latency.",
+    category: "On-Device AI",
+    readTime: "7 min read",
+    date: "2025-10-12",
+    slug: "on-device-ai/android-tflite",
+    type: "deep-dive",
+    series: "on-device-ai",
+    seriesStage: 2
+  },
   {
     id: 17,
     title: "Running AI Locally on iPhone — No Cloud Needed",
-    excerpt: "Build an on-device image classifier with Core ML + SwiftUI. Instant predictions, complete privacy, zero latency. AI is now happening right in our pockets.",
+    excerpt: "Build an on-device image classifier with Core ML + SwiftUI. Instant predictions, complete privacy, zero latency. AI is now happening right in our pockets. Start of the On-Device AI series.",
     category: "On-Device AI",
     readTime: "6 min read",
     date: "2025-10-12",
     slug: "on-device-ai/ios-coreml",
-    type: "deep-dive"
+    type: "deep-dive",
+    series: "on-device-ai",
+    seriesStage: 1
   },
   {
     id: 16,
