@@ -7,7 +7,8 @@ const onDeviceAISeries = {
   title: "On-Device AI Series",
   stages: [
     { title: "Running AI Locally on iPhone — No Cloud Needed", slug: "on-device-ai/ios-coreml", completed: true },
-    { title: "On-Device AI, Part 2 — Running Image Classification on Android with TensorFlow Lite", slug: "on-device-ai/android-tflite" }
+    { title: "On-Device AI, Part 2 — Running Image Classification on Android with TensorFlow Lite", slug: "on-device-ai/android-tflite" },
+    { title: "🧠 On-Device AI, Part 3 — What Actually Happens When AI Runs on Your Phone", slug: "on-device-ai/what-happens" }
   ]
 }
 
@@ -52,7 +53,7 @@ export default function OnDeviceAIAndroidPost() {
                 Android
               </span>
               <span className="px-3 py-1 bg-indigo-100 text-indigo-800 text-sm font-medium rounded-full">
-                📚 Part 2/2
+                📚 Part 2/3
               </span>
               <span className="text-sm text-gray-500">7 min read</span>
             </div>
@@ -70,7 +71,7 @@ export default function OnDeviceAIAndroidPost() {
           <SeriesNavigation
             seriesTitle={onDeviceAISeries.title}
             currentStage={2}
-            totalStages={2}
+            totalStages={3}
             stages={onDeviceAISeries.stages}
           />
 
