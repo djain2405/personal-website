@@ -113,7 +113,7 @@ export default function OnDeviceAIWhatHappensPost() {
                   <span className="mr-3 text-xl font-bold">2️⃣</span>
                   <div>
                     <strong>The model is already on your phone,</strong> either bundled with the app or downloaded when you first use it.
-                    <p className="mt-1">It&apos;s a small file (like <code>model.tflite</code> or <code>MobileNetV2.mlmodel</code>) that contains the "knowledge" the AI learned while training — patterns for recognizing objects, faces, or text.</p>
+                    <p className="mt-1">It&apos;s a small file (like <code>model.tflite</code> or <code>MobileNetV2.mlmodel</code>) that contains the &ldquo;knowledge&rdquo; the AI learned while training — patterns for recognizing objects, faces, or text.</p>
                   </div>
                 </div>
                 <div className="flex items-start">
@@ -137,7 +137,7 @@ export default function OnDeviceAIWhatHappensPost() {
                   <span className="mr-3 text-xl font-bold">5️⃣</span>
                   <div>
                     <strong>You get a result and confidence score.</strong>
-                    <p className="mt-1">The model outputs probabilities; for e.g., "espresso 92%." Your app shows it in the UI.</p>
+                    <p className="mt-1">The model outputs probabilities; for e.g., &ldquo;espresso 92%.&rdquo; Your app shows it in the UI.</p>
                   </div>
                 </div>
               </div>
