@@ -51,6 +51,16 @@ const onDeviceAISeries = {
 
 const blogPosts = [
   {
+    id: 19,
+    title: "Baseline Profiles in 2025: The Easy Speed Hack You're Ignoring ⚡",
+    excerpt: "If your Android app still takes a few seconds to open, there's a good chance you're not using Baseline Profiles — one of the easiest and most effective speed hacks available today.",
+    category: "Android Performance",
+    readTime: "5 min read",
+    date: "2025-10-17",
+    slug: "baseline-profiles",
+    type: "quick"
+  },
+  {
     id: 18,
     title: "On-Device AI, Part 2 — Running Image Classification on Android with TensorFlow Lite",
     excerpt: "Following up on the iOS demo, I brought the same on-device AI experience to Android using TensorFlow Lite + Jetpack Compose. Same concept: instant predictions, complete privacy, zero latency.",

@@ -461,6 +461,46 @@ export default function Home() {
             Latest from the Blog
           </motion.h2>
 
+          {/* Featured Post */}
+          <motion.div variants={fadeInUp} className="mb-12">
+            <Link href="/blog/posts/baseline-profiles">
+              <div className="bg-gradient-to-r from-blue-500 to-purple-600 p-8 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 group cursor-pointer relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -mr-16 -mt-16"></div>
+                <div className="absolute bottom-0 left-0 w-24 h-24 bg-white/10 rounded-full -ml-12 -mb-12"></div>
+
+                <div className="relative z-10">
+                  <div className="flex items-center gap-2 mb-4">
+                    <span className="px-3 py-1 bg-white/20 text-white text-sm font-medium rounded-full backdrop-blur-sm">
+                      ⚡ Latest Post
+                    </span>
+                    <span className="px-3 py-1 bg-white/20 text-white text-sm font-medium rounded-full backdrop-blur-sm">
+                      Android Performance
+                    </span>
+                  </div>
+
+                  <h3 className="text-3xl font-bold text-white mb-4 group-hover:translate-x-2 transition-transform">
+                    Baseline Profiles in 2025: The Easy Speed Hack You&apos;re Ignoring ⚡
+                  </h3>
+
+                  <p className="text-white/90 text-lg mb-6">
+                    If your Android app still takes a few seconds to open, there&apos;s a good chance you&apos;re not using Baseline Profiles — one of the easiest and most effective speed hacks available today.
+                  </p>
+
+                  <div className="flex items-center gap-4 text-white/80 text-sm">
+                    <span>Oct 17, 2025</span>
+                    <span>•</span>
+                    <span>5 min read</span>
+                  </div>
+
+                  <div className="mt-6 inline-flex items-center gap-2 text-white font-semibold group-hover:gap-3 transition-all">
+                    <span>Read Full Article</span>
+                    <ExternalLink className="w-5 h-5" />
+                  </div>
+                </div>
+              </div>
+            </Link>
+          </motion.div>
+
           <div className="grid md:grid-cols-2 gap-8">
             <Link href="/blog">
               <motion.div
