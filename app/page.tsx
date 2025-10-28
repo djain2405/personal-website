@@ -463,7 +463,7 @@ export default function Home() {
 
           {/* Featured Post */}
           <motion.div variants={fadeInUp} className="mb-12">
-            <Link href="/blog/posts/baseline-profiles">
+            <Link href="/blog/posts/predictive-back-gesture">
               <div className="bg-gradient-to-r from-blue-500 to-purple-600 p-8 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 group cursor-pointer relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -mr-16 -mt-16"></div>
                 <div className="absolute bottom-0 left-0 w-24 h-24 bg-white/10 rounded-full -ml-12 -mb-12"></div>
@@ -474,22 +474,22 @@ export default function Home() {
                       ⚡ Latest Post
                     </span>
                     <span className="px-3 py-1 bg-white/20 text-white text-sm font-medium rounded-full backdrop-blur-sm">
-                      Android Performance
+                      Android UX
                     </span>
                   </div>
 
                   <h3 className="text-3xl font-bold text-white mb-4 group-hover:translate-x-2 transition-transform">
-                    Baseline Profiles in 2025: The Easy Speed Hack You&apos;re Ignoring ⚡
+                    Predictive Back Gesture: The Subtle UX Win You Need to Enable
                   </h3>
 
                   <p className="text-white/90 text-lg mb-6">
-                    If your Android app still takes a few seconds to open, there&apos;s a good chance you&apos;re not using Baseline Profiles — one of the easiest and most effective speed hacks available today.
+                    Android 16 is making Predictive Back Navigation the default and it&apos;s one of those updates that looks tiny but feels huge. Learn how to enable this smooth navigation feature in your app.
                   </p>
 
                   <div className="flex items-center gap-4 text-white/80 text-sm">
-                    <span>Oct 17, 2025</span>
+                    <span>Oct 27, 2025</span>
                     <span>•</span>
-                    <span>5 min read</span>
+                    <span>4 min read</span>
                   </div>
 
                   <div className="mt-6 inline-flex items-center gap-2 text-white font-semibold group-hover:gap-3 transition-all">
@@ -507,15 +507,15 @@ export default function Home() {
                 variants={fadeInUp}
                 className="bg-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 group cursor-pointer"
               >
-              <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                <Code className="w-6 h-6 text-blue-600" />
-              </div>
-              <h3 className="text-xl font-semibold mb-4 group-hover:text-blue-600 transition-colors">Mobile With Me</h3>
-              <p className="text-gray-600 mb-6">Bite-sized mobile development tips & tricks. Quick, practical insights to level up your iOS & Android skills.</p>
-              <div className="flex items-center gap-2 text-blue-600 font-semibold hover:text-blue-700 transition-colors">
-                <span>Read Blog</span>
-                <BookOpen className="w-4 h-4" />
-              </div>
+                <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                  <Code className="w-6 h-6 text-blue-600" />
+                </div>
+                <h3 className="text-xl font-semibold mb-4 group-hover:text-blue-600 transition-colors">Mobile With Me</h3>
+                <p className="text-gray-600 mb-6">Bite-sized mobile development tips & tricks. Quick, practical insights to level up your iOS & Android skills.</p>
+                <div className="flex items-center gap-2 text-blue-600 font-semibold hover:text-blue-700 transition-colors">
+                  <span>Read Blog</span>
+                  <BookOpen className="w-4 h-4" />
+                </div>
               </motion.div>
             </Link>
 

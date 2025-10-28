@@ -51,6 +51,16 @@ const onDeviceAISeries = {
 
 const blogPosts = [
   {
+    id: 20,
+    title: "Predictive Back Gesture: The Subtle UX Win You Need to Enable",
+    excerpt: "Android 16 is making Predictive Back Navigation the default — and it's one of those updates that looks tiny but feels huge. Learn how to enable this smooth navigation feature in your app.",
+    category: "Android UX",
+    readTime: "4 min read",
+    date: "2025-10-27",
+    slug: "predictive-back-gesture",
+    type: "quick"
+  },
+  {
     id: 19,
     title: "Baseline Profiles in 2025: The Easy Speed Hack You're Ignoring ⚡",
     excerpt: "If your Android app still takes a few seconds to open, there's a good chance you're not using Baseline Profiles — one of the easiest and most effective speed hacks available today.",
