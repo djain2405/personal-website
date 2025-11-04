@@ -72,7 +72,7 @@ export default function OnDeviceAIiOSPost() {
           <SeriesNavigation
             seriesTitle={onDeviceAISeries.title}
             currentStage={1}
-            totalStages={3}
+            totalStages={4}
             stages={onDeviceAISeries.stages}
           />
 
@@ -83,7 +83,7 @@ export default function OnDeviceAIiOSPost() {
             </p>
 
             <p className="text-gray-700 mb-6">
-              The app lets me choose any photo, and it instantly predicts what&apos;s in it — complete with a confidence score — all without touching the cloud.
+              The app lets me choose any photo, and it instantly predicts what&apos;s in it, complete with a confidence score : all without touching the cloud.
             </p>
 
             <div className="border-t border-gray-300 my-6"></div>
@@ -95,19 +95,19 @@ export default function OnDeviceAIiOSPost() {
                 <li className="flex items-start">
                   <span className="mr-3 text-xl">⚡</span>
                   <div>
-                    <strong>Speed</strong> — Results appear instantly. No network latency, no loading spinners.
+                    <strong>Speed</strong> : Results appear instantly. No network latency, no loading spinners.
                   </div>
                 </li>
                 <li className="flex items-start">
                   <span className="mr-3 text-xl">🔒</span>
                   <div>
-                    <strong>Privacy</strong> — Everything happens locally. Your photos never leave your device.
+                    <strong>Privacy</strong> : Everything happens locally. Your photos never leave your device.
                   </div>
                 </li>
                 <li className="flex items-start">
                   <span className="mr-3 text-xl">🔋</span>
                   <div>
-                    <strong>Trade-off</strong> — Accuracy improves with larger models, but so does battery use.
+                    <strong>Trade-off</strong> : Accuracy improves with larger models, but so does battery use.
                   </div>
                 </li>
               </ul>

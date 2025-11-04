@@ -83,7 +83,7 @@ export default function OnDeviceAIAndroidPost() {
             </p>
 
             <p className="text-gray-700 mb-6">
-              Now, I wanted to bring the same idea to Android — using TensorFlow Lite.
+              Now, I wanted to bring the same idea to Android - using TensorFlow Lite.
             </p>
 
             <p className="text-gray-700 mb-6">
@@ -103,25 +103,25 @@ export default function OnDeviceAIAndroidPost() {
                 <li className="flex items-start">
                   <span className="mr-3 text-xl">⚡</span>
                   <div>
-                    <strong>Speed</strong> — still incredibly fast. Inference averages ~40–60 ms on a mid-range Pixel.
+                    <strong>Speed</strong> - still incredibly fast. Inference averages ~40–60 ms on a mid-range Pixel.
                   </div>
                 </li>
                 <li className="flex items-start">
                   <span className="mr-3 text-xl">🔒</span>
                   <div>
-                    <strong>Privacy</strong> — identical to iOS: everything happens locally, nothing touches the network.
+                    <strong>Privacy</strong> - identical to iOS: everything happens locally, nothing touches the network.
                   </div>
                 </li>
                 <li className="flex items-start">
                   <span className="mr-3 text-xl">🔧</span>
                   <div>
-                    <strong>Setup</strong> — TensorFlow Lite needs a few extra steps (model conversion + interpreter setup) but feels flexible once configured.
+                    <strong>Setup</strong> - TensorFlow Lite needs a few extra steps (model conversion + interpreter setup) but feels flexible once configured.
                   </div>
                 </li>
                 <li className="flex items-start">
                   <span className="mr-3 text-xl">🔋</span>
                   <div>
-                    <strong>Battery trade-off</strong> — quantized models make a huge difference in efficiency.
+                    <strong>Battery trade-off</strong> - quantized models make a huge difference in efficiency.
                   </div>
                 </li>
               </ul>
@@ -241,7 +241,7 @@ textResult.text = "\${top?.label} - \${(top?.score ?: 0f) * 100}%"`}
 
             <div className="bg-gradient-to-r from-green-50 to-blue-50 border border-green-200 rounded-lg p-6 mb-6">
               <p className="text-gray-800 mb-4">
-                Running AI locally isn&apos;t just possible on Android - it&apos;s becoming the expected direction.
+                Running AI locally isn&apos;t just possible on Android, it&apos;s becoming the expected direction.
               </p>
               <p className="text-gray-800 mb-4">
                 With TensorFlow Lite, Gemini Nano, and new on-device APIs, Android is closing the gap between mobile UX and AI intelligence.
@@ -267,7 +267,7 @@ textResult.text = "\${top?.label} - \${(top?.score ?: 0f) * 100}%"`}
                 <li>✅ Used TensorFlow Lite + Jetpack Compose</li>
                 <li>✅ Runs entirely offline (~50 ms inference)</li>
                 <li>✅ Maintains privacy and performance</li>
-                <li>✅ Mirrors Core ML workflow — different tools, same magic</li>
+                <li>✅ Mirrors Core ML workflow - different tools, same magic</li>
               </ul>
             </div>
 
