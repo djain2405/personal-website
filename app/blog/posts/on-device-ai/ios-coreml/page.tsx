@@ -6,9 +6,10 @@ import SeriesNavigation from '../../../components/SeriesNavigation'
 const onDeviceAISeries = {
   title: "On-Device AI Series",
   stages: [
-    { title: "Running AI Locally on iPhone — No Cloud Needed", slug: "on-device-ai/ios-coreml" },
-    { title: "On-Device AI, Part 2 — Running Image Classification on Android with TensorFlow Lite", slug: "on-device-ai/android-tflite" },
-    { title: "🧠 On-Device AI, Part 3 — What Actually Happens When AI Runs on Your Phone", slug: "on-device-ai/what-happens" }
+    { title: "Running AI Locally on iPhone - No Cloud Needed", slug: "on-device-ai/ios-coreml" },
+    { title: "On-Device AI, Part 2 - Running Image Classification on Android with TensorFlow Lite", slug: "on-device-ai/android-tflite" },
+    { title: "🧠 On-Device AI, Part 3 - What Actually Happens When AI Runs on Your Phone", slug: "on-device-ai/what-happens" },
+    { title: "On-Device AI, Part 4 - Designing AI Experiences That Feel Magical", slug: "on-device-ai/designing-ai-experiences" }
   ]
 }
 
@@ -53,12 +54,12 @@ export default function OnDeviceAIiOSPost() {
                 iOS
               </span>
               <span className="px-3 py-1 bg-indigo-100 text-indigo-800 text-sm font-medium rounded-full">
-                📚 Part 1/3
+                📚 Part 1/4
               </span>
               <span className="text-sm text-gray-500">6 min read</span>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Running AI Locally on iPhone — No Cloud Needed
+              Running AI Locally on iPhone - No Cloud Needed
             </h1>
             <div className="flex items-center mt-6 text-sm text-gray-500">
               <span>Oct 12, 2025</span>
@@ -78,7 +79,7 @@ export default function OnDeviceAIiOSPost() {
           {/* Post Content */}
           <div className="prose prose-lg max-w-none">
             <p className="text-gray-700 mb-6">
-              I built a small but exciting demo this week — an on-device image classifier running entirely on my iPhone with Core ML + SwiftUI.
+              I built a small but exciting demo this week - an on-device image classifier running entirely on my iPhone with Core ML + SwiftUI.
             </p>
 
             <p className="text-gray-700 mb-6">
@@ -142,7 +143,7 @@ export default function OnDeviceAIiOSPost() {
 
             <div className="bg-gray-900 rounded-lg p-6 mb-6 overflow-x-auto">
               <pre className="text-sm text-gray-100">
-{`// Load the Core ML model
+                {`// Load the Core ML model
 let model = try? MobileNetV2()
 
 // Make prediction

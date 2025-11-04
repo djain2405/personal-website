@@ -5,9 +5,10 @@ import SeriesNavigation from '../../../components/SeriesNavigation'
 const onDeviceAISeries = {
   title: "On-Device AI Series",
   stages: [
-    { title: "Running AI Locally on iPhone — No Cloud Needed", slug: "on-device-ai/ios-coreml", completed: true },
-    { title: "On-Device AI, Part 2 — Running Image Classification on Android with TensorFlow Lite", slug: "on-device-ai/android-tflite", completed: true },
-    { title: "On-Device AI, Part 3 — What Actually Happens When AI Runs on Your Phone", slug: "on-device-ai/what-happens" }
+    { title: "Running AI Locally on iPhone - No Cloud Needed", slug: "on-device-ai/ios-coreml", completed: true },
+    { title: "On-Device AI, Part 2 - Running Image Classification on Android with TensorFlow Lite", slug: "on-device-ai/android-tflite", completed: true },
+    { title: "On-Device AI, Part 3 - What Actually Happens When AI Runs on Your Phone", slug: "on-device-ai/what-happens" },
+    { title: "On-Device AI, Part 4 - Designing AI Experiences That Feel Magical", slug: "on-device-ai/designing-ai-experiences" }
   ]
 }
 
@@ -52,12 +53,12 @@ export default function OnDeviceAIWhatHappensPost() {
                 Technical Deep Dive
               </span>
               <span className="px-3 py-1 bg-indigo-100 text-indigo-800 text-sm font-medium rounded-full">
-                📚 Part 3/3
+                📚 Part 3/4
               </span>
               <span className="text-sm text-gray-500">8 min read</span>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              On-Device AI, Part 3 — What Actually Happens When AI Runs on Your Phone
+              On-Device AI, Part 3 - What Actually Happens When AI Runs on Your Phone
             </h1>
             <div className="flex items-center mt-6 text-sm text-gray-500">
               <span>Oct 13, 2025</span>

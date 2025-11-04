@@ -6,9 +6,10 @@ import SeriesNavigation from '../../../components/SeriesNavigation'
 const onDeviceAISeries = {
   title: "On-Device AI Series",
   stages: [
-    { title: "Running AI Locally on iPhone — No Cloud Needed", slug: "on-device-ai/ios-coreml", completed: true },
-    { title: "On-Device AI, Part 2 — Running Image Classification on Android with TensorFlow Lite", slug: "on-device-ai/android-tflite" },
-    { title: "🧠 On-Device AI, Part 3 — What Actually Happens When AI Runs on Your Phone", slug: "on-device-ai/what-happens" }
+    { title: "Running AI Locally on iPhone - No Cloud Needed", slug: "on-device-ai/ios-coreml", completed: true },
+    { title: "On-Device AI, Part 2 - Running Image Classification on Android with TensorFlow Lite", slug: "on-device-ai/android-tflite" },
+    { title: "🧠 On-Device AI, Part 3 - What Actually Happens When AI Runs on Your Phone", slug: "on-device-ai/what-happens" },
+    { title: "On-Device AI, Part 4 - Designing AI Experiences That Feel Magical", slug: "on-device-ai/designing-ai-experiences" }
   ]
 }
 
@@ -53,12 +54,12 @@ export default function OnDeviceAIAndroidPost() {
                 Android
               </span>
               <span className="px-3 py-1 bg-indigo-100 text-indigo-800 text-sm font-medium rounded-full">
-                📚 Part 2/3
+                📚 Part 2/4
               </span>
               <span className="text-sm text-gray-500">7 min read</span>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              🧠 On-Device AI, Part 2 — Running Image Classification on Android with TensorFlow Lite
+              🧠 On-Device AI, Part 2 - Running Image Classification on Android with TensorFlow Lite
             </h1>
             <div className="flex items-center mt-6 text-sm text-gray-500">
               <span>Oct 12, 2025</span>
@@ -240,7 +241,7 @@ textResult.text = "\${top?.label} - \${(top?.score ?: 0f) * 100}%"`}
 
             <div className="bg-gradient-to-r from-green-50 to-blue-50 border border-green-200 rounded-lg p-6 mb-6">
               <p className="text-gray-800 mb-4">
-                Running AI locally isn&apos;t just possible on Android — it&apos;s becoming the expected direction.
+                Running AI locally isn&apos;t just possible on Android - it&apos;s becoming the expected direction.
               </p>
               <p className="text-gray-800 mb-4">
                 With TensorFlow Lite, Gemini Nano, and new on-device APIs, Android is closing the gap between mobile UX and AI intelligence.
@@ -252,7 +253,7 @@ textResult.text = "\${top?.label} - \${(top?.score ?: 0f) * 100}%"`}
                 <strong>AI doesn&apos;t need to live in massive cloud servers anymore.</strong>
               </p>
               <p className="text-gray-800">
-                <strong>It can live right inside your phone — fast, private, and personal.</strong>
+                <strong>It can live right inside your phone - fast, private, and personal.</strong>
               </p>
             </div>
 
