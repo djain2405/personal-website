@@ -46,10 +46,30 @@ const onDeviceAISeries = {
       slug: "on-device-ai/android-tflite",
       stage: 2
     },
+    {
+      title: "🧠 On-Device AI, Part 3 — What Actually Happens When AI Runs on Your Phone",
+      slug: "on-device-ai/what-happens",
+      stage: 3
+    },
+    {
+      title: "On-Device AI, Part 4 — Designing AI Experiences That Feel Magical",
+      slug: "on-device-ai/designing-ai-experiences",
+      stage: 4
+    }
   ]
 }
 
 const blogPosts = [
+  {
+    id: 21,
+    title: "Gemini Nano & On-Device AI: What Android Devs Need to Know 🤖📱",
+    excerpt: "AI is moving from the cloud to your device's chip. Google's Gemini Nano - a lightweight LLM running entirely on-device brings AI inference directly to Android. No network calls. No latency. No data leaving the device.",
+    category: "On-Device AI",
+    readTime: "5 min read",
+    date: "2025-11-06",
+    slug: "gemini-nano",
+    type: "deep-dive"
+  },
   {
     id: 20,
     title: "Predictive Back Gesture: The Subtle UX Win You Need to Enable",

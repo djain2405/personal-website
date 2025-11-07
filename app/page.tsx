@@ -463,7 +463,7 @@ export default function Home() {
 
           {/* Featured Post */}
           <motion.div variants={fadeInUp} className="mb-12">
-            <Link href="/blog/posts/predictive-back-gesture">
+            <Link href="/blog/posts/gemini-nano">
               <div className="bg-gradient-to-r from-blue-500 to-purple-600 p-8 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 group cursor-pointer relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -mr-16 -mt-16"></div>
                 <div className="absolute bottom-0 left-0 w-24 h-24 bg-white/10 rounded-full -ml-12 -mb-12"></div>
@@ -474,22 +474,22 @@ export default function Home() {
                       ⚡ Latest Post
                     </span>
                     <span className="px-3 py-1 bg-white/20 text-white text-sm font-medium rounded-full backdrop-blur-sm">
-                      Android UX
+                      On-Device AI
                     </span>
                   </div>
 
                   <h3 className="text-3xl font-bold text-white mb-4 group-hover:translate-x-2 transition-transform">
-                    Predictive Back Gesture: The Subtle UX Win You Need to Enable
+                    🤖 Gemini Nano &amp; On-Device AI: What Android Devs Need to Know 📱
                   </h3>
 
                   <p className="text-white/90 text-lg mb-6">
-                    Android 16 is making Predictive Back Navigation the default and it&apos;s one of those updates that looks tiny but feels huge. Learn how to enable this smooth navigation feature in your app.
+                    AI is moving from the cloud to your device&apos;s chip. Google&apos;s Gemini Nano - a lightweight LLM running entirely on-device, brings AI inference directly to Android. No network calls. No latency. No data leaving the device.
                   </p>
 
                   <div className="flex items-center gap-4 text-white/80 text-sm">
-                    <span>Oct 27, 2025</span>
+                    <span>Nov 6, 2025</span>
                     <span>•</span>
-                    <span>4 min read</span>
+                    <span>5 min read</span>
                   </div>
 
                   <div className="mt-6 inline-flex items-center gap-2 text-white font-semibold group-hover:gap-3 transition-all">
