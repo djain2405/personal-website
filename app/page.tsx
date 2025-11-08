@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion'
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
-import { Sparkles, MapPin, Code, Mic, BookOpen, Mail, Github, Linkedin, Twitter, ExternalLink, Play } from 'lucide-react'
+import { Sparkles, MapPin, Code, Mic, BookOpen, Mail, Github, Linkedin, Twitter, ExternalLink, Play, Network } from 'lucide-react'
 import Link from 'next/link'
 import AnimatedCounter from './components/AnimatedCounter'
 import SkillCloud from './components/SkillCloud'
@@ -338,23 +338,23 @@ export default function Home() {
 
             <motion.div
               variants={fadeInUp}
-              className="group p-8 bg-gray-50 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
-              onClick={() => window.open('https://github.com/djain2405/trivia-game', '_blank')}
+              className="group p-8 bg-gray-50 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 cursor-pointer"
             >
-              <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-500 rounded-2xl flex items-center justify-center mb-6">
-                <Code className="w-8 h-8 text-white" />
+              <div className="w-16 h-16 bg-gradient-to-br from-cyan-500 to-indigo-500 rounded-2xl flex items-center justify-center mb-6">
+                <Network className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-2xl font-semibold mb-4">Trivia Game</h3>
-              <p className="text-gray-700 mb-6">Interactive multiplayer trivia game with real-time scoring, multiple game modes, and engaging UI. Perfect for team building!</p>
+              <h3 className="text-2xl font-semibold mb-4">LifeMesh - When Phones Talk Without the Internet</h3>
+              <p className="text-gray-700 mb-2 font-medium">AI-powered mobile networking that keeps people connected when everything else goes dark.</p>
+              <p className="text-gray-600 mb-6 text-sm">A humanitarian-tech experiment reimagining communication through on-device AI and peer-to-peer mesh networks. Built to relay SOS alerts, maps, and safety updates offline - because resilience should be built in.</p>
               <div className="flex flex-wrap gap-2 mb-6">
-                <span className="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-sm">JavaScript</span>
-                <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">HTML5</span>
-                <span className="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">CSS3</span>
-                <span className="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">Node.js</span>
+                <span className="px-3 py-1 bg-cyan-100 text-cyan-800 rounded-full text-sm">AI/ML</span>
+                <span className="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm">P2P Mesh</span>
+                <span className="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">Offline-First</span>
+                <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Humanitarian Tech</span>
               </div>
-              <button className="flex items-center gap-2 text-purple-600 font-semibold hover:text-purple-700 transition-colors cursor-pointer">
-                View on GitHub <ExternalLink className="w-4 h-4" />
-              </button>
+              <Link href="/lifemesh" className="flex items-center gap-2 text-purple-600 font-semibold hover:text-purple-700 transition-colors">
+                → Explore LifeMesh <ExternalLink className="w-4 h-4" />
+              </Link>
             </motion.div>
           </div>
 
