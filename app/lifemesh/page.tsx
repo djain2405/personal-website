@@ -147,19 +147,19 @@ export default function LifeMesh() {
           className="max-w-4xl mx-auto"
         >
           <motion.div variants={fadeInUp} className="text-center mb-12">
-            <h2 className="text-5xl md:text-6xl font-bold mb-6 text-gray-900">
+            <h2 className="text-4xl font-bold mb-6 text-gray-900">
               The Problem
             </h2>
           </motion.div>
 
           <motion.div variants={fadeInUp} className="space-y-6 text-center">
-            <p className="text-3xl md:text-4xl font-bold text-gray-800 leading-relaxed">
+            <p className="text-xl font-bold text-gray-800 leading-relaxed">
               Every disaster begins with silence.
             </p>
-            <p className="text-xl md:text-2xl text-gray-700 leading-relaxed">
+            <p className="text-lg text-gray-700 leading-relaxed">
               When networks collapse, information stops - but human need doesn&apos;t.
             </p>
-            <p className="text-lg md:text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
+            <p className="text-gray-600 leading-relaxed max-w-3xl mx-auto">
               From earthquakes to remote expeditions, millions lose access to vital communication when they need it most.
             </p>
           </motion.div>
@@ -176,17 +176,17 @@ export default function LifeMesh() {
           className="max-w-4xl mx-auto"
         >
           <motion.div variants={fadeInUp} className="text-center mb-12">
-            <h2 className="text-5xl md:text-6xl font-bold mb-6 text-gray-900">
+            <h2 className="text-4xl font-bold mb-6 text-gray-900">
               The Vision
             </h2>
           </motion.div>
 
           <motion.div variants={fadeInUp} className="space-y-8">
-            <p className="text-3xl md:text-4xl font-bold text-center bg-gradient-to-r from-indigo-600 to-cyan-600 bg-clip-text text-transparent leading-relaxed">
+            <p className="text-xl font-bold text-center bg-gradient-to-r from-indigo-600 to-cyan-600 bg-clip-text text-transparent leading-relaxed">
               What if phones could form their own intelligent networks?
             </p>
             <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xl">
-              <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
+              <p className="text-gray-700 leading-relaxed">
                 LifeMesh turns smartphones into self-healing, peer-to-peer nodes powered by on-device AI. Each device becomes both a messenger and a relay - carrying critical updates through the crowd, no internet required.
               </p>
             </div>
@@ -204,10 +204,10 @@ export default function LifeMesh() {
           className="max-w-6xl mx-auto"
         >
           <motion.div variants={fadeInUp} className="text-center mb-16">
-            <h2 className="text-5xl md:text-6xl font-bold mb-6 text-gray-900">
+            <h2 className="text-4xl font-bold mb-6 text-gray-900">
               The Concept
             </h2>
-            <p className="text-2xl md:text-3xl font-semibold text-gray-700">
+            <p className="text-lg font-semibold text-gray-700">
               On-Device AI + Mesh Networking = Offline Resilience
             </p>
           </motion.div>
@@ -220,7 +220,7 @@ export default function LifeMesh() {
               <div className="w-16 h-16 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-2xl flex items-center justify-center mb-6">
                 <Radio className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">Peer-to-Peer Links</h3>
+              <h3 className="text-lg font-bold mb-4 text-gray-900">Peer-to-Peer Links</h3>
               <p className="text-gray-700 leading-relaxed">
                 Phones discover and connect locally over Bluetooth and Wi-Fi Direct.
               </p>
@@ -233,7 +233,7 @@ export default function LifeMesh() {
               <div className="w-16 h-16 bg-gradient-to-br from-indigo-500 to-purple-500 rounded-2xl flex items-center justify-center mb-6">
                 <Brain className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">AI-Smart Routing</h3>
+              <h3 className="text-lg font-bold mb-4 text-gray-900">AI-Smart Routing</h3>
               <p className="text-gray-700 leading-relaxed">
                 Models prioritize urgent messages (SOS, location, resources) and optimize battery + route selection.
               </p>
@@ -246,7 +246,7 @@ export default function LifeMesh() {
               <div className="w-16 h-16 bg-gradient-to-br from-violet-500 to-pink-500 rounded-2xl flex items-center justify-center mb-6">
                 <MapPin className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">Context Awareness</h3>
+              <h3 className="text-lg font-bold mb-4 text-gray-900">Context Awareness</h3>
               <p className="text-gray-700 leading-relaxed">
                 Devices form adaptive networks that scale from a few users to entire field zones.
               </p>
@@ -255,7 +255,7 @@ export default function LifeMesh() {
 
           <motion.div variants={fadeInUp} className="text-center">
             <div className="inline-block bg-gray-100 px-8 py-6 rounded-2xl">
-              <p className="text-lg md:text-xl text-gray-700 font-medium">
+              <p className="text-gray-700 font-medium">
                 No backend servers. No central failure point.<br />
                 Just intelligent, distributed coordination.
               </p>
@@ -274,13 +274,13 @@ export default function LifeMesh() {
           className="max-w-4xl mx-auto"
         >
           <motion.div variants={fadeInUp} className="text-center mb-12">
-            <h2 className="text-5xl md:text-6xl font-bold mb-6 text-gray-900">
+            <h2 className="text-4xl font-bold mb-6 text-gray-900">
               Status
             </h2>
           </motion.div>
 
           <motion.div variants={fadeInUp} className="bg-white rounded-3xl p-8 md:p-12 shadow-xl">
-            <ul className="space-y-6 text-lg md:text-xl text-gray-700">
+            <ul className="space-y-6 text-gray-700">
               <li className="flex items-start gap-4">
                 <span className="text-2xl">🏆</span>
                 <span>Prototype submitted to the <strong>Global AI for Humanity Innovation Challenge</strong>.</span>
@@ -308,16 +308,16 @@ export default function LifeMesh() {
           className="max-w-4xl mx-auto"
         >
           <motion.div variants={fadeInUp} className="text-center mb-12">
-            <h2 className="text-5xl md:text-6xl font-bold mb-6 text-gray-900">
+            <h2 className="text-4xl font-bold mb-6 text-gray-900">
               About the Creator
             </h2>
           </motion.div>
 
           <motion.div variants={fadeInUp} className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-3xl p-8 md:p-12 shadow-xl">
-            <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-6">
+            <p className="text-gray-700 leading-relaxed mb-6">
               Conceptualized and built by <strong className="text-purple-600">Divya Jain</strong>, Mobile Engineering Manager and AI innovation leader.
             </p>
-            <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
+            <p className="text-gray-700 leading-relaxed">
               LifeMesh represents her belief that the next frontier of mobile intelligence isn&apos;t faster feeds - it&apos;s <strong>smarter connections that can save lives</strong>.
             </p>
           </motion.div>
@@ -333,22 +333,24 @@ export default function LifeMesh() {
           viewport={{ once: true }}
           className="max-w-4xl mx-auto text-center"
         >
-          <motion.div variants={fadeInUp} className="space-y-8">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Interested in collaboration, research partnership,<br />or humanitarian pilot testing?
-            </h2>
+          <motion.div variants={fadeInUp} className="space-y-12">
+            <p className="text-xl md:text-2xl text-white/90 leading-relaxed max-w-3xl mx-auto mb-8">
+              Interested in <span className="text-cyan-300 font-semibold">collaboration</span>, <span className="text-cyan-300 font-semibold">research partnership</span>, or <span className="text-cyan-300 font-semibold">humanitarian pilot testing</span>?
+            </p>
 
-            <Link href="/#contact">
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="px-8 py-4 bg-white text-purple-600 font-bold rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 flex items-center gap-3 mx-auto text-lg"
-              >
-                <Mail className="w-5 h-5" />
-                Let&apos;s Connect
-                <ExternalLink className="w-4 h-4" />
-              </motion.button>
-            </Link>
+            <div className="pt-4">
+              <Link href="/#contact">
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="px-8 py-4 bg-white text-purple-600 font-semibold rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 flex items-center gap-3 mx-auto text-lg"
+                >
+                  <Mail className="w-5 h-5" />
+                  Let&apos;s Connect
+                  <ExternalLink className="w-4 h-4" />
+                </motion.button>
+              </Link>
+            </div>
           </motion.div>
         </motion.div>
       </section>
