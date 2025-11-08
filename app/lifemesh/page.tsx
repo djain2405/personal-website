@@ -157,7 +157,7 @@ export default function LifeMesh() {
               Every disaster begins with silence.
             </p>
             <p className="text-xl md:text-2xl text-gray-700 leading-relaxed">
-              When networks collapse, information stops - but human need doesn't.
+              When networks collapse, information stops - but human need doesn&apos;t.
             </p>
             <p className="text-lg md:text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
               From earthquakes to remote expeditions, millions lose access to vital communication when they need it most.
@@ -291,7 +291,7 @@ export default function LifeMesh() {
               </li>
               <li className="flex items-start gap-4">
                 <span className="text-2xl">📄</span>
-                <span>White paper in progress - <em>"LifeMesh: Offline Resilience Through On-Device Intelligence."</em></span>
+                <span>White paper in progress - <em>&quot;LifeMesh: Offline Resilience Through On-Device Intelligence.&quot;</em></span>
               </li>
             </ul>
           </motion.div>
@@ -318,7 +318,7 @@ export default function LifeMesh() {
               Conceptualized and built by <strong className="text-purple-600">Divya Jain</strong>, Mobile Engineering Manager and AI innovation leader.
             </p>
             <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-              LifeMesh represents her belief that the next frontier of mobile intelligence isn't faster feeds — it's <strong>smarter connections that can save lives</strong>.
+              LifeMesh represents her belief that the next frontier of mobile intelligence isn&apos;t faster feeds - it&apos;s <strong>smarter connections that can save lives</strong>.
             </p>
           </motion.div>
         </motion.div>
@@ -345,7 +345,7 @@ export default function LifeMesh() {
                 className="px-8 py-4 bg-white text-purple-600 font-bold rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 flex items-center gap-3 mx-auto text-lg"
               >
                 <Mail className="w-5 h-5" />
-                Let's Connect
+                Let&apos;s Connect
                 <ExternalLink className="w-4 h-4" />
               </motion.button>
             </Link>
