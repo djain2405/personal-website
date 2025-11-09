@@ -6,12 +6,12 @@ import { Analytics } from "@vercel/analytics/next"
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Deevaa - Building Apps, Connecting People',
+  title: 'Divya - Building Apps, Connecting People',
   description: 'Engineering Leader, App Builder, Speaker, Explorer, Manifestor from India to US',
-  keywords: ['Deevaa', 'mobile engineering', 'tech speaker', 'app development', 'engineering leader'],
-  authors: [{ name: 'Deevaa' }],
+  keywords: ['Divya', 'mobile engineering', 'tech speaker', 'app development', 'engineering leader'],
+  authors: [{ name: 'Divya' }],
   openGraph: {
-    title: 'Deevaa - Building Apps, Connecting People',
+    title: 'Divya - Building Apps, Connecting People',
     description: 'Engineering Leader, App Builder, Speaker, Explorer, Manifestor',
     type: 'website',
   },
