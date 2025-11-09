@@ -519,21 +519,26 @@ export default function Home() {
               </motion.div>
             </Link>
 
-            <motion.div
-              variants={fadeInUp}
-              className="bg-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 group cursor-pointer"
-              onClick={() => window.open('https://leadbuildmanifest.substack.com/', '_blank')}
+            <a
+              href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7391831426578649088"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <div className="w-12 h-12 bg-pink-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                <BookOpen className="w-6 h-6 text-pink-600" />
-              </div>
-              <h3 className="text-xl font-semibold mb-4 group-hover:text-pink-600 transition-colors">Lead Build Manifest Newsletter</h3>
-              <p className="text-gray-600 mb-6">Weekly insights at the intersection of tech leadership, mobile app development, and manifestation mindset.. Join the community!</p>
-              <div className="flex items-center gap-2 text-pink-600 font-semibold hover:text-pink-700 transition-colors">
-                <span>Subscribe on Substack</span>
-                <ExternalLink className="w-4 h-4" />
-              </div>
-            </motion.div>
+              <motion.div
+                variants={fadeInUp}
+                className="bg-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 group cursor-pointer h-full"
+              >
+                <div className="w-12 h-12 bg-[#0A66C2]/10 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                  <Linkedin className="w-6 h-6 text-[#0A66C2]" />
+                </div>
+                <h3 className="text-xl font-semibold mb-4 group-hover:text-[#0A66C2] transition-colors">Lead Build Manifest Newsletter</h3>
+                <p className="text-gray-600 mb-6">Weekly insights at the intersection of tech leadership, mobile app development, and manifestation mindset. Join the community!</p>
+                <div className="flex items-center gap-2 text-[#0A66C2] font-semibold hover:text-[#004182] transition-colors">
+                  <span>Subscribe on LinkedIn</span>
+                  <ExternalLink className="w-4 h-4" />
+                </div>
+              </motion.div>
+            </a>
           </div>
         </motion.div>
       </section>
