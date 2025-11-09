@@ -7,7 +7,7 @@ const timelineData = [
   {
     year: '2023',
     title: 'Engineering Manager',
-    description: 'From builder to leader—growing teams, scaling systems, and shipping outcomes.',
+    description: 'From builder to leader - growing teams, scaling systems, and shipping outcomes.',
     icon: Briefcase,
     color: 'bg-purple-600',
   },
@@ -21,21 +21,21 @@ const timelineData = [
   {
     year: '2014',
     title: 'US Chapter Begins',
-    description: 'Moved to the USA—bigger canvas, bigger challenges, bigger growth.',
+    description: 'Moved to the USA - bigger canvas, bigger challenges, bigger growth.',
     icon: Plane,
     color: 'bg-blue-500',
   },
   {
     year: '2012',
     title: 'First App Published',
-    description: 'Released my debut app—first users, first reviews, first “we’re so back” moment.',
+    description: 'Released my debut app - first users, first reviews, first “we’re so back” moment.',
     icon: Award,
     color: 'bg-green-500',
   },
   {
     year: '2011',
     title: 'Career Kickoff (India)',
-    description: 'Jumped into mobile dev—learning fast, shipping faster, building the foundation.',
+    description: 'Jumped into mobile dev - learning fast, shipping faster, building the foundation.',
     icon: Briefcase,
     color: 'bg-orange-500',
   },

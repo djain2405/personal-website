@@ -582,7 +582,7 @@ export default function Home() {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6 }}
         >
-          © 2025 Deevaa. Made with ✨ and lots of coffee. All Rights Reserved.
+          © 2025 Divya. Made with ✨ and lots of coffee. All Rights Reserved.
         </motion.p>
       </footer>
     </div>
