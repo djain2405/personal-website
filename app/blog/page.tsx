@@ -61,6 +61,16 @@ const onDeviceAISeries = {
 
 const blogPosts = [
   {
+    id: 22,
+    title: "Credential Manager: The New Standard for Login on Android 🔐✨",
+    excerpt: "Passwords, passkeys, Google Sign-In, autofill… Android logins used to be a maze. Credential Manager fixes that by giving us one simple API for every sign-in method.",
+    category: "Android Security",
+    readTime: "6 min read",
+    date: "2025-11-15",
+    slug: "credential-manager",
+    type: "quick"
+  },
+  {
     id: 21,
     title: "Gemini Nano & On-Device AI: What Android Devs Need to Know 🤖📱",
     excerpt: "AI is moving from the cloud to your device's chip. Google's Gemini Nano - a lightweight LLM running entirely on-device brings AI inference directly to Android. No network calls. No latency. No data leaving the device.",
