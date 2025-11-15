@@ -95,13 +95,13 @@ export default function Home() {
             >
               Work With Me
             </motion.button>
-            <motion.button
+            {/* <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="btn-secondary"
             >
               Download Resume
-            </motion.button>
+            </motion.button> */}
           </div>
         </motion.div>
       </section>
