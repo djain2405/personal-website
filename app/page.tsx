@@ -463,7 +463,7 @@ export default function Home() {
 
           {/* Featured Post */}
           <motion.div variants={fadeInUp} className="mb-12">
-            <Link href="/blog/posts/credential-manager">
+            <Link href="/blog/posts/compose-glance">
               <div className="bg-gradient-to-r from-blue-500 to-purple-600 p-8 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 group cursor-pointer relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -mr-16 -mt-16"></div>
                 <div className="absolute bottom-0 left-0 w-24 h-24 bg-white/10 rounded-full -ml-12 -mb-12"></div>
@@ -474,22 +474,22 @@ export default function Home() {
                       ⚡ Latest Post
                     </span>
                     <span className="px-3 py-1 bg-white/20 text-white text-sm font-medium rounded-full backdrop-blur-sm">
-                      Android Security
+                      Android Widgets
                     </span>
                   </div>
 
                   <h3 className="text-3xl font-bold text-white mb-4 group-hover:translate-x-2 transition-transform">
-                    Credential Manager: The New Standard for Login on Android 🔐✨
+                    Compose Glance: Build Android Widgets the Modern Way 🪟✨
                   </h3>
 
                   <p className="text-white/90 text-lg mb-6">
-                    Passwords, passkeys, Google Sign-In, autofill… Android logins used to be a maze. Credential Manager fixes that by giving us one simple API for every sign-in method.
+                    Widgets are back in style - and with Android 16 + Material You, they&apos;re a big part of how users interact with your app. Build them using Jetpack Compose Glance. No RemoteViews. No XML gymnastics. Just clean, declarative UI.
                   </p>
 
                   <div className="flex items-center gap-4 text-white/80 text-sm">
-                    <span>Nov 15, 2025</span>
+                    <span>Nov 20, 2025</span>
                     <span>•</span>
-                    <span>6 min read</span>
+                    <span>5 min read</span>
                   </div>
 
                   <div className="mt-6 inline-flex items-center gap-2 text-white font-semibold group-hover:gap-3 transition-all">

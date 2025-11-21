@@ -61,6 +61,16 @@ const onDeviceAISeries = {
 
 const blogPosts = [
   {
+    id: 23,
+    title: "Compose Glance: Build Android Widgets the Modern Way 🪟✨",
+    excerpt: "Widgets are back in style - and with Android 16 + Material You, they're a big part of how users interact with your app. Build them using Jetpack Compose Glance with a Compose-like API. No RemoteViews. No XML gymnastics. Just clean, declarative UI.",
+    category: "Jetpack Compose",
+    readTime: "5 min read",
+    date: "2025-11-20",
+    slug: "compose-glance",
+    type: "quick"
+  },
+  {
     id: 22,
     title: "Credential Manager: The New Standard for Login on Android 🔐✨",
     excerpt: "Passwords, passkeys, Google Sign-In, autofill… Android logins used to be a maze. Credential Manager fixes that by giving us one simple API for every sign-in method.",
