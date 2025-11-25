@@ -61,6 +61,16 @@ const onDeviceAISeries = {
 
 const blogPosts = [
   {
+    id: 24,
+    title: "Compose Performance: Why Your UI Re-renders Too Much 🔄⚡",
+    excerpt: "If you've ever wondered why your Compose UI is recomposing so often, you're not alone. Most performance issues come down to a few simple patterns that accidentally trigger unnecessary renders. Learn the 5 most common causes and how to fix them.",
+    category: "Jetpack Compose",
+    readTime: "6 min read",
+    date: "2025-11-24",
+    slug: "compose-performance",
+    type: "quick"
+  },
+  {
     id: 23,
     title: "Compose Glance: Build Android Widgets the Modern Way 🪟✨",
     excerpt: "Widgets are back in style - and with Android 16 + Material You, they're a big part of how users interact with your app. Build them using Jetpack Compose Glance with a Compose-like API. No RemoteViews. No XML gymnastics. Just clean, declarative UI.",
