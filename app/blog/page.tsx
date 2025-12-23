@@ -61,6 +61,16 @@ const onDeviceAISeries = {
 
 const blogPosts = [
   {
+    id: 25,
+    title: "What Actually Changed Android Development in 2025",
+    excerpt: "As 2025 wraps up, Android didn't just ship more APIs, it quietly raised the bar for what 'good' mobile development looks like. A deeper shift in expectations around performance, experience, intelligence, and trust. Here's what every Android developer should internalize going into 2026.",
+    category: "Android Development",
+    readTime: "10 min read",
+    date: "2025-12-22",
+    slug: "android-development-2025",
+    type: "deep-dive"
+  },
+  {
     id: 24,
     title: "Compose Performance: Why Your UI Re-renders Too Much 🔄⚡",
     excerpt: "If you've ever wondered why your Compose UI is recomposing so often, you're not alone. Most performance issues come down to a few simple patterns that accidentally trigger unnecessary renders. Learn the 5 most common causes and how to fix them.",
