@@ -463,7 +463,7 @@ export default function Home() {
 
           {/* Featured Post */}
           <motion.div variants={fadeInUp} className="mb-12">
-            <Link href="/blog/posts/android-development-2025">
+            <Link href="/blog/posts/android-development-2026">
               <div className="bg-gradient-to-r from-blue-500 to-purple-600 p-8 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 group cursor-pointer relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -mr-16 -mt-16"></div>
                 <div className="absolute bottom-0 left-0 w-24 h-24 bg-white/10 rounded-full -ml-12 -mb-12"></div>
@@ -479,17 +479,17 @@ export default function Home() {
                   </div>
 
                   <h3 className="text-3xl font-bold text-white mb-4 group-hover:translate-x-2 transition-transform">
-                    What Actually Changed Android Development in 2025
+                    How I&apos;m Approaching Android Development in 2026
                   </h3>
 
                   <p className="text-white/90 text-lg mb-6">
-                    As 2025 wraps up, one thing is clear: Android didn&apos;t just ship more APIs this year, it quietly raised the bar for what &quot;good&quot; mobile development looks like. Not louder features. Not flashy announcements. But a deeper shift in expectations around performance, experience, intelligence, and trust.
+                    January always tempts us to chase what&apos;s new. But after shipping Android apps through 2025, I&apos;m starting 2026 with a different mindset: clarity over novelty. This is the mental model I&apos;m using to decide what to focus on, and what to ignore.
                   </p>
 
                   <div className="flex items-center gap-4 text-white/80 text-sm">
-                    <span>Dec 22, 2025</span>
+                    <span>Jan 4, 2026</span>
                     <span>•</span>
-                    <span>10 min read</span>
+                    <span>8 min read</span>
                   </div>
 
                   <div className="mt-6 inline-flex items-center gap-2 text-white font-semibold group-hover:gap-3 transition-all">

@@ -61,6 +61,16 @@ const onDeviceAISeries = {
 
 const blogPosts = [
   {
+    id: 26,
+    title: "How I'm Approaching Android Development in 2026",
+    excerpt: "January always tempts us to chase what's new. But after shipping Android apps through 2025, I'm starting 2026 with a different mindset: clarity over novelty. This is the mental model I'm using to decide what to focus on, and what to ignore.",
+    category: "Android Development",
+    readTime: "8 min read",
+    date: "2026-01-04",
+    slug: "android-development-2026",
+    type: "deep-dive"
+  },
+  {
     id: 25,
     title: "What Actually Changed Android Development in 2025",
     excerpt: "As 2025 wraps up, Android didn't just ship more APIs, it quietly raised the bar for what 'good' mobile development looks like. A deeper shift in expectations around performance, experience, intelligence, and trust. Here's what every Android developer should internalize going into 2026.",
