@@ -61,6 +61,16 @@ const onDeviceAISeries = {
 
 const blogPosts = [
   {
+    id: 27,
+    title: "What Makes a Mobile App Feel Fast",
+    excerpt: "Users don't experience metrics, they experience feel. Some apps feel instant even when they aren't. Others feel slow despite being technically 'fast.' The difference isn't just performance, it's perception. Here's the mental model I use to think about speed across Android, iOS, and any declarative UI.",
+    category: "Mobile Performance",
+    readTime: "7 min read",
+    date: "2026-01-07",
+    slug: "mobile-app-feel-fast",
+    type: "deep-dive"
+  },
+  {
     id: 26,
     title: "How I'm Approaching Android Development in 2026",
     excerpt: "January always tempts us to chase what's new. But after shipping Android apps through 2025, I'm starting 2026 with a different mindset: clarity over novelty. This is the mental model I'm using to decide what to focus on, and what to ignore.",
