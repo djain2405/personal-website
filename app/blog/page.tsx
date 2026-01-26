@@ -61,6 +61,16 @@ const onDeviceAISeries = {
 
 const blogPosts = [
   {
+    id: 29,
+    title: "What Makes a Mobile App Feel Trustworthy",
+    excerpt: "Fast apps get attention. Calm apps reduce friction. But trustworthy apps are the ones users return to. Trust isn't built through privacy policies, it's built through behavior. Here's the mental model I use to think about trust across Android, iOS, and modern declarative stacks.",
+    category: "Mobile Trust",
+    readTime: "9 min read",
+    date: "2026-01-25",
+    slug: "mobile-app-trustworthy",
+    type: "deep-dive"
+  },
+  {
     id: 28,
     title: "What Makes a Mobile App Feel Calm",
     excerpt: "Fast apps get attention. Calm apps earn trust. In a world full of notifications, prompts, and interruptions, the apps that stand out in 2026 aren't just performant, they're mentally lightweight. Here's the mental model I use to evaluate whether a mobile app feels calm.",
