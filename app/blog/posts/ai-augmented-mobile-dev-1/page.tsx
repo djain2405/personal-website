@@ -274,7 +274,7 @@ export default function AIAugmentedMobileDev1Post() {
             </ul>
 
             <p className="text-gray-700 mb-6 font-semibold">
-              That&apos;s how AI becomes a productivity partner — without lowering your bar.
+              That&apos;s how AI becomes a productivity partner, without lowering your bar.
             </p>
 
             <SeriesNavigation
