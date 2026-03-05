@@ -32,6 +32,23 @@ const composeMultiplatformSeries = {
   ]
 }
 
+const aiAugmentedMobileDevSeries = {
+  title: "The AI-Augmented Mobile Developer",
+  description: "Practical workflows to build faster, ship cleaner, and stay in control.",
+  stages: [
+    {
+      title: "My 30-Minute Daily Workflow",
+      slug: "ai-augmented-mobile-dev-1",
+      stage: 1
+    },
+    {
+      title: "5 Prompts I Reuse Constantly (Compose, SwiftUI, debugging, tests)",
+      slug: "ai-augmented-mobile-dev-2",
+      stage: 2
+    },
+  ]
+}
+
 const onDeviceAISeries = {
   title: "On-Device AI Series",
   description: "Building AI-powered mobile apps without cloud dependency",
@@ -60,6 +77,18 @@ const onDeviceAISeries = {
 }
 
 const blogPosts = [
+  {
+    id: 30,
+    title: "The AI-Augmented Mobile Developer #1: My 30-Minute Daily Workflow",
+    excerpt: "AI isn't replacing mobile developers. But it's becoming the best 'second brain' we've ever had, if you use it intentionally. Here's the 30-minute daily workflow I use to turn AI into a reliable coding copilot without losing engineering judgment.",
+    category: "AI Workflow",
+    readTime: "10 min read",
+    date: "2026-03-04",
+    slug: "ai-augmented-mobile-dev-1",
+    type: "deep-dive",
+    series: "ai-augmented-mobile-dev",
+    seriesStage: 1
+  },
   {
     id: 29,
     title: "What Makes a Mobile App Feel Trustworthy",
