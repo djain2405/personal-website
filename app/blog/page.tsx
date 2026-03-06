@@ -78,6 +78,18 @@ const onDeviceAISeries = {
 
 const blogPosts = [
   {
+    id: 31,
+    title: "The AI-Augmented Mobile Developer #2: 5 Prompts I Use Constantly",
+    excerpt: "The real productivity boost doesn't come from AI alone — it comes from good prompts. Here are five prompts I use almost every day while building mobile apps: from turning vague tasks into implementation plans, to running a quick pre-PR code review.",
+    category: "AI Workflow",
+    readTime: "8 min read",
+    date: "2026-03-05",
+    slug: "ai-augmented-mobile-dev-2",
+    type: "deep-dive",
+    series: "ai-augmented-mobile-dev",
+    seriesStage: 2
+  },
+  {
     id: 30,
     title: "The AI-Augmented Mobile Developer #1: My 30-Minute Daily Workflow",
     excerpt: "AI isn't replacing mobile developers. But it's becoming the best 'second brain' we've ever had, if you use it intentionally. Here's the 30-minute daily workflow I use to turn AI into a reliable coding copilot without losing engineering judgment.",
