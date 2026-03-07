@@ -42,9 +42,29 @@ const aiAugmentedMobileDevSeries = {
       stage: 1
     },
     {
-      title: "5 Prompts I Reuse Constantly (Compose, SwiftUI, debugging, tests)",
+      title: "5 Prompts I Use Constantly",
       slug: "ai-augmented-mobile-dev-2",
       stage: 2
+    },
+    {
+      title: "Debugging Mobile Bugs with AI",
+      slug: "ai-augmented-mobile-dev-3",
+      stage: 3
+    },
+    {
+      title: "Using AI to Learn New Mobile APIs Faster",
+      slug: "ai-augmented-mobile-dev-4",
+      stage: 4
+    },
+    {
+      title: "Using AI as a Second Code Reviewer",
+      slug: "ai-augmented-mobile-dev-5",
+      stage: 5
+    },
+    {
+      title: "Where AI Actually Fails in Mobile Development",
+      slug: "ai-augmented-mobile-dev-6",
+      stage: 6
     },
   ]
 }
@@ -77,6 +97,18 @@ const onDeviceAISeries = {
 }
 
 const blogPosts = [
+  {
+    id: 32,
+    title: "The AI-Augmented Mobile Developer #3: Debugging Mobile Bugs with AI",
+    excerpt: "AI is great at generating code. But one of the most underrated ways to use it is for debugging. Not because it magically knows the answer — but because it helps you reason faster. Here's how I use AI to debug stack traces, lifecycle bugs, concurrency problems, and weird UI behavior.",
+    category: "AI Workflow",
+    readTime: "8 min read",
+    date: "2026-03-07",
+    slug: "ai-augmented-mobile-dev-3",
+    type: "deep-dive",
+    series: "ai-augmented-mobile-dev",
+    seriesStage: 3
+  },
   {
     id: 31,
     title: "The AI-Augmented Mobile Developer #2: 5 Prompts I Use Constantly",

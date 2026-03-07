@@ -12,6 +12,25 @@ const seriesStages = [
     title: "5 Prompts I Use Constantly",
     slug: "ai-augmented-mobile-dev-2",
   },
+  {
+    title: "Debugging Mobile Bugs with AI",
+    slug: "ai-augmented-mobile-dev-3",
+  },
+  {
+    title: "Using AI to Learn New Mobile APIs Faster",
+    slug: "ai-augmented-mobile-dev-4",
+    comingSoon: true,
+  },
+  {
+    title: "Using AI as a Second Code Reviewer",
+    slug: "ai-augmented-mobile-dev-5",
+    comingSoon: true,
+  },
+  {
+    title: "Where AI Actually Fails in Mobile Development",
+    slug: "ai-augmented-mobile-dev-6",
+    comingSoon: true,
+  },
 ]
 
 const implementationPlanPrompt = `I'm building a mobile feature: [describe feature].
@@ -99,7 +118,7 @@ export default function AIAugmentedMobileDev2Post() {
                 AI Workflow
               </span>
               <span className="px-2 py-1 bg-gradient-to-r from-violet-50 to-purple-50 text-violet-700 text-xs font-medium rounded-md border border-violet-200">
-                Series &bull; 2/2
+                Series &bull; 2/6
               </span>
               <span className="text-sm text-gray-500">8 min read</span>
             </div>
@@ -268,7 +287,7 @@ export default function AIAugmentedMobileDev2Post() {
             <SeriesNavigation
               seriesTitle="The AI-Augmented Mobile Developer"
               currentStage={2}
-              totalStages={2}
+              totalStages={6}
               stages={seriesStages}
             />
           </div>
