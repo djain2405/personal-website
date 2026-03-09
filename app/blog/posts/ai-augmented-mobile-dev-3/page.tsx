@@ -19,7 +19,6 @@ const seriesStages = [
   {
     title: "Using AI to Learn New Mobile APIs Faster",
     slug: "ai-augmented-mobile-dev-4",
-    comingSoon: true,
   },
   {
     title: "Using AI as a Second Code Reviewer",

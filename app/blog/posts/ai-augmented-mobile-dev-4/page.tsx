@@ -32,57 +32,47 @@ const seriesStages = [
   },
 ]
 
-const implementationPlanPrompt = `I'm building a mobile feature: [describe feature].
+const conceptualOverviewPrompt = `Explain this mobile API like you would to an experienced developer.
 
-Context:
-- Platform: Android / iOS
-- Architecture: [MVVM / Clean / etc]
+Focus on:
+- what problem it solves
+- when it should be used
+- common mistakes developers make
+- how it fits into the platform architecture`
 
-Create a small implementation plan including:
-1. data model
-2. UI states
-3. edge cases
-4. test cases
-5. potential pitfalls`
+const minimalExamplePrompt = `Show a minimal example of using this API in a real mobile screen.
 
-const uiScaffoldingPrompt = `Generate a minimal Compose (or SwiftUI) screen that includes:
+Keep it simple and include:
+- the core API usage
+- the main UI state
+- comments explaining the important parts`
 
-- loading state
-- empty state
-- error state
-- success state
-
-Keep the implementation simple and readable.`
-
-const debugPrompt = `Here is a stack trace and the relevant code.
+const comparisonPrompt = `Compare this API to other approaches developers might already know.
 
 Explain:
-1. what the error means
-2. the three most likely causes
-3. the fastest way to confirm each cause`
+- how it differs
+- when it is better
+- when it should NOT be used`
 
-const refactorPrompt = `Refactor this code to improve:
+const pitfallsPrompt = `What are common pitfalls when using this API in production apps?
 
-- readability
-- naming
-- structure
+Focus on:
+- lifecycle issues
+- performance problems
+- incorrect assumptions developers make`
 
-Do not change the logic.
-Explain the improvements.`
+const checklistPrompt = `Turn this documentation into a short implementation checklist.
 
-const reviewPrompt = `Review this mobile code like a senior engineer.
+Include:
+- setup steps
+- required dependencies
+- lifecycle considerations
+- testing tips`
 
-Look for:
-- performance issues
-- lifecycle bugs
-- state management problems
-- edge cases
-- test gaps`
-
-export default function AIAugmentedMobileDev2Post() {
+export default function AIAugmentedMobileDev4Post() {
   const handleLinkedInShare = () => {
     const postUrl = window.location.href
-    const linkedInUrl = `https://www.linkedin.com/feed/?shareActive=true&text=The%20AI-Augmented%20Mobile%20Developer%20%232%3A%205%20Prompts%20I%20Use%20Constantly%20${encodeURIComponent(postUrl)}`
+    const linkedInUrl = `https://www.linkedin.com/feed/?shareActive=true&text=The%20AI-Augmented%20Mobile%20Developer%20%234%3A%20Using%20AI%20to%20Learn%20New%20Mobile%20APIs%20Faster%20${encodeURIComponent(postUrl)}`
     window.open(linkedInUrl, '_blank', 'width=600,height=400')
   }
 
@@ -117,15 +107,15 @@ export default function AIAugmentedMobileDev2Post() {
                 AI Workflow
               </span>
               <span className="px-2 py-1 bg-gradient-to-r from-violet-50 to-purple-50 text-violet-700 text-xs font-medium rounded-md border border-violet-200">
-                Series &bull; 2/6
+                Series &bull; 4/6
               </span>
-              <span className="text-sm text-gray-500">8 min read</span>
+              <span className="text-sm text-gray-500">7 min read</span>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              The AI-Augmented Mobile Developer #2: 5 Prompts I Use Constantly
+              The AI-Augmented Mobile Developer #4: Using AI to Learn New Mobile APIs Faster
             </h1>
             <div className="flex items-center mt-6 text-sm text-gray-500">
-              <span>Mar 5, 2026</span>
+              <span>Mar 8, 2026</span>
               <span className="mx-2">&bull;</span>
               <span>By Divya</span>
             </div>
@@ -134,158 +124,208 @@ export default function AIAugmentedMobileDev2Post() {
           {/* Post Content */}
           <div className="prose prose-lg max-w-none">
             <p className="text-gray-700 mb-6">
-              In the first post of this series, I shared my 30-minute AI workflow for mobile development.
-            </p>
-
-            <p className="text-gray-700 mb-6">
-              But the real productivity boost doesn&apos;t come from AI alone, it comes from good prompts.
-            </p>
-
-            <p className="text-gray-700 mb-6">
-              Over time, I&apos;ve settled on a small set of prompts that I use almost every day while building mobile apps.
-            </p>
-
-            <p className="text-gray-700 mb-6">
-              Here are five that consistently save me time.
-            </p>
-
-            <div className="border-t border-gray-300 my-6"></div>
-
-            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">1. Turn a vague task into an implementation plan</h2>
-
-            <p className="text-gray-700 mb-4">
-              Before writing code, I often ask AI to help structure the work.
-            </p>
-
-            <CodeSnippet
-              code={implementationPlanPrompt}
-              language="text"
-              title="Prompt (copy/paste)"
-              showLineNumbers={false}
-            />
-
-            <p className="text-gray-700 mb-4 font-semibold">Why this helps:</p>
-            <p className="text-gray-700 mb-6">
-              It converts a vague idea into a clear checklist.
-            </p>
-
-            <div className="border-t border-gray-300 my-6"></div>
-
-            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">2. Generate minimal UI scaffolding</h2>
-
-            <p className="text-gray-700 mb-4">
-              AI is excellent at turning a concept into a basic UI skeleton.
-            </p>
-
-            <CodeSnippet
-              code={uiScaffoldingPrompt}
-              language="text"
-              title="Prompt (copy/paste)"
-              showLineNumbers={false}
-            />
-
-            <p className="text-gray-700 mb-4 font-semibold">Why this helps:</p>
-            <p className="text-gray-700 mb-6">
-              You avoid staring at a blank file and can immediately start refining.
-            </p>
-
-            <div className="border-t border-gray-300 my-6"></div>
-
-            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">3. Debug a confusing error</h2>
-
-            <p className="text-gray-700 mb-4">
-              Instead of searching forums for an hour, I often paste the error and ask AI to reason through it.
-            </p>
-
-            <CodeSnippet
-              code={debugPrompt}
-              language="text"
-              title="Prompt (copy/paste)"
-              showLineNumbers={false}
-            />
-
-            <p className="text-gray-700 mb-4 font-semibold">Why this helps:</p>
-            <p className="text-gray-700 mb-6">
-              It turns debugging into hypothesis testing instead of guessing.
-            </p>
-
-            <div className="border-t border-gray-300 my-6"></div>
-
-            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">4. Refactor messy code</h2>
-
-            <p className="text-gray-700 mb-4">
-              AI is surprisingly good at improving readability.
-            </p>
-
-            <CodeSnippet
-              code={refactorPrompt}
-              language="text"
-              title="Prompt (copy/paste)"
-              showLineNumbers={false}
-            />
-
-            <p className="text-gray-700 mb-4 font-semibold">Why this helps:</p>
-            <p className="text-gray-700 mb-6">
-              You get a second opinion on code clarity.
-            </p>
-
-            <div className="border-t border-gray-300 my-6"></div>
-
-            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">5. Do a quick code review</h2>
-
-            <p className="text-gray-700 mb-4">
-              Before opening a PR, I often run one last check.
-            </p>
-
-            <CodeSnippet
-              code={reviewPrompt}
-              language="text"
-              title="Prompt (copy/paste)"
-              showLineNumbers={false}
-            />
-
-            <p className="text-gray-700 mb-4 font-semibold">Why this helps:</p>
-            <p className="text-gray-700 mb-6">
-              It often catches things that are easy to overlook.
-            </p>
-
-            <div className="border-t border-gray-300 my-6"></div>
-
-            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">The Real Trick</h2>
-
-            <p className="text-gray-700 mb-4">
-              The best prompts are not complicated.
+              Every year mobile platforms introduce new APIs.
             </p>
 
             <p className="text-gray-700 mb-4">
-              They are specific, structured, and grounded in real engineering tasks.
+              New UI frameworks.<br />
+              New authentication flows.<br />
+              New lifecycle behaviors.
+            </p>
+
+            <p className="text-gray-700 mb-4">
+              And learning them usually follows a familiar pattern:
+            </p>
+
+            <ul className="list-none pl-0 mb-6 text-gray-700 space-y-2">
+              <li>• Open the documentation</li>
+              <li>• Scroll through examples</li>
+              <li>• Search StackOverflow</li>
+              <li>• Try something</li>
+              <li>• Realize you misunderstood the API</li>
+            </ul>
+
+            <p className="text-gray-700 mb-4">
+              AI doesn&apos;t replace documentation.
             </p>
 
             <p className="text-gray-700 mb-6 font-semibold">
-              AI becomes useful when you treat it like a thought partner, not an autopilot.
+              But it can dramatically accelerate the learning loop.
+            </p>
+
+            <p className="text-gray-700 mb-6">
+              Here&apos;s how I use it when exploring new mobile APIs.
+            </p>
+
+            <div className="border-t border-gray-300 my-6"></div>
+
+            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">1. Start with a Conceptual Overview</h2>
+
+            <p className="text-gray-700 mb-4">
+              When approaching a new API, the first challenge is understanding what problem it actually solves.
+            </p>
+
+            <p className="text-gray-700 mb-4">
+              Instead of jumping straight into the docs, I ask AI to summarize the intent.
+            </p>
+
+            <CodeSnippet
+              code={conceptualOverviewPrompt}
+              language="text"
+              title="Prompt (copy/paste)"
+              showLineNumbers={false}
+            />
+
+            <p className="text-gray-700 mb-4">
+              This gives a mental model before diving into details.
+            </p>
+
+            <p className="text-gray-700 mb-6">
+              Once the concept is clear, the documentation becomes much easier to digest.
+            </p>
+
+            <div className="border-t border-gray-300 my-6"></div>
+
+            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">2. Ask for a Minimal Example</h2>
+
+            <p className="text-gray-700 mb-4">
+              Documentation examples are often large or overly abstract.
+            </p>
+
+            <p className="text-gray-700 mb-4">
+              AI is great at producing small, focused examples.
+            </p>
+
+            <CodeSnippet
+              code={minimalExamplePrompt}
+              language="text"
+              title="Prompt (copy/paste)"
+              showLineNumbers={false}
+            />
+
+            <p className="text-gray-700 mb-4">
+              The goal isn&apos;t production code.
+            </p>
+
+            <p className="text-gray-700 mb-6">
+              It&apos;s a small sandbox example you can understand quickly.
+            </p>
+
+            <div className="border-t border-gray-300 my-6"></div>
+
+            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">3. Compare It to What You Already Know</h2>
+
+            <p className="text-gray-700 mb-4">
+              One of the fastest ways to learn something new is by connecting it to something familiar.
+            </p>
+
+            <p className="text-gray-700 mb-4">
+              AI is useful for drawing these parallels.
+            </p>
+
+            <CodeSnippet
+              code={comparisonPrompt}
+              language="text"
+              title="Prompt (copy/paste)"
+              showLineNumbers={false}
+            />
+
+            <p className="text-gray-700 mb-4">
+              This helps answer the real question developers have:
+            </p>
+
+            <p className="text-gray-700 mb-6 font-semibold">
+              Why does this API exist?
+            </p>
+
+            <div className="border-t border-gray-300 my-6"></div>
+
+            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">4. Ask About Real-World Pitfalls</h2>
+
+            <p className="text-gray-700 mb-4">
+              The documentation rarely tells you where developers struggle.
+            </p>
+
+            <p className="text-gray-700 mb-4">
+              AI can help surface common mistakes.
+            </p>
+
+            <CodeSnippet
+              code={pitfallsPrompt}
+              language="text"
+              title="Prompt (copy/paste)"
+              showLineNumbers={false}
+            />
+
+            <p className="text-gray-700 mb-6">
+              These insights often save hours of trial and error.
+            </p>
+
+            <div className="border-t border-gray-300 my-6"></div>
+
+            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">5. Turn Documentation into a Checklist</h2>
+
+            <p className="text-gray-700 mb-4">
+              After reading about an API, I often ask AI to convert the information into something actionable.
+            </p>
+
+            <CodeSnippet
+              code={checklistPrompt}
+              language="text"
+              title="Prompt (copy/paste)"
+              showLineNumbers={false}
+            />
+
+            <p className="text-gray-700 mb-6">
+              Now instead of rereading documentation repeatedly, I have a clear set of steps to follow.
+            </p>
+
+            <div className="border-t border-gray-300 my-6"></div>
+
+            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">The Key Rule</h2>
+
+            <p className="text-gray-700 mb-4">
+              AI helps you understand APIs faster, but it should never replace the official documentation.
+            </p>
+
+            <p className="text-gray-700 mb-4">
+              The best workflow is:
+            </p>
+
+            <ul className="list-none pl-0 mb-6 text-gray-700 space-y-2">
+              <li>• Use AI to build the mental model</li>
+              <li>• Read the official docs</li>
+              <li>• Implement the feature</li>
+              <li>• Use AI again when debugging or refining</li>
+            </ul>
+
+            <p className="text-gray-700 mb-6 font-semibold">
+              Think of AI as a learning accelerator, not a documentation replacement.
             </p>
 
             <div className="border-t border-gray-300 my-6"></div>
 
             <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">TL;DR</h2>
 
-            <p className="text-gray-700 mb-4">Five prompts I use constantly:</p>
+            <p className="text-gray-700 mb-4">
+              AI can make learning new mobile APIs faster by helping you:
+            </p>
 
             <ul className="list-none pl-0 mb-6 text-gray-700 space-y-2">
-              <li>• Turn tasks into implementation plans</li>
-              <li>• Generate UI scaffolding</li>
-              <li>• Debug errors with hypotheses</li>
-              <li>• Refactor messy code</li>
-              <li>• Run a quick code review</li>
+              <li>• build a mental model first</li>
+              <li>• generate minimal examples</li>
+              <li>• compare with familiar patterns</li>
+              <li>• surface common pitfalls</li>
+              <li>• convert docs into implementation steps</li>
             </ul>
 
-            <p className="text-gray-700 mb-6">
-              Small habits, but they add up.
+            <p className="text-gray-700 mb-6 font-semibold">
+              The goal isn&apos;t to skip learning. It&apos;s to shorten the path to understanding.
             </p>
 
             <SeriesNavigation
               seriesTitle="The AI-Augmented Mobile Developer"
-              currentStage={2}
+              currentStage={4}
               totalStages={6}
               stages={seriesStages}
             />

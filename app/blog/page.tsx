@@ -98,6 +98,18 @@ const onDeviceAISeries = {
 
 const blogPosts = [
   {
+    id: 33,
+    title: "The AI-Augmented Mobile Developer #4: Using AI to Learn New Mobile APIs Faster",
+    excerpt: "Every year mobile platforms introduce new APIs. AI doesn't replace documentation — but it can dramatically accelerate the learning loop. Here are five prompts I use to build mental models, generate minimal examples, surface pitfalls, and turn docs into actionable checklists.",
+    category: "AI Workflow",
+    readTime: "7 min read",
+    date: "2026-03-08",
+    slug: "ai-augmented-mobile-dev-4",
+    type: "deep-dive",
+    series: "ai-augmented-mobile-dev",
+    seriesStage: 4
+  },
+  {
     id: 32,
     title: "The AI-Augmented Mobile Developer #3: Debugging Mobile Bugs with AI",
     excerpt: "AI is great at generating code. But one of the most underrated ways to use it is for debugging. Not because it magically knows the answer — but because it helps you reason faster. Here's how I use AI to debug stack traces, lifecycle bugs, concurrency problems, and weird UI behavior.",
