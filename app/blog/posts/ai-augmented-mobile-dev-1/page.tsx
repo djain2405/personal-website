@@ -23,7 +23,6 @@ const seriesStages = [
   {
     title: "Using AI as a Second Code Reviewer",
     slug: "ai-augmented-mobile-dev-5",
-    comingSoon: true,
   },
   {
     title: "Where AI Actually Fails in Mobile Development",
