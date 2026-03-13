@@ -98,6 +98,30 @@ const onDeviceAISeries = {
 
 const blogPosts = [
   {
+    id: 35,
+    title: "The AI-Augmented Mobile Developer #6: Where AI Actually Fails in Mobile Development",
+    excerpt: "AI can make mobile development faster, but it also has real limits. Here are the five places where I've learned to be most cautious: hallucinated APIs, lifecycle misunderstandings, concurrency bugs, architectural decisions, and product intent.",
+    category: "AI Workflow",
+    readTime: "6 min read",
+    date: "2026-03-12",
+    slug: "ai-augmented-mobile-dev-6",
+    type: "deep-dive",
+    series: "ai-augmented-mobile-dev",
+    seriesStage: 6
+  },
+  {
+    id: 34,
+    title: "The AI-Augmented Mobile Developer #5: Using AI as a Second Code Reviewer",
+    excerpt: "AI won't replace human code review, but it's a surprisingly effective way to catch issues before your PR goes out. Here's how I use it to check readability, surface edge cases, flag performance risks, and submit cleaner code.",
+    category: "AI Workflow",
+    readTime: "6 min read",
+    date: "2026-03-10",
+    slug: "ai-augmented-mobile-dev-5",
+    type: "deep-dive",
+    series: "ai-augmented-mobile-dev",
+    seriesStage: 5
+  },
+  {
     id: 33,
     title: "The AI-Augmented Mobile Developer #4: Using AI to Learn New Mobile APIs Faster",
     excerpt: "Every year mobile platforms introduce new APIs. AI doesn't replace documentation — but it can dramatically accelerate the learning loop. Here are five prompts I use to build mental models, generate minimal examples, surface pitfalls, and turn docs into actionable checklists.",

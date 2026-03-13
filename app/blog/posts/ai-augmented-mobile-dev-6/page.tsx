@@ -1,6 +1,5 @@
 'use client'
 import Link from 'next/link'
-import CodeSnippet from '../../components/CodeSnippet'
 import SeriesNavigation from '../../components/SeriesNavigation'
 
 const seriesStages = [
@@ -30,27 +29,10 @@ const seriesStages = [
   },
 ]
 
-const seniorReviewerPrompt = `Review this code like a senior mobile engineer.
-
-Focus on:
-- readability
-- edge cases
-- lifecycle issues
-- performance concerns
-- test coverage gaps
-
-Explain any problems and suggest improvements.`
-
-const edgeCasesPrompt = `Given this code, what edge cases might break it in a real mobile app?
-
-Focus on lifecycle events, state changes, and asynchronous behavior.`
-
-const checklistPrompt = `Based on your review, create a checklist of improvements I should consider before merging this code.`
-
-export default function AIAugmentedMobileDev5Post() {
+export default function AIAugmentedMobileDev6Post() {
   const handleLinkedInShare = () => {
     const postUrl = window.location.href
-    const linkedInUrl = `https://www.linkedin.com/feed/?shareActive=true&text=The%20AI-Augmented%20Mobile%20Developer%20%235%3A%20Using%20AI%20as%20a%20Second%20Code%20Reviewer%20${encodeURIComponent(postUrl)}`
+    const linkedInUrl = `https://www.linkedin.com/feed/?shareActive=true&text=The%20AI-Augmented%20Mobile%20Developer%20%236%3A%20Where%20AI%20Actually%20Fails%20in%20Mobile%20Development%20${encodeURIComponent(postUrl)}`
     window.open(linkedInUrl, '_blank', 'width=600,height=400')
   }
 
@@ -85,15 +67,15 @@ export default function AIAugmentedMobileDev5Post() {
                 AI Workflow
               </span>
               <span className="px-2 py-1 bg-gradient-to-r from-violet-50 to-purple-50 text-violet-700 text-xs font-medium rounded-md border border-violet-200">
-                Series &bull; 5/6
+                Series &bull; 6/6
               </span>
               <span className="text-sm text-gray-500">6 min read</span>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              The AI-Augmented Mobile Developer #5: Using AI as a Second Code Reviewer
+              The AI-Augmented Mobile Developer #6: Where AI Actually Fails in Mobile Development
             </h1>
             <div className="flex items-center mt-6 text-sm text-gray-500">
-              <span>Mar 10, 2026</span>
+              <span>Mar 12, 2026</span>
               <span className="mx-2">&bull;</span>
               <span>By Divya</span>
             </div>
@@ -102,224 +84,221 @@ export default function AIAugmentedMobileDev5Post() {
           {/* Post Content */}
           <div className="prose prose-lg max-w-none">
             <p className="text-gray-700 mb-6">
-              Most developers understand the value of a good code review.
+              AI can be incredibly useful for mobile developers.
             </p>
 
             <p className="text-gray-700 mb-4">
-              Another engineer can catch things you miss:
+              Over the past few posts in this series, I&apos;ve shared how I use it for:
             </p>
 
             <ul className="list-none pl-0 mb-6 text-gray-700 space-y-2">
-              <li>• edge cases</li>
-              <li>• confusing logic</li>
-              <li>• performance problems</li>
-              <li>• architectural drift</li>
+              <li>• planning features</li>
+              <li>• debugging issues</li>
+              <li>• learning new APIs</li>
+              <li>• reviewing code</li>
             </ul>
 
             <p className="text-gray-700 mb-4">
-              But code reviews don&apos;t always happen instantly.
+              Used well, AI can make development faster and more thoughtful.
             </p>
 
             <p className="text-gray-700 mb-4">
-              Sometimes you want a quick sanity check before opening a PR.
-            </p>
-
-            <p className="text-gray-700 mb-4">
-              That&apos;s where AI can be surprisingly useful.
+              But it&apos;s equally important to understand where AI doesn&apos;t work well.
             </p>
 
             <p className="text-gray-700 mb-6 font-semibold">
-              Not as a replacement for human review, but as a second set of eyes before the code leaves your branch.
+              Because the moment you trust it blindly, it will eventually lead you in the wrong direction.
+            </p>
+
+            <p className="text-gray-700 mb-6">
+              Here are the places where I&apos;ve learned to be the most cautious.
             </p>
 
             <div className="border-t border-gray-300 my-6"></div>
 
-            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">Why AI Works Well for Early Code Review</h2>
+            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">1. Hallucinated APIs</h2>
 
             <p className="text-gray-700 mb-4">
-              When you&apos;ve been staring at a piece of code for hours, it&apos;s easy to miss problems.
+              One of the most common issues is AI suggesting APIs that don&apos;t exist.
             </p>
 
             <p className="text-gray-700 mb-4">
-              AI has one advantage:
-            </p>
-
-            <p className="text-gray-700 mb-4 font-semibold">
-              It looks at the code with zero context bias.
-            </p>
-
-            <p className="text-gray-700 mb-4">
-              That makes it good at spotting things like:
+              Sometimes it will:
             </p>
 
             <ul className="list-none pl-0 mb-6 text-gray-700 space-y-2">
-              <li>• unclear naming</li>
-              <li>• duplicated logic</li>
-              <li>• missing edge cases</li>
-              <li>• questionable structure</li>
-            </ul>
-
-            <p className="text-gray-700 mb-6">
-              It&apos;s not perfect, but it&apos;s often enough to catch obvious issues early.
-            </p>
-
-            <div className="border-t border-gray-300 my-6"></div>
-
-            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">1. Ask AI to Review Like a Senior Engineer</h2>
-
-            <p className="text-gray-700 mb-4">
-              Instead of asking &ldquo;Is this code good?&rdquo;, give AI a clear review role.
-            </p>
-
-            <CodeSnippet
-              code={seniorReviewerPrompt}
-              language="text"
-              title="Prompt (copy/paste)"
-              showLineNumbers={false}
-            />
-
-            <p className="text-gray-700 mb-6">
-              This encourages feedback that&apos;s closer to what you&apos;d get in a real review.
-            </p>
-
-            <div className="border-t border-gray-300 my-6"></div>
-
-            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">2. Catch Readability Problems</h2>
-
-            <p className="text-gray-700 mb-4">
-              Code reviews often focus heavily on readability.
-            </p>
-
-            <p className="text-gray-700 mb-4">
-              AI is surprisingly good at identifying:
-            </p>
-
-            <ul className="list-none pl-0 mb-6 text-gray-700 space-y-2">
-              <li>• confusing function names</li>
-              <li>• deeply nested logic</li>
-              <li>• overly complex functions</li>
-              <li>• inconsistent patterns</li>
+              <li>• invent method names</li>
+              <li>• reference outdated APIs</li>
+              <li>• mix different platform versions</li>
+              <li>• combine concepts from multiple frameworks</li>
             </ul>
 
             <p className="text-gray-700 mb-4">
-              Sometimes the suggestions are simple, but useful.
+              The code can look convincing, but still be incorrect.
+            </p>
+
+            <p className="text-gray-700 mb-6 font-semibold">
+              This is why official documentation should always remain the source of truth.
+            </p>
+
+            <p className="text-gray-700 mb-6">
+              AI can help explain APIs, but it shouldn&apos;t replace verifying them.
+            </p>
+
+            <div className="border-t border-gray-300 my-6"></div>
+
+            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">2. Lifecycle Misunderstandings</h2>
+
+            <p className="text-gray-700 mb-4">
+              Mobile platforms are deeply tied to lifecycle behavior.
             </p>
 
             <p className="text-gray-700 mb-4">
-              Example feedback might include:
+              Screens appear and disappear. Activities pause. Views are destroyed and recreated.
+            </p>
+
+            <p className="text-gray-700 mb-4">
+              AI often struggles with these details because lifecycle behavior is:
             </p>
 
             <ul className="list-none pl-0 mb-6 text-gray-700 space-y-2">
-              <li>• breaking a function into smaller parts</li>
-              <li>• improving naming</li>
-              <li>• extracting reusable components</li>
+              <li>• context-specific</li>
+              <li>• platform-dependent</li>
+              <li>• tightly coupled to architecture</li>
             </ul>
 
-            <p className="text-gray-700 mb-6">
-              Small improvements like these make future maintenance easier.
-            </p>
-
-            <div className="border-t border-gray-300 my-6"></div>
-
-            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">3. Surface Edge Cases You Didn&apos;t Consider</h2>
-
             <p className="text-gray-700 mb-4">
-              Another strong use case is edge case discovery.
-            </p>
-
-            <p className="text-gray-700 mb-4">
-              You might have tested the happy path, but forgotten scenarios like:
+              It might suggest code that looks correct but fails when:
             </p>
 
             <ul className="list-none pl-0 mb-6 text-gray-700 space-y-2">
-              <li>• empty data</li>
-              <li>• partial results</li>
-              <li>• race conditions</li>
-              <li>• configuration changes</li>
+              <li>• the device rotates</li>
+              <li>• the app backgrounds</li>
+              <li>• the screen recomposes</li>
             </ul>
 
-            <CodeSnippet
-              code={edgeCasesPrompt}
-              language="text"
-              title="Prompt (copy/paste)"
-              showLineNumbers={false}
-            />
-
-            <p className="text-gray-700 mb-6">
-              Even if the suggestions aren&apos;t perfect, they often highlight cases worth testing.
+            <p className="text-gray-700 mb-6 font-semibold">
+              This is where experience still matters most.
             </p>
 
             <div className="border-t border-gray-300 my-6"></div>
 
-            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">4. Identify Potential Performance Issues</h2>
+            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">3. Concurrency and Asynchronous Logic</h2>
 
             <p className="text-gray-700 mb-4">
-              AI can also flag patterns that might cause performance issues.
+              Concurrency bugs are already difficult for humans.
             </p>
 
             <p className="text-gray-700 mb-4">
-              For example:
+              AI can sometimes produce code that:
             </p>
 
             <ul className="list-none pl-0 mb-6 text-gray-700 space-y-2">
-              <li>• unnecessary recompositions</li>
-              <li>• expensive work in UI layers</li>
-              <li>• repeated data transformations</li>
-              <li>• blocking operations on the main thread</li>
+              <li>• ignores cancellation</li>
+              <li>• introduces race conditions</li>
+              <li>• assumes ordering guarantees that don&apos;t exist</li>
             </ul>
 
-            <p className="text-gray-700 mb-6">
-              It&apos;s not a profiler, but it can point out suspicious patterns.
+            <p className="text-gray-700 mb-4">
+              Because these issues often appear only under specific timing conditions, they are easy to miss.
+            </p>
+
+            <p className="text-gray-700 mb-6 font-semibold">
+              AI-generated code involving asynchronous work should always be reviewed carefully.
             </p>
 
             <div className="border-t border-gray-300 my-6"></div>
 
-            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">5. Turn Feedback Into Action</h2>
+            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">4. Large Architectural Decisions</h2>
 
             <p className="text-gray-700 mb-4">
-              One useful trick is asking AI to convert feedback into a small checklist.
-            </p>
-
-            <CodeSnippet
-              code={checklistPrompt}
-              language="text"
-              title="Prompt (copy/paste)"
-              showLineNumbers={false}
-            />
-
-            <p className="text-gray-700 mb-6">
-              This helps you turn vague feedback into concrete fixes.
-            </p>
-
-            <div className="border-t border-gray-300 my-6"></div>
-
-            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">The Important Limitation</h2>
-
-            <p className="text-gray-700 mb-4">
-              AI is not a substitute for real code review.
+              AI is very good at helping with local problems.
             </p>
 
             <p className="text-gray-700 mb-4">
-              It lacks:
+              But it&apos;s much weaker at guiding big architectural choices.
+            </p>
+
+            <p className="text-gray-700 mb-4">
+              Things like:
             </p>
 
             <ul className="list-none pl-0 mb-6 text-gray-700 space-y-2">
-              <li>• full project context</li>
-              <li>• product knowledge</li>
-              <li>• architectural history</li>
+              <li>• module boundaries</li>
+              <li>• data flow patterns</li>
+              <li>• long-term maintainability</li>
               <li>• team conventions</li>
             </ul>
 
             <p className="text-gray-700 mb-4">
-              Human reviewers are still essential.
-            </p>
-
-            <p className="text-gray-700 mb-4">
-              But AI can help you arrive at the review in better shape.
+              These decisions depend heavily on context.
             </p>
 
             <p className="text-gray-700 mb-6 font-semibold">
-              Think of it as preparing your code before others see it.
+              And context is something AI rarely has.
+            </p>
+
+            <div className="border-t border-gray-300 my-6"></div>
+
+            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">5. Understanding Product Intent</h2>
+
+            <p className="text-gray-700 mb-4">
+              Perhaps the biggest limitation is that AI does not understand the product.
+            </p>
+
+            <p className="text-gray-700 mb-4">
+              It doesn&apos;t know:
+            </p>
+
+            <ul className="list-none pl-0 mb-6 text-gray-700 space-y-2">
+              <li>• what matters most to users</li>
+              <li>• the tradeoffs the team has made</li>
+              <li>• the constraints behind a feature</li>
+            </ul>
+
+            <p className="text-gray-700 mb-4">
+              It can help write code.
+            </p>
+
+            <p className="text-gray-700 mb-6 font-semibold">
+              But it cannot decide what should be built. That&apos;s still a human responsibility.
+            </p>
+
+            <div className="border-t border-gray-300 my-6"></div>
+
+            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">The Real Role of AI</h2>
+
+            <p className="text-gray-700 mb-4">
+              After experimenting with AI in my development workflow, the most useful way to think about it is this:
+            </p>
+
+            <p className="text-gray-700 mb-4 font-semibold">
+              AI is not an autopilot. It&apos;s a thinking partner.
+            </p>
+
+            <p className="text-gray-700 mb-4">
+              It can:
+            </p>
+
+            <ul className="list-none pl-0 mb-6 text-gray-700 space-y-2">
+              <li>• help explore ideas</li>
+              <li>• speed up debugging</li>
+              <li>• surface blind spots</li>
+              <li>• accelerate learning</li>
+            </ul>
+
+            <p className="text-gray-700 mb-4">
+              But good engineering still depends on:
+            </p>
+
+            <ul className="list-none pl-0 mb-6 text-gray-700 space-y-2">
+              <li>• judgment</li>
+              <li>• experience</li>
+              <li>• careful reasoning</li>
+            </ul>
+
+            <p className="text-gray-700 mb-6 font-semibold">
+              AI can amplify those skills, but it can&apos;t replace them.
             </p>
 
             <div className="border-t border-gray-300 my-6"></div>
@@ -327,27 +306,57 @@ export default function AIAugmentedMobileDev5Post() {
             <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">TL;DR</h2>
 
             <p className="text-gray-700 mb-4">
-              AI can act as a useful second reviewer when you use it to:
+              AI can make mobile development faster, but it struggles with:
             </p>
 
             <ul className="list-none pl-0 mb-6 text-gray-700 space-y-2">
-              <li>• check readability</li>
-              <li>• surface edge cases</li>
-              <li>• flag performance risks</li>
-              <li>• challenge your assumptions</li>
+              <li>• hallucinated APIs</li>
+              <li>• lifecycle complexity</li>
+              <li>• concurrency logic</li>
+              <li>• architectural decisions</li>
+              <li>• product intent</li>
+            </ul>
+
+            <p className="text-gray-700 mb-6 font-semibold">
+              Use AI to assist your thinking, not replace it. That&apos;s where it becomes most valuable.
+            </p>
+
+            <div className="border-t border-gray-300 my-6"></div>
+
+            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">Closing the Series</h2>
+
+            <p className="text-gray-700 mb-4">
+              This wraps up the AI-Augmented Mobile Developer series.
+            </p>
+
+            <p className="text-gray-700 mb-4">
+              Across these six posts, we explored how AI can help with:
+            </p>
+
+            <ul className="list-none pl-0 mb-6 text-gray-700 space-y-2">
+              <li>• daily development workflows</li>
+              <li>• useful prompt patterns</li>
+              <li>• debugging complex bugs</li>
+              <li>• learning new APIs</li>
+              <li>• reviewing code</li>
+              <li>• understanding the limits of AI</li>
             </ul>
 
             <p className="text-gray-700 mb-4">
-              It won&apos;t replace human feedback.
+              Used thoughtfully, AI can make us more effective developers.
+            </p>
+
+            <p className="text-gray-700 mb-4">
+              But the goal isn&apos;t to write less code.
             </p>
 
             <p className="text-gray-700 mb-6 font-semibold">
-              But it can help you submit cleaner, more thoughtful code.
+              It&apos;s to think better while writing it.
             </p>
 
             <SeriesNavigation
               seriesTitle="The AI-Augmented Mobile Developer"
-              currentStage={5}
+              currentStage={6}
               totalStages={6}
               stages={seriesStages}
             />

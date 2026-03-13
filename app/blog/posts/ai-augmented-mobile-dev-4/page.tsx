@@ -27,7 +27,6 @@ const seriesStages = [
   {
     title: "Where AI Actually Fails in Mobile Development",
     slug: "ai-augmented-mobile-dev-6",
-    comingSoon: true,
   },
 ]
 
