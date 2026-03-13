@@ -96,6 +96,12 @@ const onDeviceAISeries = {
   ]
 }
 
+const seriesTotalStages: Record<string, number> = {
+  'compose-multiplatform': composeMultiplatformSeries.stages.length,
+  'ai-augmented-mobile-dev': aiAugmentedMobileDevSeries.stages.length,
+  'on-device-ai': onDeviceAISeries.stages.length,
+}
+
 const blogPosts = [
   {
     id: 35,
@@ -522,7 +528,7 @@ export default function BlogPage() {
                     )}
                     {post.series && (
                       <span className="px-2 py-1 bg-gradient-to-r from-violet-50 to-purple-50 text-violet-700 text-xs font-medium rounded-md border border-violet-200">
-                        Series • {post.seriesStage}/4
+                        Series • {post.seriesStage}/{post.series ? seriesTotalStages[post.series] : ''}
                       </span>
                     )}
                     <span className="text-sm text-gray-500">{post.readTime}</span>
