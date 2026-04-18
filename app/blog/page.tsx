@@ -104,6 +104,17 @@ const seriesTotalStages: Record<string, number> = {
 
 const blogPosts = [
   {
+    id: 36,
+    title: "The 3 AI Features That Actually Make Mobile Apps Better",
+    excerpt: "AI is everywhere in mobile apps - but most features don't actually help users. Here are the three that consistently do: summarization, smart suggestions, and classification. Plus what usually doesn't work.",
+    category: "Mobile AI",
+    readTime: "5 min read",
+    date: "2026-04-18",
+    slug: "ai-features-mobile-apps",
+    type: "deep-dive",
+    isLatest: true,
+  },
+  {
     id: 35,
     title: "The AI-Augmented Mobile Developer #6: Where AI Actually Fails in Mobile Development",
     excerpt: "AI can make mobile development faster, but it also has real limits. Here are the five places where I've learned to be most cautious: hallucinated APIs, lifecycle misunderstandings, concurrency bugs, architectural decisions, and product intent.",
@@ -516,6 +527,11 @@ export default function BlogPage() {
                     <span className="px-3 py-1 bg-blue-50 text-blue-700 text-sm font-medium rounded-md border border-blue-200">
                       {post.category}
                     </span>
+                    {post.isLatest && (
+                      <span className="px-2 py-1 bg-green-50 text-green-700 text-xs font-semibold rounded-md border border-green-200">
+                        New
+                      </span>
+                    )}
                     {post.type === 'guide' && (
                       <span className="px-2 py-1 bg-emerald-50 text-emerald-700 text-xs font-medium rounded-md border border-emerald-200">
                         Guide
