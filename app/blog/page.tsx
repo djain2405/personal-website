@@ -69,6 +69,28 @@ const aiAugmentedMobileDevSeries = {
   ]
 }
 
+const onDeviceFitnessCoachSeries = {
+  title: "On-Device Fitness Coach",
+  description: "Architecture-first on-device AI through a simple local fitness insight app",
+  stages: [
+    {
+      title: "On-Device AI Is a Decision, Not a Trend",
+      slug: "on-device-fitness-coach/architecture-decision",
+      stage: 1
+    },
+    {
+      title: "On-Device AI Decision Scorecard",
+      slug: "on-device-fitness-coach/decision-scorecard",
+      stage: 2
+    },
+    {
+      title: "Choosing the Right Android AI Stack",
+      slug: "on-device-fitness-coach/android-ai-stack",
+      stage: 3
+    },
+  ]
+}
+
 const onDeviceAISeries = {
   title: "On-Device AI Series",
   description: "Building AI-powered mobile apps without cloud dependency",
@@ -100,9 +122,35 @@ const seriesTotalStages: Record<string, number> = {
   'compose-multiplatform': composeMultiplatformSeries.stages.length,
   'ai-augmented-mobile-dev': aiAugmentedMobileDevSeries.stages.length,
   'on-device-ai': onDeviceAISeries.stages.length,
+  'on-device-fitness-coach': onDeviceFitnessCoachSeries.stages.length,
 }
 
 const blogPosts = [
+  {
+    id: 38,
+    title: "On-Device Fitness Coach #2: On-Device AI Decision Scorecard",
+    excerpt: "Score your AI feature on Privacy, Latency, Availability, Cost, and Engineering Complexity. Use the interactive scorecard to see whether cloud, hybrid, or on-device fits before you pick an SDK.",
+    category: "On-Device AI",
+    readTime: "9 min read",
+    date: "2026-07-28",
+    slug: "on-device-fitness-coach/decision-scorecard",
+    type: "deep-dive",
+    series: "on-device-fitness-coach",
+    seriesStage: 2,
+    isLatest: true,
+  },
+  {
+    id: 37,
+    title: "On-Device Fitness Coach #1: On-Device AI Is a Decision, Not a Trend",
+    excerpt: "Before SDKs or models, decide where intelligence should live. Walk through the PLACE framework (Privacy, Latency, Availability, Cost, Engineering Complexity) and how it shapes a simple on-device fitness coach.",
+    category: "On-Device AI",
+    readTime: "10 min read",
+    date: "2026-07-28",
+    slug: "on-device-fitness-coach/architecture-decision",
+    type: "deep-dive",
+    series: "on-device-fitness-coach",
+    seriesStage: 1,
+  },
   {
     id: 36,
     title: "The 3 AI Features That Actually Make Mobile Apps Better",
@@ -112,7 +160,6 @@ const blogPosts = [
     date: "2026-04-18",
     slug: "ai-features-mobile-apps",
     type: "deep-dive",
-    isLatest: true,
   },
   {
     id: 35,
