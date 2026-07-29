@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Android On-Device AI Stack Cheat Sheet</title>
+  <style>
+    @page {
+      size: letter;
+      margin: 0.45in;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      color: #111827;
+      font-size: 9.5pt;
+      line-height: 1.35;
+      background: #fff;
+    }
+    h1 {
+      margin: 0 0 4px;
+      font-size: 16pt;
+      color: #1e1b4b;
+    }
+    .subtitle {
+      margin: 0 0 10px;
+      font-size: 10pt;
+      color: #4b5563;
+      font-weight: 600;
+    }
+    .rule {
+      height: 3px;
+      width: 100%;
+      background: linear-gradient(90deg, #2563eb, #7c3aed);
+      margin-bottom: 12px;
+      border-radius: 2px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 14px;
+      font-size: 8pt;
+    }
+    th, td {
+      border: 1px solid #e5e7eb;
+      padding: 6px 7px;
+      vertical-align: top;
+      text-align: left;
+    }
+    th {
+      background: #f5f3ff;
+      color: #1e1b4b;
+      font-weight: 700;
+    }
+    tr:nth-child(even) td { background: #fafafa; }
+    h2 {
+      margin: 0 0 8px;
+      font-size: 11pt;
+      color: #1e1b4b;
+    }
+    ol {
+      margin: 0 0 12px;
+      padding-left: 18px;
+    }
+    li { margin-bottom: 5px; }
+    li strong { color: #1e3a8a; }
+    .footer {
+      margin-top: 10px;
+      padding-top: 8px;
+      border-top: 1px solid #e5e7eb;
+      font-size: 7.5pt;
+      color: #6b7280;
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Android On-Device AI Stack Cheat Sheet</h1>
+  <p class="subtitle">Start with the task, not the SDK.</p>
+  <div class="rule"></div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Option</th>
+        <th>Best for</th>
+        <th>What your team owns</th>
+        <th>Complexity</th>
+        <th>Device considerations</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>ML Kit task APIs</strong></td>
+        <td>Common, well-defined vision and language tasks</td>
+        <td>Product integration, state, errors, and UX</td>
+        <td>Low</td>
+        <td>Often broad, but varies by API and delivery mode</td>
+      </tr>
+      <tr>
+        <td><strong>ML Kit GenAI APIs + Gemini Nano</strong></td>
+        <td>On-device summarization, rewriting, prompting, and short generated output</td>
+        <td>Prompting, evaluation, availability handling, and UX</td>
+        <td>Moderate</td>
+        <td>Supported devices only; runtime status must be checked</td>
+      </tr>
+      <tr>
+        <td><strong>MediaPipe Tasks</strong></td>
+        <td>Customizable vision, audio, gesture, and live media pipelines</td>
+        <td>Pipeline configuration, model choice, and performance</td>
+        <td>Moderate</td>
+        <td>Depends on the task, model, input mode, and hardware</td>
+      </tr>
+      <tr>
+        <td><strong>LiteRT / LiteRT-LM</strong></td>
+        <td>Custom ML or generative models that need deeper runtime control</td>
+        <td>Model selection, optimization, delivery, compatibility, and lifecycle</td>
+        <td>High</td>
+        <td>Depends heavily on the model and target devices</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>A Quick Decision Path</h2>
+  <ol>
+    <li><strong>Common, well-defined task?</strong> (OCR, barcode, translation, face detection) → Start with an <strong>ML Kit task-specific API</strong>.</li>
+    <li><strong>Short on-device generated text or structured output?</strong> (summarization, rewriting, guided insight) → Evaluate <strong>ML Kit GenAI APIs powered by Gemini Nano</strong>.</li>
+    <li><strong>Customizable vision, audio, gesture, or live media?</strong> (pose, segmentation, gestures) → Evaluate <strong>MediaPipe Tasks</strong>.</li>
+    <li><strong>Bring your own model or deep runtime control?</strong> Traditional ML → <strong>LiteRT</strong>. On-device LLM → <strong>LiteRT-LM</strong>.</li>
+    <li><strong>One path cannot cover all requirements?</strong> Use a <strong>hybrid architecture</strong>, with each implementation behind the same product interface.</li>
+  </ol>
+
+  <div class="footer">
+    <span>Mobile With Me · On-Device Fitness Coach series</span>
+    <span>divyajain.dev/blog/posts/on-device-fitness-coach/android-ai-stack</span>
+  </div>
+</body>
+</html>

@@ -14,8 +14,12 @@ const seriesStages = [
     slug: 'on-device-fitness-coach/decision-scorecard',
   },
   {
-    title: 'Choosing the Right Android AI Stack',
+    title: "Too Many On-Device AI Options? Here's How to Actually Choose",
     slug: 'on-device-fitness-coach/android-ai-stack',
+  },
+  {
+    title: 'Building Fitness Coach with Compose and FitnessInsightEngine',
+    slug: 'on-device-fitness-coach/production-architecture',
     comingSoon: true,
   },
 ]
@@ -55,7 +59,7 @@ export default function OnDeviceFitnessCoachPart2Post() {
                 On-Device AI
               </span>
               <span className="px-2 py-1 bg-gradient-to-r from-violet-50 to-purple-50 text-violet-700 text-xs font-medium rounded-md border border-violet-200">
-                Series &bull; 2/3
+                Series &bull; 2/4
               </span>
               <span className="text-sm text-gray-500">9 min read</span>
             </div>
@@ -220,7 +224,7 @@ export default function OnDeviceFitnessCoachPart2Post() {
             <SeriesNavigation
               seriesTitle="On-Device Fitness Coach"
               currentStage={2}
-              totalStages={3}
+              totalStages={4}
               stages={seriesStages}
             />
           </div>

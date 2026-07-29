@@ -463,7 +463,7 @@ export default function Home() {
 
           {/* Featured Post */}
           <motion.div variants={fadeInUp} className="mb-12">
-            <Link href="/blog/posts/on-device-fitness-coach/decision-scorecard">
+            <Link href="/blog/posts/on-device-fitness-coach/android-ai-stack">
               <div className="bg-gradient-to-r from-purple-600 to-blue-600 p-8 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 group cursor-pointer relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -mr-16 -mt-16"></div>
                 <div className="absolute bottom-0 left-0 w-24 h-24 bg-white/10 rounded-full -ml-12 -mb-12"></div>
@@ -477,22 +477,22 @@ export default function Home() {
                       On-Device AI
                     </span>
                     <span className="px-3 py-1 bg-white/20 text-white text-sm font-medium rounded-full backdrop-blur-sm">
-                      Series · 2/3
+                      Series · 3/4
                     </span>
                   </div>
 
                   <h3 className="text-3xl font-bold text-white mb-4 group-hover:translate-x-2 transition-transform">
-                    On-Device Fitness Coach #2: On-Device AI Decision Scorecard
+                    On-Device Fitness Coach #3: Too Many On-Device AI Options? Here&apos;s How to Actually Choose
                   </h3>
 
                   <p className="text-white/90 text-lg mb-6">
-                    Score your AI feature on Privacy, Latency, Availability, Cost, and Engineering Complexity. Use the interactive scorecard to see whether cloud, hybrid, or on-device fits before you pick an SDK.
+                    ML Kit, MediaPipe, LiteRT, Gemini Nano - start with the task, then pick the stack. Includes a Fitness Coach decision record and a downloadable one-page cheat sheet.
                   </p>
 
                   <div className="flex items-center gap-4 text-white/80 text-sm">
-                    <span>Jul 28, 2026</span>
+                    <span>Jul 29, 2026</span>
                     <span>•</span>
-                    <span>9 min read</span>
+                    <span>12 min read</span>
                   </div>
 
                   <div className="mt-6 inline-flex items-center gap-2 text-white font-semibold group-hover:gap-3 transition-all">

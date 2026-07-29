@@ -84,9 +84,14 @@ const onDeviceFitnessCoachSeries = {
       stage: 2
     },
     {
-      title: "Choosing the Right Android AI Stack",
+      title: "Too Many On-Device AI Options? Here's How to Actually Choose",
       slug: "on-device-fitness-coach/android-ai-stack",
       stage: 3
+    },
+    {
+      title: "Building Fitness Coach with Compose and FitnessInsightEngine",
+      slug: "on-device-fitness-coach/production-architecture",
+      stage: 4
     },
   ]
 }
@@ -127,6 +132,19 @@ const seriesTotalStages: Record<string, number> = {
 
 const blogPosts = [
   {
+    id: 39,
+    title: "On-Device Fitness Coach #3: Too Many On-Device AI Options? Here's How to Actually Choose",
+    excerpt: "ML Kit, MediaPipe, LiteRT, Gemini Nano - start with the task, then pick the stack. Includes a Fitness Coach decision record, FitnessInsightEngine abstraction, and a downloadable one-page cheat sheet.",
+    category: "On-Device AI",
+    readTime: "12 min read",
+    date: "2026-07-29",
+    slug: "on-device-fitness-coach/android-ai-stack",
+    type: "deep-dive",
+    series: "on-device-fitness-coach",
+    seriesStage: 3,
+    isLatest: true,
+  },
+  {
     id: 38,
     title: "On-Device Fitness Coach #2: On-Device AI Decision Scorecard",
     excerpt: "Score your AI feature on Privacy, Latency, Availability, Cost, and Engineering Complexity. Use the interactive scorecard to see whether cloud, hybrid, or on-device fits before you pick an SDK.",
@@ -137,7 +155,6 @@ const blogPosts = [
     type: "deep-dive",
     series: "on-device-fitness-coach",
     seriesStage: 2,
-    isLatest: true,
   },
   {
     id: 37,
