@@ -89,7 +89,7 @@ const onDeviceFitnessCoachSeries = {
       stage: 3
     },
     {
-      title: "Building Fitness Coach with Compose and FitnessInsightEngine",
+      title: "A Production-Ready Architecture for On-Device AI on Android",
       slug: "on-device-fitness-coach/production-architecture",
       stage: 4
     },
@@ -132,6 +132,19 @@ const seriesTotalStages: Record<string, number> = {
 
 const blogPosts = [
   {
+    id: 40,
+    title: "On-Device Fitness Coach #4: A Production-Ready Architecture for On-Device AI on Android",
+    excerpt: "Hide Gemini Nano behind FitnessInsightEngine. Compose, ViewModel, use case, and a swappable engine seam - plus a starter Android Studio project you can clone and run.",
+    category: "On-Device AI",
+    readTime: "11 min read",
+    date: "2026-08-04",
+    slug: "on-device-fitness-coach/production-architecture",
+    type: "deep-dive",
+    series: "on-device-fitness-coach",
+    seriesStage: 4,
+    isLatest: true,
+  },
+  {
     id: 39,
     title: "On-Device Fitness Coach #3: Too Many On-Device AI Options? Here's How to Actually Choose",
     excerpt: "ML Kit, MediaPipe, LiteRT, Gemini Nano - start with the task, then pick the stack. Includes a Fitness Coach decision record, FitnessInsightEngine abstraction, and a downloadable one-page cheat sheet.",
@@ -142,7 +155,6 @@ const blogPosts = [
     type: "deep-dive",
     series: "on-device-fitness-coach",
     seriesStage: 3,
-    isLatest: true,
   },
   {
     id: 38,

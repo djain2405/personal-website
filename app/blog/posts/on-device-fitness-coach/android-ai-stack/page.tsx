@@ -20,9 +20,8 @@ const seriesStages = [
     slug: 'on-device-fitness-coach/android-ai-stack',
   },
   {
-    title: 'Building Fitness Coach with Compose and FitnessInsightEngine',
+    title: 'A Production-Ready Architecture for On-Device AI on Android',
     slug: 'on-device-fitness-coach/production-architecture',
-    comingSoon: true,
   },
 ]
 
