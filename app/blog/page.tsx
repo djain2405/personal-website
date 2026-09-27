@@ -93,6 +93,11 @@ const onDeviceFitnessCoachSeries = {
       slug: "on-device-fitness-coach/production-architecture",
       stage: 4
     },
+    {
+      title: "Your AI Model Is Not Always Ready",
+      slug: "on-device-fitness-coach/ai-readiness",
+      stage: 5
+    },
   ]
 }
 
@@ -132,6 +137,19 @@ const seriesTotalStages: Record<string, number> = {
 
 const blogPosts = [
   {
+    id: 41,
+    title: "On-Device Fitness Coach #5: Your AI Model Is Not Always Ready",
+    excerpt: "AVAILABLE is not the same as ready. Fitness Coach gets its own readiness lifecycle — check, download, warm-up, and retry — so Generate insight only turns on when Gemini Nano can actually run.",
+    category: "On-Device AI",
+    readTime: "14 min read",
+    date: "2026-09-27",
+    slug: "on-device-fitness-coach/ai-readiness",
+    type: "deep-dive",
+    series: "on-device-fitness-coach",
+    seriesStage: 5,
+    isLatest: true,
+  },
+  {
     id: 40,
     title: "On-Device Fitness Coach #4: A Production-Ready Architecture for On-Device AI on Android",
     excerpt: "Hide Gemini Nano behind FitnessInsightEngine. Compose, ViewModel, use case, and a swappable engine seam - plus a starter Android Studio project you can clone and run.",
@@ -142,7 +160,6 @@ const blogPosts = [
     type: "deep-dive",
     series: "on-device-fitness-coach",
     seriesStage: 4,
-    isLatest: true,
   },
   {
     id: 39,

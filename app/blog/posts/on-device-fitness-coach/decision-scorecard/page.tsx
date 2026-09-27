@@ -21,6 +21,10 @@ const seriesStages = [
     title: 'A Production-Ready Architecture for On-Device AI on Android',
     slug: 'on-device-fitness-coach/production-architecture',
   },
+  {
+    title: 'Your AI Model Is Not Always Ready',
+    slug: 'on-device-fitness-coach/ai-readiness',
+  },
 ]
 
 export default function OnDeviceFitnessCoachPart2Post() {
@@ -58,7 +62,7 @@ export default function OnDeviceFitnessCoachPart2Post() {
                 On-Device AI
               </span>
               <span className="px-2 py-1 bg-gradient-to-r from-violet-50 to-purple-50 text-violet-700 text-xs font-medium rounded-md border border-violet-200">
-                Series &bull; 2/4
+                Series &bull; 2/5
               </span>
               <span className="text-sm text-gray-500">9 min read</span>
             </div>
@@ -223,7 +227,7 @@ export default function OnDeviceFitnessCoachPart2Post() {
             <SeriesNavigation
               seriesTitle="On-Device Fitness Coach"
               currentStage={2}
-              totalStages={4}
+              totalStages={5}
               stages={seriesStages}
             />
           </div>
