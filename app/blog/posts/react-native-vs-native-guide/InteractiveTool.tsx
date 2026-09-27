@@ -161,7 +161,7 @@ const InteractiveTool = () => {
             <span className="opacity-60">React Native vs Native</span>
           </div>
           <h1 className="mt-4 text-2xl sm:text-3xl font-extrabold tracking-tight">
-            React Native vs Native — the <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-fuchsia-500">vibe check</span>
+            React Native vs Native: the <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-fuchsia-500">vibe check</span>
           </h1>
           <p className="mt-3 text-sm sm:text-base text-gray-600">
             There&apos;s no single right answer. It&apos;s retrospective and use-case-driven. Let&apos;s map the trade-offs visually and keep it fun.
@@ -194,7 +194,7 @@ const InteractiveTool = () => {
                   transition={{ type: "spring", stiffness: 120, damping: 20 }}
                 />
               </div>
-              <p className="mt-2 text-sm"><b>{meterHint}</b> — {rnPct}% RN, {100 - rnPct}% Native</p>
+              <p className="mt-2 text-sm"><b>{meterHint}</b>: {rnPct}% RN, {100 - rnPct}% Native</p>
             </div>
           </Card>
         </div>
@@ -266,7 +266,7 @@ const InteractiveTool = () => {
         {/* Pros & Cons */}
         <div className="mt-6 grid gap-4 md:grid-cols-2">
           <Card>
-            <SectionTitle icon={Rocket} title="React Native — Why it slaps" kicker="pros" />
+            <SectionTitle icon={Rocket} title="React Native: Why it slaps" kicker="pros" />
             <ul className="mt-3 text-sm space-y-2">
               <li>⚡ One codebase → faster features & fewer drift bugs.</li>
               <li>👩‍💻 JS/TS talent pool → easier hiring.</li>
@@ -275,7 +275,7 @@ const InteractiveTool = () => {
             </ul>
           </Card>
           <Card>
-            <SectionTitle icon={ShieldCheck} title="React Native — Keep in mind" kicker="cons" />
+            <SectionTitle icon={ShieldCheck} title="React Native: Keep in mind" kicker="cons" />
             <ul className="mt-3 text-sm space-y-2">
               <li>🔌 Bridge/JSI overhead in hot paths.</li>
               <li>🧰 Native modules sometimes required.</li>
@@ -284,7 +284,7 @@ const InteractiveTool = () => {
             </ul>
           </Card>
           <Card>
-            <SectionTitle icon={Cpu} title="Native — Why it hits different" kicker="pros" />
+            <SectionTitle icon={Cpu} title="Native: Why it hits different" kicker="pros" />
             <ul className="mt-3 text-sm space-y-2">
               <li>🏎️ Peak performance & lowest latency gestures.</li>
               <li>🆕 Immediate access to new OS features.</li>
@@ -293,7 +293,7 @@ const InteractiveTool = () => {
             </ul>
           </Card>
           <Card>
-            <SectionTitle icon={Wrench} title="Native — Keep in mind" kicker="cons" />
+            <SectionTitle icon={Wrench} title="Native: Keep in mind" kicker="cons" />
             <ul className="mt-3 text-sm space-y-2">
               <li>👥 Two codebases & coordination overhead.</li>
               <li>🧑‍🔧 Specialized hiring for both platforms.</li>

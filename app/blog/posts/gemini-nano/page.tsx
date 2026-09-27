@@ -135,7 +135,7 @@ Log.d("AIResult", result.text)`}
                   <strong>On-device caption summaries</strong> for video content
                 </li>
                 <li>
-                  <strong>Context-aware assistants</strong> (&ldquo;Driving detected—launch navigation?&rdquo;)
+                  <strong>Context-aware assistants</strong> (&ldquo;Driving detected. Launch navigation?&rdquo;)
                 </li>
                 <li>
                   <strong>Private, offline translation</strong> for short-form text

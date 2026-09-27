@@ -112,7 +112,7 @@ export default function AndroidDevelopment2025Post() {
             </ul>
 
             <p className="text-gray-700 mb-6 font-semibold">
-              The takeaway: Good UX in Android is no longer just about screens — it&apos;s about flow.
+              The takeaway: Good UX in Android is no longer just about screens. It&apos;s about flow.
             </p>
 
             <div className="border-t border-gray-300 my-6"></div>

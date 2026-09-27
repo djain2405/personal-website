@@ -114,7 +114,7 @@ export default function OnDeviceAIiOSPost() {
             </div>
 
             <p className="text-gray-700 mb-6 text-lg italic">
-              It&apos;s wild to think how much intelligence can now fit inside a mobile device. AI isn&apos;t just happening in servers anymore — it&apos;s happening right here, in our pockets.
+              It&apos;s wild to think how much intelligence can now fit inside a mobile device. AI isn&apos;t just happening in servers anymore. It&apos;s happening right here, in our pockets.
             </p>
 
             <div className="border-t border-gray-300 my-6"></div>

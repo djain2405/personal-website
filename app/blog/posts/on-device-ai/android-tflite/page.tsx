@@ -232,7 +232,7 @@ textResult.text = "\${top?.label} - \${(top?.score ?: 0f) * 100}%"`}
             </div>
 
             <p className="text-gray-700 mb-6 text-lg">
-              Seeing it run in real time on an Android phone feels the same way the Core ML demo did — shockingly instant.
+              Seeing it run in real time on an Android phone feels the same way the Core ML demo did: shockingly instant.
             </p>
 
             <div className="border-t border-gray-300 my-6"></div>

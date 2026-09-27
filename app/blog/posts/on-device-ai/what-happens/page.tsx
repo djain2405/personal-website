@@ -114,7 +114,7 @@ export default function OnDeviceAIWhatHappensPost() {
                   <span className="mr-3 text-xl font-bold">2️⃣</span>
                   <div>
                     <strong>The model is already on your phone,</strong> either bundled with the app or downloaded when you first use it.
-                    <p className="mt-1">It&apos;s a small file (like <code>model.tflite</code> or <code>MobileNetV2.mlmodel</code>) that contains the &ldquo;knowledge&rdquo; the AI learned while training — patterns for recognizing objects, faces, or text.</p>
+                    <p className="mt-1">It&apos;s a small file (like <code>model.tflite</code> or <code>MobileNetV2.mlmodel</code>) that contains the &ldquo;knowledge&rdquo; the AI learned while training: patterns for recognizing objects, faces, or text.</p>
                   </div>
                 </div>
                 <div className="flex items-start">
@@ -131,7 +131,7 @@ export default function OnDeviceAIWhatHappensPost() {
                   <span className="mr-3 text-xl font-bold">4️⃣</span>
                   <div>
                     <strong>The model analyzes the photo.</strong>
-                    <p className="mt-1">Each image becomes numbers (pixels), then math happens — millions of small calculations performed into a few milliseconds.</p>
+                    <p className="mt-1">Each image becomes numbers (pixels), then math happens: millions of small calculations performed into a few milliseconds.</p>
                   </div>
                 </div>
                 <div className="flex items-start">
@@ -175,7 +175,7 @@ export default function OnDeviceAIWhatHappensPost() {
             </div>
 
             <p className="text-gray-700 mb-6">
-              These chips are designed to run neural networks the same way graphics chips render 3D games — quickly, efficiently, and without draining too much battery.
+              These chips are designed to run neural networks the same way graphics chips render 3D games: quickly, efficiently, and without draining too much battery.
             </p>
 
             <div className="border-t border-gray-300 my-6"></div>
@@ -213,7 +213,7 @@ export default function OnDeviceAIWhatHappensPost() {
             </p>
 
             <p className="text-gray-700 mb-6">
-              For users, it means experiences that feel smarter, faster, and more personal — like magic that doesn&apos;t depend on the internet.
+              For users, it means experiences that feel smarter, faster, and more personal, like magic that doesn&apos;t depend on the internet.
             </p>
 
             <div className="border-t border-gray-300 my-6"></div>
@@ -292,7 +292,7 @@ export default function OnDeviceAIWhatHappensPost() {
                 <li>✅ On-device AI means the model runs locally on your phone</li>
                 <li>✅ It&apos;s faster, more private, and works offline</li>
                 <li>✅ Core ML (iOS) and TensorFlow Lite (Android) are the engines behind it</li>
-                <li>✅ The future of AI is not somewhere out there — it&apos;s right here, in your hand</li>
+                <li>✅ The future of AI is not somewhere out there. It&apos;s right here, in your hand</li>
               </ul>
             </div>
           </div>

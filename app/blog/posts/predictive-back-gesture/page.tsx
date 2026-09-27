@@ -104,7 +104,7 @@ export default function PredictiveBackGesturePost() {
             </div>
 
             <p className="text-gray-700 mb-6">
-              That&apos;s it — the system handles the predictive animation automatically.
+              That&apos;s it. The system handles the predictive animation automatically.
             </p>
 
             <p className="text-gray-700 mb-6">

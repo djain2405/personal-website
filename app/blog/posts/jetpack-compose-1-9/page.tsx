@@ -53,13 +53,13 @@ export default function JetpackCompose19Post() {
           {/* Post Content */}
           <div className="prose prose-lg max-w-none">
             <p className="text-gray-700 mb-6">
-              Jetpack Compose 1.9 just dropped — and it&apos;s all about performance, polish, and flexibility. If you&apos;ve been shipping Compose UIs, this update is worth a quick look.
+              Jetpack Compose 1.9 just dropped, and it&apos;s all about performance, polish, and flexibility. If you&apos;ve been shipping Compose UIs, this update is worth a quick look.
             </p>
 
             <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">⚡ 1. Performance That Feels Faster</h2>
 
             <p className="text-gray-700 mb-6">
-              Scrolling and lazy lists got smoother across the board. The Compose runtime now optimizes recompositions more aggressively — meaning less UI jank, even in complex layouts.
+              Scrolling and lazy lists got smoother across the board. The Compose runtime now optimizes recompositions more aggressively, which means less UI jank, even in complex layouts.
             </p>
 
             <p className="text-gray-700 mb-6 font-medium">
@@ -89,7 +89,7 @@ export default function JetpackCompose19Post() {
             </div>
 
             <p className="text-gray-700 mb-6">
-              Finally — shadows that actually look crisp across light/dark themes.
+              Finally, shadows that actually look crisp across light/dark themes.
             </p>
 
             <div className="border-t border-gray-300 my-6"></div>
@@ -101,7 +101,7 @@ export default function JetpackCompose19Post() {
             </p>
 
             <p className="text-gray-700 mb-6">
-              If you&apos;re building for multi-form factors — this release is gold.
+              If you&apos;re building for multi-form factors, this release is gold.
             </p>
 
             <div className="border-t border-gray-300 my-6"></div>
@@ -128,7 +128,7 @@ export default function JetpackCompose19Post() {
             </ul>
 
             <p className="text-gray-700 mb-4">
-              If you haven&apos;t updated yet — now&apos;s the time.
+              If you haven&apos;t updated yet, now&apos;s the time.
             </p>
           </div>
 

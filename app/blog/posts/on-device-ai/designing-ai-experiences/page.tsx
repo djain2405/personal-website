@@ -281,7 +281,7 @@ export default function DesigningAIExperiencesPost() {
             </div>
 
             <p className="text-gray-700 mb-6 text-lg font-medium italic">
-              That&apos;s where the future of AI lives — not just on-device, but in-experience.
+              That&apos;s where the future of AI lives: not just on-device, but in-experience.
             </p>
 
             <div className="border-t border-gray-300 my-6"></div>

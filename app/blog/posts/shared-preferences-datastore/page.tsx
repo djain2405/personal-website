@@ -53,7 +53,7 @@ export default function SharedPreferencesDataStorePost() {
           {/* Post Content */}
           <div className="prose prose-lg max-w-none">
             <p className="text-gray-700 mb-6">
-              If you’ve been building Android apps for a while, you probably started with SharedPreferences for storing small amounts of key-value data—things like user settings, tokens, or flags. It’s been around forever, but like many legacy APIs, it comes with baggage.
+              If you’ve been building Android apps for a while, you probably started with SharedPreferences for storing small amounts of key-value data, things like user settings, tokens, or flags. It’s been around forever, but like many legacy APIs, it comes with baggage.
             </p>
 
             <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">Why SharedPreferences feels outdated</h2>

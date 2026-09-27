@@ -137,7 +137,7 @@ Parent(text) // re-renders whole subtree`}
             <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">🔥 4. Missing key in Lazy Lists</h2>
 
             <p className="text-gray-700 mb-4">
-              If Compose can&apos;t uniquely identify list items, it re-renders more than necessary — sometimes the whole list.
+              If Compose can&apos;t uniquely identify list items, it re-renders more than necessary, sometimes the whole list.
             </p>
 
             <div className="bg-gray-100 rounded-lg p-4 mb-4">

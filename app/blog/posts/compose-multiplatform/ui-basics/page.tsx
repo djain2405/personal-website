@@ -63,7 +63,7 @@ export default function ComposeMultiplatformUIBasicsPost() {
             {/* Introduction */}
             <h2 className="text-2xl font-bold text-gray-900 mb-4">Introduction</h2>
             <p className="text-gray-700 mb-8">
-              Now that our CMP project is set up, let&apos;s build something useful. In this part, we&apos;ll create a small app: Quotes of the Day. We&apos;ll show a list of quotes, with the ability to favorite/unfavorite them — all written in shared UI code.
+              Now that our CMP project is set up, let&apos;s build something useful. In this part, we&apos;ll create a small app: Quotes of the Day. We&apos;ll show a list of quotes, with the ability to favorite/unfavorite them, all written in shared UI code.
             </p>
 
             {/* Step 1 */}

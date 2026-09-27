@@ -486,7 +486,7 @@ export default function Home() {
                   </h3>
 
                   <p className="text-white/90 text-lg mb-6">
-                    AVAILABLE is not the same as ready. Fitness Coach gets its own readiness lifecycle — check, download, warm-up, and retry — so Generate insight only turns on when Gemini Nano can actually run.
+                    AVAILABLE is not the same as ready. Fitness Coach gets its own readiness lifecycle (check, download, warm-up, and retry), so Generate insight only turns on when Gemini Nano can actually run.
                   </p>
 
                   <div className="flex items-center gap-4 text-white/80 text-sm">

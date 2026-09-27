@@ -106,22 +106,22 @@ const onDeviceAISeries = {
   description: "Building AI-powered mobile apps without cloud dependency",
   stages: [
     {
-      title: "Running AI Locally on iPhone — No Cloud Needed",
+      title: "Running AI Locally on iPhone - No Cloud Needed",
       slug: "on-device-ai/ios-coreml",
       stage: 1
     },
     {
-      title: "On-Device AI, Part 2 — Running Image Classification on Android with TensorFlow Lite",
+      title: "On-Device AI, Part 2 - Running Image Classification on Android with TensorFlow Lite",
       slug: "on-device-ai/android-tflite",
       stage: 2
     },
     {
-      title: "🧠 On-Device AI, Part 3 — What Actually Happens When AI Runs on Your Phone",
+      title: "🧠 On-Device AI, Part 3 - What Actually Happens When AI Runs on Your Phone",
       slug: "on-device-ai/what-happens",
       stage: 3
     },
     {
-      title: "On-Device AI, Part 4 — Designing AI Experiences That Feel Magical",
+      title: "On-Device AI, Part 4 - Designing AI Experiences That Feel Magical",
       slug: "on-device-ai/designing-ai-experiences",
       stage: 4
     }
@@ -139,7 +139,7 @@ const blogPosts = [
   {
     id: 41,
     title: "On-Device Fitness Coach #5: Your AI Model Is Not Always Ready",
-    excerpt: "AVAILABLE is not the same as ready. Fitness Coach gets its own readiness lifecycle — check, download, warm-up, and retry — so Generate insight only turns on when Gemini Nano can actually run.",
+    excerpt: "AVAILABLE is not the same as ready. Fitness Coach gets its own readiness lifecycle (check, download, warm-up, and retry), so Generate insight only turns on when Gemini Nano can actually run.",
     category: "On-Device AI",
     readTime: "14 min read",
     date: "2026-09-27",
@@ -234,7 +234,7 @@ const blogPosts = [
   {
     id: 33,
     title: "The AI-Augmented Mobile Developer #4: Using AI to Learn New Mobile APIs Faster",
-    excerpt: "Every year mobile platforms introduce new APIs. AI doesn't replace documentation — but it can dramatically accelerate the learning loop. Here are five prompts I use to build mental models, generate minimal examples, surface pitfalls, and turn docs into actionable checklists.",
+    excerpt: "Every year mobile platforms introduce new APIs. AI doesn't replace documentation, but it can dramatically accelerate the learning loop. Here are five prompts I use to build mental models, generate minimal examples, surface pitfalls, and turn docs into actionable checklists.",
     category: "AI Workflow",
     readTime: "7 min read",
     date: "2026-03-08",
@@ -246,7 +246,7 @@ const blogPosts = [
   {
     id: 32,
     title: "The AI-Augmented Mobile Developer #3: Debugging Mobile Bugs with AI",
-    excerpt: "AI is great at generating code. But one of the most underrated ways to use it is for debugging. Not because it magically knows the answer — but because it helps you reason faster. Here's how I use AI to debug stack traces, lifecycle bugs, concurrency problems, and weird UI behavior.",
+    excerpt: "AI is great at generating code. But one of the most underrated ways to use it is for debugging. Not because it magically knows the answer, but because it helps you reason faster. Here's how I use AI to debug stack traces, lifecycle bugs, concurrency problems, and weird UI behavior.",
     category: "AI Workflow",
     readTime: "8 min read",
     date: "2026-03-07",
@@ -258,7 +258,7 @@ const blogPosts = [
   {
     id: 31,
     title: "The AI-Augmented Mobile Developer #2: 5 Prompts I Use Constantly",
-    excerpt: "The real productivity boost doesn't come from AI alone — it comes from good prompts. Here are five prompts I use almost every day while building mobile apps: from turning vague tasks into implementation plans, to running a quick pre-PR code review.",
+    excerpt: "The real productivity boost doesn't come from AI alone. It comes from good prompts. Here are five prompts I use almost every day while building mobile apps: from turning vague tasks into implementation plans, to running a quick pre-PR code review.",
     category: "AI Workflow",
     readTime: "8 min read",
     date: "2026-03-05",
@@ -372,7 +372,7 @@ const blogPosts = [
   {
     id: 20,
     title: "Predictive Back Gesture: The Subtle UX Win You Need to Enable",
-    excerpt: "Android 16 is making Predictive Back Navigation the default — and it's one of those updates that looks tiny but feels huge. Learn how to enable this smooth navigation feature in your app.",
+    excerpt: "Android 16 is making Predictive Back Navigation the default, and it's one of those updates that looks tiny but feels huge. Learn how to enable this smooth navigation feature in your app.",
     category: "Android UX",
     readTime: "4 min read",
     date: "2025-10-27",
@@ -382,7 +382,7 @@ const blogPosts = [
   {
     id: 19,
     title: "Baseline Profiles in 2025: The Easy Speed Hack You're Ignoring ⚡",
-    excerpt: "If your Android app still takes a few seconds to open, there's a good chance you're not using Baseline Profiles — one of the easiest and most effective speed hacks available today.",
+    excerpt: "If your Android app still takes a few seconds to open, there's a good chance you're not using Baseline Profiles. One of the easiest and most effective speed hacks available today.",
     category: "Android Performance",
     readTime: "5 min read",
     date: "2025-10-17",
@@ -391,7 +391,7 @@ const blogPosts = [
   },
   {
     id: 18,
-    title: "On-Device AI, Part 2 — Running Image Classification on Android with TensorFlow Lite",
+    title: "On-Device AI, Part 2 - Running Image Classification on Android with TensorFlow Lite",
     excerpt: "Following up on the iOS demo, I brought the same on-device AI experience to Android using TensorFlow Lite + Jetpack Compose. Same concept: instant predictions, complete privacy, zero latency.",
     category: "On-Device AI",
     readTime: "7 min read",
@@ -403,7 +403,7 @@ const blogPosts = [
   },
   {
     id: 17,
-    title: "Running AI Locally on iPhone — No Cloud Needed",
+    title: "Running AI Locally on iPhone - No Cloud Needed",
     excerpt: "Build an on-device image classifier with Core ML + SwiftUI. Instant predictions, complete privacy, zero latency. AI is now happening right in our pockets. Start of the On-Device AI series.",
     category: "On-Device AI",
     readTime: "6 min read",
@@ -416,7 +416,7 @@ const blogPosts = [
   {
     id: 16,
     title: "What's New in Jetpack Compose 1.9: Smoother, Faster, and More Expressive 🎨",
-    excerpt: "Jetpack Compose 1.9 just dropped — and it's all about performance, polish, and flexibility. If you've been shipping Compose UIs, this update is worth a quick look.",
+    excerpt: "Jetpack Compose 1.9 just dropped, and it's all about performance, polish, and flexibility. If you've been shipping Compose UIs, this update is worth a quick look.",
     category: "Jetpack Compose",
     readTime: "4 min read",
     date: "2025-10-11",

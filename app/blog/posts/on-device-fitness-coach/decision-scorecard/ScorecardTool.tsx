@@ -131,7 +131,7 @@ export default function ScorecardTool() {
         <Card className="md:col-span-2">
           <p className="text-xs font-semibold uppercase tracking-wide text-gray-500">Your total</p>
           <p className="mt-2 text-3xl font-bold text-gray-900" aria-live="polite">
-            {complete ? total : '—'}
+            {complete ? total : '-'}
             <span className="text-lg font-normal text-gray-500"> / 25</span>
           </p>
           <p className="mt-2 text-sm text-gray-600">

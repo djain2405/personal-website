@@ -53,7 +53,7 @@ export default function AppStartupApiPost() {
           {/* Post Content */}
           <div className="prose prose-lg max-w-none">
             <p className="text-gray-700 mb-6">
-              Nobody likes waiting for apps to open. On Android, every extra millisecond at startup can hurt retention. That&apos;s where the Jetpack App Startup API comes in—it simplifies how you initialize components on launch.
+              Nobody likes waiting for apps to open. On Android, every extra millisecond at startup can hurt retention. That&apos;s where the Jetpack App Startup API comes in. It simplifies how you initialize components on launch.
             </p>
 
             <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">The Old Way 😬</h2>
@@ -100,7 +100,7 @@ export default function AppStartupApiPost() {
             </div>
 
             <p className="text-gray-700 mb-6">
-              And boom — App Startup handles the rest.
+              And boom, App Startup handles the rest.
             </p>
 
             <div className="border-t border-gray-300 my-6"></div>
